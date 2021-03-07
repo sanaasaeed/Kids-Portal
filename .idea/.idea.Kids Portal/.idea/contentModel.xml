@@ -6,7 +6,7 @@
     <e p="C:\Users\sunfu\Kids Portal\Kids Portal" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="GUIPackCartoon" t="Include">
+        <e p="Portal" t="Include">
           <e p="Demo" t="Include">
             <e p="Fonts" t="Include">
               <e p="OFL.txt" t="Include" />
