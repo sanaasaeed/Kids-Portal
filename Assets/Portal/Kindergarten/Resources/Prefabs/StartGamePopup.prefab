@@ -848,7 +848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Level 1
+  scene: EL1-1
   duration: 0.5
   color: {r: 0.08212586, g: 0.181072, b: 0.22794116, a: 1}
 --- !u!82 &8290172

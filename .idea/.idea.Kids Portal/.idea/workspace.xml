@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="18fd4037-dc49-412f-af94-81ba1c2b9c3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Demo/Scenes/HomeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Demo/Scenes/HomeScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Resources/Prefabs/StartGamePopup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Resources/Prefabs/StartGamePopup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/EnglishLevels.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/EnglishLevels.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Level 1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Level 1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/InitialPlayerPrefs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/InitialPlayerPrefs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/SceneTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/SceneTransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/wyron-a-6ZR-f5bkrGE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/wyron-a-6ZR-f5bkrGE-unsplash.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,12 +42,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/AudioManagerU1.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/GUIPackCartoon/Demo/Scripts/InitialPlayerPrefs.cs" />
         <option value="$PROJECT_DIR$/Assets/GUIPackCartoon/Demo/Scripts/SceneTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/GUIPackCartoon/Demo/Scripts/AnimatedButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/AudioManagerUrdu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/GameStateUrdu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/SpawnManagerU1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/AudioManagerU1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/SceneLoaderU1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/GameStateU1.cs" />
       </list>
     </option>
   </component>
@@ -66,7 +103,8 @@
       <workItem from="1614322767079" duration="2806000" />
       <workItem from="1614528293032" duration="4176000" />
       <workItem from="1614767140929" duration="1290000" />
-      <workItem from="1615137165321" duration="29000" />
+      <workItem from="1615137165321" duration="596000" />
+      <workItem from="1615171003801" duration="1697000" />
     </task>
     <servers />
   </component>
@@ -75,6 +113,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

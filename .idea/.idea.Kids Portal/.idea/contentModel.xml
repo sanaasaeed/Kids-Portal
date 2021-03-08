@@ -7,9 +7,46 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Portal" t="Include">
-          <e p="Demo" t="Include">
+          <e p="Kindergarten" t="Include">
             <e p="Fonts" t="Include">
               <e p="OFL.txt" t="Include" />
+            </e>
+            <e p="Scenes" t="Include">
+              <e p="EnglishLevels" t="Include">
+                <e p="EL1 Assets" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="Alphabets.cs" t="Include" />
+                    <e p="AudioManager.cs" t="Include" />
+                    <e p="GameState.cs" t="Include" />
+                    <e p="PauseMenu.cs" t="Include" />
+                    <e p="Player.cs" t="Include" />
+                    <e p="PopupMenu.cs" t="Include" />
+                    <e p="SceneLoader.cs" t="Include" />
+                    <e p="SpawnManager.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="EL2 Assets" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="ClickLetters.cs" t="Include" />
+                    <e p="DisplayLetter.cs" t="Include" />
+                    <e p="GameController.cs" t="Include" />
+                    <e p="LoadScene.cs" t="Include" />
+                    <e p="RemainingCounter.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="UrduLevels" t="Include">
+                <e p="UL1 Assets" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="AudioManager.cs" t="Include" />
+                    <e p="Balloon.cs" t="Include" />
+                    <e p="GameState.cs" t="Include" />
+                    <e p="GoalsScreen.cs" t="Include" />
+                    <e p="SceneLoader.cs" t="Include" />
+                    <e p="SpawnManager.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
             </e>
             <e p="Scripts" t="Include">
               <e p="AnimatedButton.cs" t="Include" />

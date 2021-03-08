@@ -12734,7 +12734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popupPrefab: {fileID: 109706, guid: 225ad75b7d168450fb9abba5d4e401af, type: 3}
-  starsObtained: 3
+  starsObtained: 2
 --- !u!82 &1004105984
 AudioSource:
   m_ObjectHideFlags: 0
