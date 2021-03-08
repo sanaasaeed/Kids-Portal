@@ -55,9 +55,11 @@
               <e p="Fader.cs" t="Include" />
               <e p="InitialPlayerPrefs.cs" t="Include" />
               <e p="LevelScene.cs" t="Include" />
+              <e p="LevelSetterInPopup.cs" t="Include" />
               <e p="MusicButton.cs" t="Include" />
               <e p="MusicManager.cs" t="Include" />
               <e p="MuteBackgroundMusic.cs" t="Include" />
+              <e p="PlayerData.cs" t="Include" />
               <e p="PlayPopup.cs" t="Include" />
               <e p="PlayPopupOpener.cs" t="Include" />
               <e p="Popup.cs" t="Include" />
