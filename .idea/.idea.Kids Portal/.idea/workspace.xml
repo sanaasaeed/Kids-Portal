@@ -43,7 +43,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/AudioManagerU1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/PlayerData.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,10 +54,16 @@
         <option value="$PROJECT_DIR$/Assets/GUIPackCartoon/Demo/Scripts/AnimatedButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/AudioManagerUrdu.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/GameStateUrdu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/SpawnManagerU1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/AudioManagerU1.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/SceneLoaderU1.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/GameStateU1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/AudioManagerU1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/SceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/GameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/Balloon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/SpawnManagerU1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/GoalsScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/SpawnManager.cs" />
       </list>
     </option>
   </component>
@@ -104,7 +111,7 @@
       <workItem from="1614528293032" duration="4176000" />
       <workItem from="1614767140929" duration="1290000" />
       <workItem from="1615137165321" duration="596000" />
-      <workItem from="1615171003801" duration="1697000" />
+      <workItem from="1615171003801" duration="2541000" />
     </task>
     <servers />
   </component>
