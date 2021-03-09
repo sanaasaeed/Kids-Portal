@@ -35,6 +35,13 @@
                   </e>
                 </e>
               </e>
+              <e p="MathsLevels" t="Include">
+                <e p="ML-1 Assets" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="RandomSelection.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
               <e p="UrduLevels" t="Include">
                 <e p="UL1 Assets" t="Include">
                   <e p="Scripts" t="Include">
@@ -55,7 +62,6 @@
               <e p="Fader.cs" t="Include" />
               <e p="InitialPlayerPrefs.cs" t="Include" />
               <e p="LevelScene.cs" t="Include" />
-              <e p="LevelSetterInPopup.cs" t="Include" />
               <e p="MusicButton.cs" t="Include" />
               <e p="MusicManager.cs" t="Include" />
               <e p="MuteBackgroundMusic.cs" t="Include" />
