@@ -1,23 +1,30 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ClickHandler : MonoBehaviour {
+    [SerializeField] private GameObject panel;
     [SerializeField] private GameObject gameManager;
     [SerializeField] private TMP_Text buttonText;
     private RandomSelection randomSelection;
     void Start() {
         randomSelection = gameManager.GetComponent<RandomSelection>();
-        HandleClick();
     }
 
+    IEnumerator waitForSeconds() {
+        yield return new WaitForSeconds(1);
+        panel.SetActive(false);
+    }
     public void HandleClick() {
         int noOfThings = randomSelection.noOfThings;
         if (buttonText.text == noOfThings.ToString()) {
             randomSelection.DestroyItems();
             randomSelection.DisplayThings();
+        }
+        else if(buttonText.text != noOfThings.ToString()){
+            panel.SetActive(true);
+            StartCoroutine("waitForSeconds");
+            
         }
     }
 }
