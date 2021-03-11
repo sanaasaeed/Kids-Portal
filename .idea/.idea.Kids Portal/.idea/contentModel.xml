@@ -38,6 +38,7 @@
               <e p="MathsLevels" t="Include">
                 <e p="ML-1 Assets" t="Include">
                   <e p="Scripts" t="Include">
+                    <e p="ClickHandler.cs" t="Include" />
                     <e p="RandomSelection.cs" t="Include" />
                   </e>
                 </e>
@@ -73,7 +74,6 @@
               <e p="SceneTransition.cs" t="Include" />
               <e p="SoundButton.cs" t="Include" />
               <e p="SoundManager.cs" t="Include" />
-              <e p="SpinWheel.cs" t="Include" />
               <e p="SpriteSwapper.cs" t="Include" />
               <e p="TintedButton.cs" t="Include" />
               <e p="Transition.cs" t="Include" />
