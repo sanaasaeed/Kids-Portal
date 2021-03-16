@@ -23,86 +23,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Resources/Prefabs/SettingsPopup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Resources/Prefabs/SettingsPopup.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/EnglishLevels.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/EnglishLevels.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/ML1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/ML1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Prefabs/Item.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Prefabs/Item.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Prefabs/WrongTryPopup.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Prefabs/WrongTryPopup.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Scripts/ClickHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Scripts/ClickHandler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Scripts/RandomSelection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Scripts/RandomSelection.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 10.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 102.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 102.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 11.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 112.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 112.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 12.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 122.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 122.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 13.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 132.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 132.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 14.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 15.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 162.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 162.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 172.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 172.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 182.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 182.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 22.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 32.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 42.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 52.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 62.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 62.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 82.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 82.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 9.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 92.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/Asset 92.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/football.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Sprites/football.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/bg.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/SubjectSelect.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/SubjectSelect.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/PlayPopupOpener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/PlayPopupOpener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/EnglishLevels/EL1 Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/EnglishLevels/EL1 Assets/Scripts/GameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/EnglishLevels/EL2 Assets/Scenes/EL2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/EnglishLevels/EL2 Assets/Scenes/EL2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/HomeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/HomeScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/ItemsScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/ItemsScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/Shapes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/Shapes/Scripts/Get.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/Shapes/Scripts/Get.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/EnglishLevels.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/EnglishLevels.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/MathsLevels.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/MathsLevels.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/SubjectSelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/SubjectSelect.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/UrduLevels.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/UrduLevels.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/MuteBackgroundMusic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/PlayPopupOpener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/UserData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/Balloon.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -161,6 +94,11 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/ML-1 Assets/Scripts/ClickHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/PlayPopupOpener.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/Shapes/Scripts/Get.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/Shapes/Scripts/WebServices.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/Shapes/Scripts/ConnectionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/UserData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/ConnectionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/EnglishLevels/EL1 Assets/Scripts/GameState.cs" />
       </list>
     </option>
   </component>
@@ -171,6 +109,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -215,6 +154,7 @@
       <workItem from="1615439244319" duration="11311000" />
       <workItem from="1615522996264" duration="881000" />
       <workItem from="1615745371297" duration="5700000" />
+      <workItem from="1615890492320" duration="9954000" />
     </task>
     <servers />
   </component>

@@ -39,8 +39,12 @@ public class GameState : MonoBehaviour
     public void IncreaseScore() {
         count += 10;
         if (count == levelScore) {
-            if(SceneManager.GetActiveScene().buildIndex < SceneManager.sceneCountInBuildSettings)
+            if (SceneManager.GetActiveScene().name != "EL1-3") {
                 SceneLoader.LoadNextSceneWithoutLoading();
+            }
+            else {
+                SceneManager.LoadScene("EnglishLevels");
+            }
         }
 
         scoreText.text = count.ToString();
@@ -55,12 +59,12 @@ public class GameState : MonoBehaviour
     }
 
     public void SetLevelScore() {
-        if (SceneManager.GetActiveScene().buildIndex == 1) {
+        if (SceneManager.GetActiveScene().buildIndex == 3) {
             levelScore = 50;
-        } else if (SceneManager.GetActiveScene().buildIndex == 2) {
-            levelScore = 50;
-        } else if (SceneManager.GetActiveScene().buildIndex == 3) {
+        } else if (SceneManager.GetActiveScene().buildIndex == 4) {
             levelScore = 70;
+        } else if (SceneManager.GetActiveScene().buildIndex == 5) {
+            levelScore = 80;
         }
     }
 }

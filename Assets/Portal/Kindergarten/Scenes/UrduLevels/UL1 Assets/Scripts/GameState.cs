@@ -20,11 +20,11 @@ namespace Portal.Kindergarten.Scenes.UrduLevels.UL1_Assets.Scripts {
         }
 // Can make it more dynamic
         private void SetLevelScore() {
-            if (SceneManager.GetActiveScene().name == "Level 01") {
+            if (SceneManager.GetActiveScene().name == "UL1-1") {
                 targetScore = levelScores[0];
-            } else if (SceneManager.GetActiveScene().name == "Level 02") {
+            } else if (SceneManager.GetActiveScene().name == "UL1-2") {
                 targetScore = levelScores[1];
-            } else if (SceneManager.GetActiveScene().name == "Level 03") {
+            } else if (SceneManager.GetActiveScene().name == "UL1-3") {
                 targetScore = levelScores[2];
             }
         }

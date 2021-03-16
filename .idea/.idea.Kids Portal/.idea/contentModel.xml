@@ -44,11 +44,6 @@
                     </e>
                   </e>
                 </e>
-                <e p="Shapes" t="Include">
-                  <e p="Scripts" t="Include">
-                    <e p="Get.cs" t="Include" />
-                  </e>
-                </e>
               </e>
               <e p="UrduLevels" t="Include">
                 <e p="UL1 Assets" t="Include">
@@ -67,6 +62,7 @@
               <e p="AnimatedButton.cs" t="Include" />
               <e p="BackgroundMusic.cs" t="Include" />
               <e p="ColorSwapper.cs" t="Include" />
+              <e p="ConnectionManager.cs" t="Include" />
               <e p="Fader.cs" t="Include" />
               <e p="InitialPlayerPrefs.cs" t="Include" />
               <e p="LevelScene.cs" t="Include" />
@@ -84,6 +80,8 @@
               <e p="SpriteSwapper.cs" t="Include" />
               <e p="TintedButton.cs" t="Include" />
               <e p="Transition.cs" t="Include" />
+              <e p="UserData.cs" t="Include" />
+              <e p="WebServices.cs" t="Include" />
             </e>
             <e p="Shaders" t="Include">
               <e p="GrayTint.shader" t="Include" />

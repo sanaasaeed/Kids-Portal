@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Portal/Kindergarten/Scenes/Subjects/UrduLevels.unity
     guid: 2b5bbfc3b814a1341861aeeee7274799
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/LoseScene.unity
+    guid: 7c04ba0fdd2244fba8f705a230749b76
   m_configObjects: {}
