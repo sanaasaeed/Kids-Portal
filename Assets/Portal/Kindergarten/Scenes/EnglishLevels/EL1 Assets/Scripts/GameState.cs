@@ -53,7 +53,7 @@ public class GameState : MonoBehaviour
     public void DecreaseScore() {
         count -= 10;
         if(count < 0) {
-            SceneLoader.LoadLastScene();
+            SceneManager.LoadScene("EnglishLevels");
         }
         scoreText.text = count.ToString();
     }

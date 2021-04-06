@@ -44,6 +44,11 @@
                     </e>
                   </e>
                 </e>
+                <e p="Shapes" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="ObjectSpawner.cs" t="Include" />
+                  </e>
+                </e>
               </e>
               <e p="UrduLevels" t="Include">
                 <e p="UL1 Assets" t="Include">
