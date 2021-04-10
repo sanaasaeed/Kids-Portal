@@ -47,6 +47,7 @@
                 <e p="Shapes" t="Include">
                   <e p="Scripts" t="Include">
                     <e p="ObjectSpawner.cs" t="Include" />
+                    <e p="Shape.cs" t="Include" />
                   </e>
                 </e>
               </e>
