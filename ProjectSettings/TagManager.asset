@@ -6,6 +6,16 @@ TagManager:
   tags:
   - right
   - item
+  - Circle
+  - Diamond
+  - Hexagon
+  - Pentagon
+  - Rectangle
+  - Square
+  - Star
+  - Trap
+  - Triangle
+  - Circledone
   layers:
   - Default
   - TransparentFX
