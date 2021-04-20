@@ -12,54 +12,74 @@
               <e p="OFL.txt" t="Include" />
             </e>
             <e p="Scenes" t="Include">
-              <e p="EnglishLevels" t="Include">
-                <e p="EL1 Assets" t="Include">
-                  <e p="Scripts" t="Include">
-                    <e p="Alphabets.cs" t="Include" />
-                    <e p="AudioManager.cs" t="Include" />
-                    <e p="GameState.cs" t="Include" />
-                    <e p="PauseMenu.cs" t="Include" />
-                    <e p="Player.cs" t="Include" />
-                    <e p="PopupMenu.cs" t="Include" />
-                    <e p="SceneLoader.cs" t="Include" />
-                    <e p="SpawnManager.cs" t="Include" />
+              <e p="Games" t="Include">
+                <e p="EnglishLevels" t="Include">
+                  <e p="Level 1" t="Include">
+                    <e p="EL1 Assets" t="Include">
+                      <e p="Scripts" t="Include">
+                        <e p="Alphabets.cs" t="Include" />
+                        <e p="AudioManager.cs" t="Include" />
+                        <e p="GameState.cs" t="Include" />
+                        <e p="PauseMenu.cs" t="Include" />
+                        <e p="Player.cs" t="Include" />
+                        <e p="PopupMenu.cs" t="Include" />
+                        <e p="SceneLoader.cs" t="Include" />
+                        <e p="SpawnManager.cs" t="Include" />
+                      </e>
+                    </e>
                   </e>
-                </e>
-                <e p="EL2 Assets" t="Include">
-                  <e p="Scripts" t="Include">
-                    <e p="ClickLetters.cs" t="Include" />
-                    <e p="DisplayLetter.cs" t="Include" />
-                    <e p="GameController.cs" t="Include" />
-                    <e p="LoadScene.cs" t="Include" />
-                    <e p="RemainingCounter.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
-              <e p="MathsLevels" t="Include">
-                <e p="Counting" t="Include">
-                  <e p="ML-1 Assets" t="Include">
-                    <e p="Scripts" t="Include">
-                      <e p="ClickHandler.cs" t="Include" />
-                      <e p="RandomSelection.cs" t="Include" />
+                  <e p="Level 2" t="Include">
+                    <e p="EL2 Assets" t="Include">
+                      <e p="Scripts" t="Include">
+                        <e p="ClickLetters.cs" t="Include" />
+                        <e p="DisplayLetter.cs" t="Include" />
+                        <e p="GameController.cs" t="Include" />
+                        <e p="LoadScene.cs" t="Include" />
+                        <e p="RemainingCounter.cs" t="Include" />
+                      </e>
                     </e>
                   </e>
                 </e>
-                <e p="Shapes" t="Include">
-                  <e p="Scripts" t="Include">
-                    <e p="ObjectSpawner.cs" t="Include" />
-                    <e p="Shape.cs" t="Include" />
+                <e p="MathsLevels" t="Include">
+                  <e p="Counting" t="Include">
+                    <e p="ML-1 Assets" t="Include">
+                      <e p="Scripts" t="Include">
+                        <e p="ClickHandler.cs" t="Include" />
+                        <e p="RandomSelection.cs" t="Include" />
+                        <e p="ScoreHandler.cs" t="Include" />
+                      </e>
+                    </e>
+                  </e>
+                  <e p="Shapes" t="Include">
+                    <e p="Scripts" t="Include">
+                      <e p="ObjectSpawner.cs" t="Include" />
+                      <e p="Score.cs" t="Include" />
+                      <e p="Shape.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="UrduLevels" t="Include">
+                  <e p="UL1 Assets" t="Include">
+                    <e p="Scripts" t="Include">
+                      <e p="AudioManager.cs" t="Include" />
+                      <e p="Balloon.cs" t="Include" />
+                      <e p="GameState.cs" t="Include" />
+                      <e p="GoalsScreen.cs" t="Include" />
+                      <e p="SceneLoader.cs" t="Include" />
+                      <e p="SpawnManager.cs" t="Include" />
+                    </e>
                   </e>
                 </e>
               </e>
-              <e p="UrduLevels" t="Include">
-                <e p="UL1 Assets" t="Include">
-                  <e p="Scripts" t="Include">
-                    <e p="AudioManager.cs" t="Include" />
-                    <e p="Balloon.cs" t="Include" />
-                    <e p="GameState.cs" t="Include" />
-                    <e p="GoalsScreen.cs" t="Include" />
-                    <e p="SceneLoader.cs" t="Include" />
-                    <e p="SpawnManager.cs" t="Include" />
+              <e p="Learning Resources" t="Include">
+                <e p="English" t="Include">
+                  <e p="LR1" t="Include">
+                    <e p="Assets" t="Include">
+                      <e p="Scripts" t="Include">
+                        <e p="AlphabetObjSpawner.cs" t="Include" />
+                        <e p="Popups.cs" t="Include" />
+                      </e>
+                    </e>
                   </e>
                 </e>
               </e>
@@ -69,6 +89,7 @@
               <e p="BackgroundMusic.cs" t="Include" />
               <e p="ColorSwapper.cs" t="Include" />
               <e p="ConnectionManager.cs" t="Include" />
+              <e p="DynamicPlay.cs" t="Include" />
               <e p="Fader.cs" t="Include" />
               <e p="InitialPlayerPrefs.cs" t="Include" />
               <e p="LevelScene.cs" t="Include" />

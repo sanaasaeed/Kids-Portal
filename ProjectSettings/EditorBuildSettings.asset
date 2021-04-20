@@ -9,42 +9,66 @@ EditorBuildSettings:
     path: Assets/Portal/Kindergarten/Scenes/HomeScene.unity
     guid: 96685a7dff6564d8cbb85dd67f648e41
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/Subjects/SubjectSelect.unity
+    path: Assets/Portal/Kindergarten/Scenes/Games/Subjects/TypeSelect.unity
+    guid: e8e6ed0989d973a45beaf3a79c95b70b
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Games/Subjects/SubjectSelect.unity
     guid: f8bb517c5d494654c9428a83aab02426
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/Subjects/EnglishLevels.unity
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/SubjectSelect LR.unity
+    guid: 2f674d8037756c64eaff7fc18b75ab68
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Games/Subjects/EnglishLevels.unity
     guid: c66bacef4b83c4fdc99bd00d5cab76ff
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/EnglishLevels/EL1 Assets/Scenes/EL1-1.unity
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/EnglishLRs.unity
+    guid: 9b66fc34ff193c6499275d6a90e08a5c
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/Level 1/EL1 Assets/Scenes/EL1-1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/EnglishLevels/EL1 Assets/Scenes/EL1-2.unity
+    path: Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/Level 1/EL1 Assets/Scenes/EL1-2.unity
     guid: 62fece8352f5aab4198f7b58f9ffe0a2
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/EnglishLevels/EL1 Assets/Scenes/EL1-3.unity
+    path: Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/Level 1/EL1 Assets/Scenes/EL1-3.unity
     guid: 4b7a945ebfdbf294198fc5fd7181a387
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/EnglishLevels/EL2 Assets/Scenes/EL2.unity
+    path: Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/Level 2/EL2 Assets/Scenes/EL2.unity
     guid: 9a66d0dcebd20af46ad9dc53e5a991bf
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/Subjects/MathsLevels.unity
+    path: Assets/Portal/Kindergarten/Scenes/Games/Subjects/MathsLevels.unity
     guid: 4347be50ca271a744965fc3b94b80a16
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/MathsLevels/Counting/ML1.unity
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/MathsLRs.unity
+    guid: c21e1ebf42e0b9b4e8304fd99b3a9012
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Counting/ML1.unity
     guid: a6bbe21899d951242babc906f584be5e
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/Subjects/UrduLevels.unity
+    path: Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Shapes/ML2.unity
+    guid: 48038d409ec82d24b8a6cf830cffe2fc
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Games/Subjects/UrduLevels.unity
     guid: 2b5bbfc3b814a1341861aeeee7274799
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scenes/UL1-1.unity
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/UrduLRs.unity
+    guid: e495ad9a98f68314086bfc75227e7a1b
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Games/UrduLevels/UL1 Assets/Scenes/UL1-1.unity
     guid: 20530bc2127c3314c9f8282a8d3584a1
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scenes/UL2-2.unity
+    path: Assets/Portal/Kindergarten/Scenes/Games/UrduLevels/UL1 Assets/Scenes/UL1-2.unity
     guid: 21578e246cf90b745a90de85f4424aca
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scenes/UL3-3.unity
+    path: Assets/Portal/Kindergarten/Scenes/Games/UrduLevels/UL1 Assets/Scenes/UL1-3.unity
     guid: 3fc246a24ba1a894493d8c064985cb82
   - enabled: 0
-    path: Assets/Portal/Kindergarten/Scenes/LoseScene.unity
+    path: 
     guid: 7c04ba0fdd2244fba8f705a230749b76
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/GameOver.unity
+    guid: c3ce1866e0e91af4c9e4dd3a46448cd3
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/GameOver.unity
+    guid: c3ce1866e0e91af4c9e4dd3a46448cd3
   m_configObjects: {}
