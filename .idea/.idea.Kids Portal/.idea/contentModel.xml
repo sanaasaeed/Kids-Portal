@@ -76,6 +76,7 @@
                   <e p="LR1" t="Include">
                     <e p="Assets" t="Include">
                       <e p="Scripts" t="Include">
+                        <e p="ActivityManager.cs" t="Include" />
                         <e p="AlphabetObjSpawner.cs" t="Include" />
                         <e p="Popups.cs" t="Include" />
                       </e>

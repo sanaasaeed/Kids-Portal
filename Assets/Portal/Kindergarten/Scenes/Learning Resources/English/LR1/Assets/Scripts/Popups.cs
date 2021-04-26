@@ -7,7 +7,8 @@ public class Popups : MonoBehaviour
     [SerializeField] private GameObject instructionPopup;
     
     void Start() {
-        StartCoroutine(nameof(WaitAndDestroy));
+        if(GameObject.Find("instructionPopup") != null)
+            StartCoroutine(nameof(WaitAndDestroy));
     }
     IEnumerator WaitAndDestroy() {
         yield return new WaitForSeconds(3);
