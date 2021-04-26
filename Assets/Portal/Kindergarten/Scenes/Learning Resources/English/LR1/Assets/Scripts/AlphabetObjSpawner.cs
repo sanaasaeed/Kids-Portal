@@ -16,8 +16,8 @@ public class AlphabetObjSpawner : MonoBehaviour {
     [SerializeField] private GameObject instructionPopup;
     [SerializeField] private GameObject playActivityBtn;
     [SerializeField] private GameObject canvas;
+    private Animator animatorGameObj;
     private int rounds = 4;
-    private int roundNo = 0;
     private static int alphabetNo = 0;
 
     private void Awake() {
@@ -25,6 +25,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
     }
 
     void Start() {
+        animatorGameObj = alphabetPrefab.GetComponent<Animator>();
         if (ActivityManager.isStart) {
             StartCoroutine(nameof(WaitAndInitialize));
             alphabetPrefab.GetComponent<SpriteRenderer>().sprite = alphabetSpriteList[alphabetNo];
@@ -46,6 +47,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
     }
 
     public void NextAlphabet() {
+        animatorGameObj.enabled = true;
         nextBtn.SetActive(true);
         DestroyAlphabets();
         
@@ -64,6 +66,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
         }
         
         if (alphabetNo % rounds == 0) {
+            Debug.Log(alphabetNo);
             var createdBtn = Instantiate(playActivityBtn, canvas.transform, true);
             var rectTransform = createdBtn.GetComponent<RectTransform>();
             rectTransform.anchoredPosition = new Vector3(-700, 50, 0);
@@ -72,9 +75,6 @@ public class AlphabetObjSpawner : MonoBehaviour {
 
     public void Play() {
         if (alphabetNo % rounds == 0) {
-            roundNo += 1;
-            Debug.Log("Insert activity here" + roundNo);
-            Debug.Log("Alphabet No: " + alphabetNo);
             SceneManager.LoadScene("EmbeddedActivity");
         }
     }
@@ -89,11 +89,15 @@ public class AlphabetObjSpawner : MonoBehaviour {
     }
 
     public void PlayActivity() {
+        animatorGameObj.enabled = false;
         int activityAlphabet = alphabetNo;
+        int posIncrease = 4;
         for (int i = 0; i < rounds; i++) {
-            alphabetPrefab.GetComponent<SpriteRenderer>().sprite = alphabetSpriteList[activityAlphabet];
-            var clonedObj = Instantiate(alphabetPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+            alphabetPrefab.GetComponent<SpriteRenderer>().sprite = alphabetSpriteList[activityAlphabet-1];
+            var clonedObj = Instantiate(alphabetPrefab, new Vector3(-10 + posIncrease, 0, 0), Quaternion.identity);
+            clonedObj.transform.localScale -= new Vector3(0.03f, 0.03f, 0);
             activityAlphabet -= 1;
+            posIncrease += 4;
         }
     }
 }  
