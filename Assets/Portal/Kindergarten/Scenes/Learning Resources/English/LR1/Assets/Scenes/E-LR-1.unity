@@ -1020,6 +1020,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1165488445033136994, guid: 4f17a700b6c824a45a1bfd85610bb3a4,
         type: 3}
+    - target: {fileID: 7838075441055859324, guid: 15d3c04bfbb0d00409b4f456c0512288,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 502774492}
     - target: {fileID: 7838075441055859326, guid: 15d3c04bfbb0d00409b4f456c0512288,
         type: 3}
       propertyPath: instructionPopup

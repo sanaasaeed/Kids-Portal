@@ -15,6 +15,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
     [SerializeField] private GameObject objectPrefab;
     [SerializeField] private GameObject instructionPopup;
     [SerializeField] private GameObject playActivityBtn;
+    [SerializeField] private GameObject canvas;
     private int rounds = 4;
     private int roundNo = 0;
     private static int alphabetNo = 0;
@@ -62,15 +63,14 @@ public class AlphabetObjSpawner : MonoBehaviour {
             Debug.Log("Learning Resource completed Game Unlocked");
         }
         
-        if (alphabetNo % rounds == 0) { // TODO: when its zero we need to let it go. 
-            // btn
-            Instantiate(playActivityBtn);
-            Play();
+        if (alphabetNo % rounds == 0) {
+            var createdBtn = Instantiate(playActivityBtn, canvas.transform, true);
+            var rectTransform = createdBtn.GetComponent<RectTransform>();
+            rectTransform.anchoredPosition = new Vector3(-700, 50, 0);
         }
     }
 
-    public void Play() {  // TODO: Create a btn programmatically when its time for activity disable next btn and user has to click on play activity btn to play it. 
-        
+    public void Play() {
         if (alphabetNo % rounds == 0) {
             roundNo += 1;
             Debug.Log("Insert activity here" + roundNo);
@@ -94,7 +94,6 @@ public class AlphabetObjSpawner : MonoBehaviour {
             alphabetPrefab.GetComponent<SpriteRenderer>().sprite = alphabetSpriteList[activityAlphabet];
             var clonedObj = Instantiate(alphabetPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             activityAlphabet -= 1;
-            clonedObj.transform.localScale -= new Vector3(1f, 1f, 0);
         }
     }
 }  
