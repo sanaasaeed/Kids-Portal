@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class AlphabetObjSpawner : MonoBehaviour {
     [SerializeField] private List<Sprite> alphabetSpriteList = new List<Sprite>();
@@ -27,6 +23,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
     void Start() {
         animatorGameObj = alphabetPrefab.GetComponent<Animator>();
         if (ActivityManager.isStart) {
+            animatorGameObj.enabled = true;
             StartCoroutine(nameof(WaitAndInitialize));
             alphabetPrefab.GetComponent<SpriteRenderer>().sprite = alphabetSpriteList[alphabetNo];
             objectPrefab.GetComponent<SpriteRenderer>().sprite = objectsSpriteList[alphabetNo];  
@@ -37,6 +34,18 @@ public class AlphabetObjSpawner : MonoBehaviour {
             NextAlphabet();
         }
         
+    }
+    private void OnTriggerStay2D(Collider2D other) {
+        Debug.Log("Trigger Stay");
+        if (Input.GetMouseButtonDown(0)) {
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit)) {
+                if (hit.transform.name == "Alphabet(Clone)") {
+                    Debug.Log("Object is clicked");
+                }
+            }
+        }
     }
     IEnumerator WaitAndInitialize() {
         yield return new WaitForSeconds(4);
@@ -57,16 +66,13 @@ public class AlphabetObjSpawner : MonoBehaviour {
             Instantiate(alphabetPrefab, new Vector3(5, 0, 0), Quaternion.identity);
             Instantiate(objectPrefab, new Vector3(-4, 0, -1), Quaternion.identity);
             alphabetNo += 1;
-            Debug.Log("Alphabet No in Next alphabet flow " + alphabetNo);
         }
         else {
-            Debug.Log("LAST ACTIVITY HERE");
             nextBtn.SetActive(false);   // TODO: WIn Screen
             Debug.Log("Learning Resource completed Game Unlocked");
         }
         
         if (alphabetNo % rounds == 0) {
-            Debug.Log(alphabetNo);
             var createdBtn = Instantiate(playActivityBtn, canvas.transform, true);
             var rectTransform = createdBtn.GetComponent<RectTransform>();
             rectTransform.anchoredPosition = new Vector3(-700, 50, 0);

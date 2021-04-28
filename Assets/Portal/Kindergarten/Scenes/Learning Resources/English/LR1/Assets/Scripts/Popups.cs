@@ -12,6 +12,7 @@ public class Popups : MonoBehaviour
     }
     IEnumerator WaitAndDestroy() {
         yield return new WaitForSeconds(3);
+        
         instructionPopup.SetActive(false);
     }
 }

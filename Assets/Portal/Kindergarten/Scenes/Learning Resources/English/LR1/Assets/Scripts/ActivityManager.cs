@@ -17,6 +17,8 @@ public class ActivityManager : MonoBehaviour {
         alphabetObjSpawner.PlayActivity();
     }
 
+  
+    
     public void BackBtn() {
         isStart = false;
         SceneManager.LoadScene("E-LR-1");
