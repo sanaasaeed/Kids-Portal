@@ -111,9 +111,39 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ced1bb8bb45e6494ab1379325aa598d2, type: 3}
   - {fileID: 21300000, guid: 4fc7d195c45bb39499f38d552db7b968, type: 3}
   - {fileID: 21300000, guid: 1ce3bed17cce3384aa6e99b6253c3b56, type: 3}
+  audioClipList:
+  - {fileID: 8300000, guid: 8bcb15c86287aa8458e8185d00ffce3d, type: 3}
+  - {fileID: 8300000, guid: 1a359c0e6ef83384289affecafb3b296, type: 3}
+  - {fileID: 8300000, guid: cb50a6be371ee974da688ff068ffc998, type: 3}
+  - {fileID: 8300000, guid: acd0d5279f3192445b504f4f7be458f3, type: 3}
+  - {fileID: 8300000, guid: 534666b8b2c51ed4ebc85137b823955b, type: 3}
+  - {fileID: 8300000, guid: bc4c29afd30292a4c98e4839dfcf782e, type: 3}
+  - {fileID: 8300000, guid: 996179f7a4850a54cae94e61e25b1cc9, type: 3}
+  - {fileID: 8300000, guid: 0c2d2cac10c121c41bc60d704272377a, type: 3}
+  - {fileID: 8300000, guid: 737141c3c08624545bb99ca9c6733951, type: 3}
+  - {fileID: 8300000, guid: e626594eca9be9a419847bf007b92865, type: 3}
+  - {fileID: 8300000, guid: f9b247fc1d0b94b46a0b5a94867e509b, type: 3}
+  - {fileID: 8300000, guid: aabd595137f31e64384acb5afd95b2ba, type: 3}
+  - {fileID: 8300000, guid: 2fec3231a6f7e114aab9f17eacbc2a54, type: 3}
+  - {fileID: 8300000, guid: f6933c6efe3ea1a4a8a7348c96980a10, type: 3}
+  - {fileID: 8300000, guid: 4b875ffb0563e3644b0e62e506371c58, type: 3}
+  - {fileID: 8300000, guid: 7b76fd05e799cb34eb69dfdbc37ac86b, type: 3}
+  - {fileID: 8300000, guid: 1d3ed1000954d464aa681fd36b7db7a9, type: 3}
+  - {fileID: 8300000, guid: a7aa51e1ecdcfd843941dc70367ec6bd, type: 3}
+  - {fileID: 8300000, guid: bd28e8d6612792949a011533efba5262, type: 3}
+  - {fileID: 8300000, guid: 97ac518922254d3499f40e8985640b75, type: 3}
+  - {fileID: 8300000, guid: 2903008fe01b9934683d3d2b5e60ef50, type: 3}
+  - {fileID: 8300000, guid: 0dd19efdc196bed44aa0d197a6004b1a, type: 3}
+  - {fileID: 8300000, guid: 6d929531fedb2aa4ba2b79ed76813398, type: 3}
+  - {fileID: 8300000, guid: 8b1f080e9ac22b34f8995b60454ff099, type: 3}
+  - {fileID: 8300000, guid: 3b949bc39938bba40b71f49e37d0b880, type: 3}
+  - {fileID: 8300000, guid: 2d3b7d24f5354e7458e6047e7cc7c537, type: 3}
   nextBtn: {fileID: 0}
   alphabetPrefab: {fileID: 6412103608288929441, guid: 2625ef21581173d4ea3dd21a7f6bb585,
     type: 3}
   objectPrefab: {fileID: 6873962750485158522, guid: ffc3e0beb6c7f7442b19538f6134299d,
     type: 3}
   instructionPopup: {fileID: 0}
+  playActivityBtn: {fileID: 1165488445033136994, guid: 4f17a700b6c824a45a1bfd85610bb3a4,
+    type: 3}
+  canvas: {fileID: 0}

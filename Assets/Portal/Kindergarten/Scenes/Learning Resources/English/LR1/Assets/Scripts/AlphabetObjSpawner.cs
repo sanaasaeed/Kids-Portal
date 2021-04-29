@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class AlphabetObjSpawner : MonoBehaviour {
     [SerializeField] private List<Sprite> alphabetSpriteList = new List<Sprite>();
     [SerializeField] private List<Sprite> objectsSpriteList = new List<Sprite>();
+    [SerializeField] private List<AudioClip> audioClipList = new List<AudioClip>();
     [SerializeField] private GameObject nextBtn;
     [SerializeField] private GameObject alphabetPrefab;
     [SerializeField] private GameObject objectPrefab;
     [SerializeField] private GameObject instructionPopup;
     [SerializeField] private GameObject playActivityBtn;
     [SerializeField] private GameObject canvas;
+    private AudioSource alphabetAudio;
     private Animator animatorGameObj;
     private int rounds = 4;
     private static int alphabetNo = 0;
@@ -22,11 +24,14 @@ public class AlphabetObjSpawner : MonoBehaviour {
 
     void Start() {
         animatorGameObj = alphabetPrefab.GetComponent<Animator>();
+        alphabetAudio = alphabetPrefab.GetComponent<AudioSource>();
         if (ActivityManager.isStart) {
             animatorGameObj.enabled = true;
             StartCoroutine(nameof(WaitAndInitialize));
             alphabetPrefab.GetComponent<SpriteRenderer>().sprite = alphabetSpriteList[alphabetNo];
-            objectPrefab.GetComponent<SpriteRenderer>().sprite = objectsSpriteList[alphabetNo];  
+            objectPrefab.GetComponent<SpriteRenderer>().sprite = objectsSpriteList[alphabetNo];
+            alphabetAudio.clip = audioClipList[alphabetNo];
+            alphabetAudio.Play();
         }
         else {
             // TODO: Disable repeat with us
@@ -63,6 +68,8 @@ public class AlphabetObjSpawner : MonoBehaviour {
         if (alphabetNo < alphabetSpriteList.Count) {
             alphabetPrefab.GetComponent<SpriteRenderer>().sprite = alphabetSpriteList[alphabetNo];
             objectPrefab.GetComponent<SpriteRenderer>().sprite = objectsSpriteList[alphabetNo];
+            alphabetAudio.clip = audioClipList[alphabetNo];
+            alphabetAudio.Play();
             Instantiate(alphabetPrefab, new Vector3(5, 0, 0), Quaternion.identity);
             Instantiate(objectPrefab, new Vector3(-4, 0, -1), Quaternion.identity);
             alphabetNo += 1;
