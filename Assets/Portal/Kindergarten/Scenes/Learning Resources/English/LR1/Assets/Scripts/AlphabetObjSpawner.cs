@@ -35,6 +35,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
         }
         else {
             // TODO: Disable repeat with us
+            alphabetAudio.enabled = true;
             instructionPopup.SetActive(false);
             NextAlphabet();
         }
@@ -80,6 +81,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
         }
         
         if (alphabetNo % rounds == 0) {
+            nextBtn.SetActive(false);
             var createdBtn = Instantiate(playActivityBtn, canvas.transform, true);
             var rectTransform = createdBtn.GetComponent<RectTransform>();
             rectTransform.anchoredPosition = new Vector3(-700, 50, 0);
@@ -102,6 +104,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
     }
 
     public void PlayActivity() {
+        alphabetAudio.enabled = false;
         animatorGameObj.enabled = false;
         int activityAlphabet = alphabetNo;
         int posIncrease = 4;

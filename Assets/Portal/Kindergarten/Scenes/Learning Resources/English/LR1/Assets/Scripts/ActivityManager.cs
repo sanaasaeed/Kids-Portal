@@ -16,8 +16,6 @@ public class ActivityManager : MonoBehaviour {
         alphabetObjSpawner = FindObjectOfType<AlphabetObjSpawner>();
         alphabetObjSpawner.PlayActivity();
     }
-
-  
     
     public void BackBtn() {
         isStart = false;
