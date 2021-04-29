@@ -34,7 +34,6 @@ public class AlphabetObjSpawner : MonoBehaviour {
             alphabetAudio.Play();
         }
         else {
-            // TODO: Disable repeat with us
             alphabetAudio.enabled = true;
             instructionPopup.SetActive(false);
             NextAlphabet();
@@ -55,6 +54,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
     }
     IEnumerator WaitAndInitialize() {
         yield return new WaitForSeconds(4);
+        instructionPopup.SetActive(false);
         Instantiate(alphabetPrefab, new Vector3(5, 0, 0), Quaternion.identity);
         Instantiate(objectPrefab, new Vector3(-4, 0, -1), Quaternion.identity);
         alphabetNo += 1;
