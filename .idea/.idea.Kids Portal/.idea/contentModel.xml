@@ -73,7 +73,7 @@
               </e>
               <e p="Learning Resources" t="Include">
                 <e p="English" t="Include">
-                  <e p="LR1" t="Include">
+                  <e p="LR1 Recognition" t="Include">
                     <e p="Assets" t="Include">
                       <e p="Scripts" t="Include">
                         <e p="ActivityManager.cs" t="Include" />
