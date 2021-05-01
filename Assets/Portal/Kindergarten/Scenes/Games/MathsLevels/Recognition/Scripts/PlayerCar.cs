@@ -26,8 +26,6 @@ public class PlayerCar : MonoBehaviour {
             spawnManager.SpawnTriggerEnter();
         } else if (other.CompareTag("NumberTrigger")) {
             audio.Play();
-            // TODO: Only collect a certain number thats displayed on the screen
-            // TODO: Subtasks: 1. Make a panel or something to display the number
             // TODO: 2. Choose a random number, display on that panel
             // TODO: 3. Tag those numbers as target by some means. 
             // TODO: 4. Now only collect those targets and if user collects something else than he should be punished game should be somewhat over or something life should reduce or something. 

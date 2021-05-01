@@ -20,9 +20,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18fd4037-dc49-412f-af94-81ba1c2b9c3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/LetterSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/LetterSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/7.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/7.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/8.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/8.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/9.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Prefab/Letters/9.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/0.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/0.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/4.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/4.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/5.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/5.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/6.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/6.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/7.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/7.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/8.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/8.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/9.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Resources/Letters/9.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scenes/MLRec.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scenes/MLRec.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/LetterSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/NumberSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/LetterSpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/NumberSpawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/PlayerCar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/PlayerCar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/SpawnManagerMath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/SpawnManagerMath.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/UrduLevels/UL1 Assets/Scripts/SpawnManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/Popup.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/LevelSetterInPopup.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/AnimatedButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/BackgroundMusic.cs" />
@@ -94,8 +138,10 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1/Assets/Scripts/AlphabetObjSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/SpawnManagerMath.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/PlayerCar.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/LetterSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/NumberSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/PlayerCar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/PopupCreator.cs" />
       </list>
     </option>
   </component>
@@ -179,7 +225,7 @@
       <workItem from="1619662951489" duration="9938000" />
       <workItem from="1619760033131" duration="798000" />
       <workItem from="1619781895358" duration="2318000" />
-      <workItem from="1619803154219" duration="14152000" />
+      <workItem from="1619803154219" duration="17005000" />
     </task>
     <servers />
   </component>

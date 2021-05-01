@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class LetterSpawner : MonoBehaviour
+public class NumberSpawner : MonoBehaviour
 {
     public List<GameObject> numbers;
     public List<float> xPositions = new List<float>();
