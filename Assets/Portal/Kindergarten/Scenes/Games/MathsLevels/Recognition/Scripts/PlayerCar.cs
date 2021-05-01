@@ -25,9 +25,8 @@ public class PlayerCar : MonoBehaviour {
         if (other.CompareTag("RoadTrigger")) {
             spawnManager.SpawnTriggerEnter();
         } else if (other.name.Contains(LevelManager.numberToGet.ToString())) {
-            audio.Play();
-            // TODO: 3. Tag those numbers as target by some means. 
-            // TODO: 4. Now only collect those targets and if user collects something else than he should be punished game should be somewhat over or something life should reduce or something. 
+            audio.Play(); 
+            // TODO: 4. Damage the car
             Destroy(other.gameObject);
         }
     }

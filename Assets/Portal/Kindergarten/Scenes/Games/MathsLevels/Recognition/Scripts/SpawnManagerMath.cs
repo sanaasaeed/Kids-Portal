@@ -20,6 +20,6 @@ public class SpawnManagerMath : MonoBehaviour {
         roadSpawner.MoveRoad();
         plotSpawner.spawnPlot();
         m_numberSpawner.SpawnNumbers();
-        // obstacleSpawner.SpawnObstacles();
+        obstacleSpawner.SpawnObstacles();
     }
 }

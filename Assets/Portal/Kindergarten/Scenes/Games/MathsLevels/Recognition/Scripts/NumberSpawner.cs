@@ -22,7 +22,7 @@ public class NumberSpawner : MonoBehaviour
         int randomXPosIndex = Random.Range(0, xPositions.Count);
         Vector3 posOfObstacle = new Vector3(xPositions[randomXPosIndex], 0, lastPosZ);
         Instantiate(numbers[index], posOfObstacle, new Quaternion(0, 180,0,0));
-        gap = Random.Range(50, 80);
+        gap = Random.Range(20, 30);
         lastPosZ += gap;
     }
 }
