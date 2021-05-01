@@ -13,7 +13,8 @@ public class ActivityManager : MonoBehaviour {
     }
 
     private void Start() {
-        alphabetObjSpawner = FindObjectOfType<AlphabetObjSpawner>();
+        alphabetObjSpawner = FindObjectOfType<AlphabetObjSpawner>(); 
+        // TODO: Instantiate alphabets randomly and get alphabet no make a list from them select from them....
         alphabetObjSpawner.PlayActivity();
     }
     
