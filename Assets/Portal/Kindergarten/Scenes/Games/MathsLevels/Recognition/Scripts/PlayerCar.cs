@@ -32,7 +32,10 @@ public class PlayerCar : MonoBehaviour {
         } else if (!other.name.Contains(LevelManager.numberToGet.ToString())) {
             Time.timeScale = 0f;
             levelManager.RestartLevel();
-            // TODO: if time permits then destory car physically
+            // TODO: if time permits then destroy car physically
+            // TODO: Shrink the colliders
+            // TODO: See level problems solve them
+            // TODO: Probability of chosen random number should be more
         }
     }
 }

@@ -12,11 +12,12 @@ public class LevelManager : MonoBehaviour {
     [SerializeField] private GameObject levelPopup;
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private TextMeshProUGUI randomNumber;
-    
+    [SerializeField] private TextMeshProUGUI scoreText;
         private void Start() {
         numberToGet = Random.Range(0, 9);
         randomNumber.text = numberToGet.ToString();
         levelText.text = "Level " + levelNo;
+        scoreText.text = score.ToString();
         EnableLevelPopup();
         SetLevelVars();
     }
@@ -56,6 +57,8 @@ public class LevelManager : MonoBehaviour {
             SetLevelVars();
             EnableLevelPopup();
         }
+
+        scoreText.text = score.ToString();
     }
 
     public void RestartLevel() {
