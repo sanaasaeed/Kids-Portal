@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 1245479359835632917}
   m_Layer: 0
   m_Name: SpawnTrigger
-  m_TagString: Untagged
+  m_TagString: RoadTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

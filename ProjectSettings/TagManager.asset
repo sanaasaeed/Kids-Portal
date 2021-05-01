@@ -16,6 +16,12 @@ TagManager:
   - Trap
   - Triangle
   - Circledone
+  - enemy
+  - target
+  - Target
+  - Enemy
+  - RoadTrigger
+  - NumberTrigger
   layers:
   - Default
   - TransparentFX

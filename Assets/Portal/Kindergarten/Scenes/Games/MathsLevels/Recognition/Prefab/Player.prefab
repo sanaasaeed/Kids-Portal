@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 8865054714195224353}
   - component: {fileID: 8865054714195224352}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -430,7 +430,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &8865054714195224352
 MonoBehaviour:
@@ -445,5 +445,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpForce: 10
+  turnSpeed: 10
   spawnManager: {fileID: 0}

@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class LetterSpawner : MonoBehaviour
 {
@@ -8,7 +10,7 @@ public class LetterSpawner : MonoBehaviour
     public List<float> xPositions = new List<float>();
     private float lastPosZ = 15f;
 
-    [SerializeField] private float gap = 60f;
+    [SerializeField] private float gap = 80f;
 
     private void Start() {
         for (int i = 0; i < numbers.Count; i++) {
