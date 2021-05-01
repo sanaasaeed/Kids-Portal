@@ -24,9 +24,8 @@ public class PlayerCar : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("RoadTrigger")) {
             spawnManager.SpawnTriggerEnter();
-        } else if (other.CompareTag("NumberTrigger")) {
+        } else if (other.name.Contains(LevelManager.numberToGet.ToString())) {
             audio.Play();
-            // TODO: 2. Choose a random number, display on that panel
             // TODO: 3. Tag those numbers as target by some means. 
             // TODO: 4. Now only collect those targets and if user collects something else than he should be punished game should be somewhat over or something life should reduce or something. 
             Destroy(other.gameObject);

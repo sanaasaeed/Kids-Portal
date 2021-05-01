@@ -53,11 +53,11 @@
                   <e p="Recognition" t="Include">
                     <e p="Scripts" t="Include">
                       <e p="CameraController.cs" t="Include" />
+                      <e p="LevelManager.cs" t="Include" />
                       <e p="NumberSpawner.cs" t="Include" />
                       <e p="ObstacleSpawner.cs" t="Include" />
                       <e p="PlayerCar.cs" t="Include" />
                       <e p="PlotSpawner.cs" t="Include" />
-                      <e p="PopupCreator.cs" t="Include" />
                       <e p="RoadSpawner.cs" t="Include" />
                       <e p="SpawnManagerMath.cs" t="Include" />
                     </e>

@@ -1,13 +1,17 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using TMPro;
 using UnityEngine;
 
-public class PopupCreator : MonoBehaviour {
+public class LevelManager : MonoBehaviour {
     public static bool isPopupOpened = true;
+    public static int levelNo = 1;
+    public static int numberToGet;
     [SerializeField] private GameObject levelPopup;
-
+    [SerializeField] private TextMeshProUGUI levelText;
+    [SerializeField] private TextMeshProUGUI randomNumber;
     private void Start() {
+        numberToGet = Random.Range(0, 9);
+        randomNumber.text = numberToGet.ToString();
+        levelText.text = "Level " + levelNo;
         EnableLevelPopup();
     }
 
