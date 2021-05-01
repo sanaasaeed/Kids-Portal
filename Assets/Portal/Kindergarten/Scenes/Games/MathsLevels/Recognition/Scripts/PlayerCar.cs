@@ -4,19 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCar : MonoBehaviour {
-    public float speed = 30f;
+    public static float speed = 30f;
     private Rigidbody rb;
     private AudioSource audio;
     public SpawnManagerMath spawnManager;
+    public LevelManager levelManager;
 
     private void Start() {
+        levelManager = FindObjectOfType<LevelManager>();
         audio = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
     }
 
     void Update() {
         float horizontalInput = Input.GetAxis("Horizontal") * speed / 2;
-        float forwardInput = Input.GetAxis("Vertical") * speed;
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
         transform.Translate(Vector3.right * Time.deltaTime * horizontalInput);
     }
@@ -25,12 +26,13 @@ public class PlayerCar : MonoBehaviour {
         if (other.CompareTag("RoadTrigger")) {
             spawnManager.SpawnTriggerEnter();
         } else if (other.name.Contains(LevelManager.numberToGet.ToString())) {
-            audio.Play(); 
-            // TODO: 4. Damage the car
+            audio.Play();
             Destroy(other.gameObject);
+            levelManager.IncreaseScore();
+        } else if (!other.name.Contains(LevelManager.numberToGet.ToString())) {
+            Time.timeScale = 0f;
+            levelManager.RestartLevel();
+            // TODO: if time permits then destory car physically
         }
     }
 }
-
-// TODO: Randomize gap, player controller should be instant.. Add maths alphabets and collect those
-// TODO: After adding maths letters give target of collecting them and avoiding every other thing

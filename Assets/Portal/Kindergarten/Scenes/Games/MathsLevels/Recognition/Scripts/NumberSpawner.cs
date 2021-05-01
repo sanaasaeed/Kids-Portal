@@ -9,7 +9,7 @@ public class NumberSpawner : MonoBehaviour
     public List<GameObject> numbers;
     public List<float> xPositions = new List<float>();
     private float lastPosZ = 15f;
-    [SerializeField] private float gap;
+    public static float gap;
 
     private void Start() {
         for (int i = 0; i < numbers.Count; i++) {
