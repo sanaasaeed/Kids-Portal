@@ -13,12 +13,11 @@ public class LevelManager : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private TextMeshProUGUI randomNumber;
     [SerializeField] private TextMeshProUGUI scoreText;
-        private void Start() {
+    private void Start() {
         numberToGet = Random.Range(0, 9);
         randomNumber.text = numberToGet.ToString();
         levelText.text = "Level " + levelNo;
         scoreText.text = score.ToString();
-        EnableLevelPopup();
         SetLevelVars();
     }
     private void SetLevelVars() {
@@ -26,15 +25,23 @@ public class LevelManager : MonoBehaviour {
             PlayerCar.speed = 20f;
             NumberSpawner.gap = Random.Range(20, 40);
         } else if (levelNo == 2) {
+            numberToGet = Random.Range(0, 9);
             PlayerCar.speed = 25f;
             NumberSpawner.gap = Random.Range(20, 30);
         } else if (levelNo == 3) {
-            PlayerCar.speed = 30f;
+            numberToGet = Random.Range(0, 9);
+            PlayerCar.speed = 35f;
+            NumberSpawner.gap = Random.Range(20, 25);
+        }else if (levelNo == 4) {
+            numberToGet = Random.Range(0, 9);
+            PlayerCar.speed = 40f;
             NumberSpawner.gap = Random.Range(20, 25);
         }
     }
 
     public void EnableLevelPopup() {
+        randomNumber.text = numberToGet.ToString();
+        levelText.text = "Level " + levelNo;
         levelPopup.SetActive(true);
         Time.timeScale = 0f;
         isPopupOpened = true;
@@ -48,12 +55,18 @@ public class LevelManager : MonoBehaviour {
 
     public void IncreaseScore() {
         score += 10;
-        if (score == 60) {
+        if (score == 20) {
             levelNo = 2;
             SetLevelVars();
             EnableLevelPopup();
-        } else if (score > 100) {
+        } else if (score == 40) {
             levelNo = 3;
+            numberToGet = Random.Range(0, 9);
+            SetLevelVars();
+            EnableLevelPopup();
+        } else if (score == 60) {
+            levelNo = 4;
+            numberToGet = Random.Range(0, 9);
             SetLevelVars();
             EnableLevelPopup();
         }

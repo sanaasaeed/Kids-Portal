@@ -14,6 +14,7 @@ public class PlayerCar : MonoBehaviour {
         levelManager = FindObjectOfType<LevelManager>();
         audio = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
+        levelManager.EnableLevelPopup();
     }
 
     void Update() {
