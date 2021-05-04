@@ -1,12 +1,14 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ActivityManager : MonoBehaviour {
     public AlphabetObjSpawner alphabetObjSpawner;
+    [SerializeField] private GameObject alphabetPrefab;
     public static bool isStart = true;
+    private GameObject alphabetsInPos;
+    private Animator alphabetAnimator;
 
     private void Awake() {
         DontDestroyOnLoad(gameObject);
@@ -14,8 +16,21 @@ public class ActivityManager : MonoBehaviour {
 
     private void Start() {
         alphabetObjSpawner = FindObjectOfType<AlphabetObjSpawner>(); 
-        // TODO: Instantiate alphabets randomly and get alphabet no make a list from them select from them....
-        alphabetObjSpawner.PlayActivity();
+       // for (int i = 0; i < 9; i++) {
+            var alphabetList = alphabetObjSpawner.ReturnAlphabetList();
+            PlayAlphabets(alphabetList);
+       // }
+        
+    }
+
+    public void PlayAlphabets(List<Sprite> alphabetList) {
+        foreach (var alphabet in FindObjectsOfType<GameObject>()) {
+            if (alphabet.name.Contains("Alphabet")) {
+                alphabet.GetComponent<Animator>().enabled = false;
+                alphabet.GetComponent<AudioSource>().enabled = false;
+                alphabet.GetComponent<SpriteRenderer>().sprite = alphabetList[UnityEngine.Random.Range(0, alphabetList.Count)];
+            }
+        }
     }
     
     public void BackBtn() {

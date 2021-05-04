@@ -1,7 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = System.Random;
 
 public class AlphabetObjSpawner : MonoBehaviour {
     [SerializeField] private List<Sprite> alphabetSpriteList = new List<Sprite>();
@@ -13,8 +16,10 @@ public class AlphabetObjSpawner : MonoBehaviour {
     [SerializeField] private GameObject instructionPopup;
     [SerializeField] private GameObject playActivityBtn;
     [SerializeField] private GameObject canvas;
+    private ActivityManager m_activityManager;
     private AudioSource alphabetAudio;
-    private Animator animatorGameObj;
+    private Animator alphabetAnimator;
+    private Animator objAnimator;
     private int rounds = 4;
     private static int alphabetNo = 0;
 
@@ -23,10 +28,13 @@ public class AlphabetObjSpawner : MonoBehaviour {
     }
 
     void Start() {
-        animatorGameObj = alphabetPrefab.GetComponent<Animator>();
+        m_activityManager = FindObjectOfType<ActivityManager>();
+        alphabetAnimator = alphabetPrefab.GetComponent<Animator>();
+        objAnimator = objectPrefab.GetComponent<Animator>();
         alphabetAudio = alphabetPrefab.GetComponent<AudioSource>();
         if (ActivityManager.isStart) {
-            animatorGameObj.enabled = true;
+            alphabetAnimator.enabled = true;
+            objAnimator.enabled = true;
             StartCoroutine(nameof(WaitAndInitialize));
             alphabetPrefab.GetComponent<SpriteRenderer>().sprite = alphabetSpriteList[alphabetNo];
             objectPrefab.GetComponent<SpriteRenderer>().sprite = objectsSpriteList[alphabetNo];
@@ -62,7 +70,8 @@ public class AlphabetObjSpawner : MonoBehaviour {
     }
 
     public void NextAlphabet() {
-        animatorGameObj.enabled = true;
+        alphabetAnimator.enabled = true;
+        objAnimator.enabled = true;
         nextBtn.SetActive(true);
         DestroyAlphabets();
         
@@ -103,17 +112,52 @@ public class AlphabetObjSpawner : MonoBehaviour {
         }
     }
 
-    public void PlayActivity() {
+    public void PlayAlphabetAndObjActivity() {
         alphabetAudio.enabled = false;
-        animatorGameObj.enabled = false;
+        alphabetAnimator.enabled = false;
+        objAnimator.enabled = false;
         int activityAlphabet = alphabetNo;
         int posIncrease = 4;
         for (int i = 0; i < rounds; i++) {
             alphabetPrefab.GetComponent<SpriteRenderer>().sprite = alphabetSpriteList[activityAlphabet-1];
-            var clonedObj = Instantiate(alphabetPrefab, new Vector3(-10 + posIncrease, 0, 0), Quaternion.identity);
-            clonedObj.transform.localScale -= new Vector3(0.03f, 0.03f, 0);
+            objectPrefab.GetComponent<SpriteRenderer>().sprite = objectsSpriteList[activityAlphabet-1];
+            var clonedAlphabet = Instantiate(alphabetPrefab, new Vector3(-10 + posIncrease, 2, -1), Quaternion.identity);
+            var clonedObj = Instantiate(objectPrefab, new Vector3(-10 + posIncrease, -2, -1), Quaternion.identity);
+            clonedAlphabet.transform.localScale -= new Vector3(0.08f, 0.08f, 0);
+            clonedObj.transform.localScale -= new Vector3(0.2f, 0.2f, 0);
             activityAlphabet -= 1;
             posIncrease += 4;
         }
+    }
+
+    /*public void PlayAlphabets(List<int> xPos, List<float> yPos) {
+        alphabetAudio.enabled = false;
+        alphabetAnimator.enabled = false;
+        for (int i = 0; i < 4; i++) {
+            int activityAlphabet = alphabetNo;
+            var shuffledXPos = xPos.OrderBy((x => Guid.NewGuid())).ToList();
+            var shuffledYPos = yPos.OrderBy((y => Guid.NewGuid())).ToList();
+            for (int j = 0; j < 4; j++) {
+                alphabetPrefab.GetComponent<SpriteRenderer>().sprite = alphabetSpriteList[activityAlphabet-1];
+                var clonedAlphabet = Instantiate(alphabetPrefab, new Vector3(shuffledXPos[j], shuffledYPos[j], -1), Quaternion
+                .identity);
+                clonedAlphabet.transform.localScale -= new Vector3(0.12f, 0.12f, 0);
+                activityAlphabet -= 1;     
+            }
+            
+        }
+    }*/
+    
+    public List<Sprite> ReturnAlphabetList() {
+        
+        List<Sprite> activityAlphabetList = new List<Sprite>();
+        int activityAlphabet = alphabetNo;
+        for (int i = 0; i < 4; i++) {
+            var alphabetSprite = alphabetSpriteList[activityAlphabet - 1];
+            activityAlphabetList.Add(alphabetSprite);
+            activityAlphabet -= 1;
+        }
+
+        return activityAlphabetList;
     }
 }  
