@@ -7,23 +7,27 @@ public class ActivityManager : MonoBehaviour {
     public AlphabetObjSpawner alphabetObjSpawner;
     [SerializeField] private GameObject alphabetPrefab;
     public static bool isStart = true;
+    public static List<Sprite> alphabetList = new List<Sprite>();
     private GameObject alphabetsInPos;
     private Animator alphabetAnimator;
+    private ActivitySound m_activitySound;
 
     private void Awake() {
         DontDestroyOnLoad(gameObject);
     }
 
     private void Start() {
-        alphabetObjSpawner = FindObjectOfType<AlphabetObjSpawner>(); 
+        alphabetObjSpawner = FindObjectOfType<AlphabetObjSpawner>();
+        m_activitySound = FindObjectOfType<ActivitySound>();
        // for (int i = 0; i < 9; i++) {
-            var alphabetList = alphabetObjSpawner.ReturnAlphabetList();
-            PlayAlphabets(alphabetList);
-       // }
-        
+            alphabetList = alphabetObjSpawner.ReturnAlphabetList();
+            SetAlphabets(alphabetList);
+            
+            // }
+
     }
 
-    public void PlayAlphabets(List<Sprite> alphabetList) {
+    public static void SetAlphabets(List<Sprite> alphabetList) {
         foreach (var alphabet in FindObjectsOfType<GameObject>()) {
             if (alphabet.name.Contains("Alphabet")) {
                 alphabet.GetComponent<Animator>().enabled = false;
@@ -32,7 +36,11 @@ public class ActivityManager : MonoBehaviour {
             }
         }
     }
-    
+
+    private void OnMouseEnter() {
+        Debug.Log("Mouse Entered");
+    }
+
     public void BackBtn() {
         isStart = false;
         SceneManager.LoadScene("E-LR-1");

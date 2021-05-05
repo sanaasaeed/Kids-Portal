@@ -89,9 +89,10 @@
                     <e p="Assets" t="Include">
                       <e p="Scripts" t="Include">
                         <e p="ActivityManager.cs" t="Include" />
+                        <e p="ActivitySound.cs" t="Include" />
+                        <e p="AlphabetDestroyer.cs" t="Include" />
                         <e p="AlphabetObjSpawner.cs" t="Include" />
                         <e p="Popups.cs" t="Include" />
-                        <e p="SpawnActivityManager.cs" t="Include" />
                       </e>
                     </e>
                   </e>

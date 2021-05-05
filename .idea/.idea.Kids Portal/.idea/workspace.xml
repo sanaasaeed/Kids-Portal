@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="18fd4037-dc49-412f-af94-81ba1c2b9c3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Prefabs/Alphabet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Prefabs/Alphabet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Prefabs/Object.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Prefabs/Object.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scenes/EmbeddedActivity.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scenes/EmbeddedActivity.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetObjSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetObjSpawner.cs" afterDir="false" />
@@ -43,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/PlayerCar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/MusicManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetDestroyer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/UserData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Counting/ML-1 Assets/Scripts/ScoreHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/PlayPopupOpener.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,9 +49,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/ColorSwapper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/InitialPlayerPrefs.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/LevelScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/MusicButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/Transition.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/TintedButton.cs" />
@@ -99,8 +95,11 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/PlayerCar.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/SpawnActivityManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetDestroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetObjSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivitySound.cs" />
       </list>
     </option>
   </component>
@@ -188,7 +187,7 @@
       <workItem from="1619952367156" duration="9006000" />
       <workItem from="1620058459906" duration="2634000" />
       <workItem from="1620111865045" duration="1568000" />
-      <workItem from="1620143741013" duration="13483000" />
+      <workItem from="1620143741013" duration="26600000" />
     </task>
     <servers />
   </component>
@@ -222,10 +221,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1617740757991" />
-    <state x="2324" y="151" width="672" height="708" key="search.everywhere.popup" timestamp="1618672732540">
-      <screen x="1920" y="0" width="1440" height="860" />
+    <state x="431" y="145" width="717" height="679" key="search.everywhere.popup" timestamp="1620205476432">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1618367452191" />
     <state x="2324" y="151" width="672" height="708" key="search.everywhere.popup/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1618672732540" />
+    <state x="431" y="145" width="717" height="679" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1620205476432" />
   </component>
 </project>

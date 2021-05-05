@@ -129,24 +129,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
             posIncrease += 4;
         }
     }
-
-    /*public void PlayAlphabets(List<int> xPos, List<float> yPos) {
-        alphabetAudio.enabled = false;
-        alphabetAnimator.enabled = false;
-        for (int i = 0; i < 4; i++) {
-            int activityAlphabet = alphabetNo;
-            var shuffledXPos = xPos.OrderBy((x => Guid.NewGuid())).ToList();
-            var shuffledYPos = yPos.OrderBy((y => Guid.NewGuid())).ToList();
-            for (int j = 0; j < 4; j++) {
-                alphabetPrefab.GetComponent<SpriteRenderer>().sprite = alphabetSpriteList[activityAlphabet-1];
-                var clonedAlphabet = Instantiate(alphabetPrefab, new Vector3(shuffledXPos[j], shuffledYPos[j], -1), Quaternion
-                .identity);
-                clonedAlphabet.transform.localScale -= new Vector3(0.12f, 0.12f, 0);
-                activityAlphabet -= 1;     
-            }
-            
-        }
-    }*/
+    
     
     public List<Sprite> ReturnAlphabetList() {
         
@@ -157,7 +140,6 @@ public class AlphabetObjSpawner : MonoBehaviour {
             activityAlphabetList.Add(alphabetSprite);
             activityAlphabet -= 1;
         }
-
         return activityAlphabetList;
     }
 }  
