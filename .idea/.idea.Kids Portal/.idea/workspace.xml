@@ -20,12 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18fd4037-dc49-412f-af94-81ba1c2b9c3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Prefabs/Alphabet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Prefabs/Alphabet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scenes/EmbeddedActivity.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scenes/EmbeddedActivity.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetObjSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetObjSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivitySound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivitySound.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivitySound.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivitySound.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetDestroyer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetDestroyer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,14 +93,14 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/PopupCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/SpawnManagerMath.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/NumberSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/PlayerCar.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/SpawnActivityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityHelper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetDestroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetObjSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/PlayerCar.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivitySound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetDestroyer.cs" />
       </list>
     </option>
   </component>
@@ -187,7 +188,7 @@
       <workItem from="1619952367156" duration="9006000" />
       <workItem from="1620058459906" duration="2634000" />
       <workItem from="1620111865045" duration="1568000" />
-      <workItem from="1620143741013" duration="26600000" />
+      <workItem from="1620143741013" duration="40322000" />
     </task>
     <servers />
   </component>

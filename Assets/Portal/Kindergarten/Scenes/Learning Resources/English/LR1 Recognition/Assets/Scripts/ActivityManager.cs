@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class ActivityManager : MonoBehaviour {
     public AlphabetObjSpawner alphabetObjSpawner;
-    [SerializeField] private GameObject alphabetPrefab;
     public static bool isStart = true;
     public static List<Sprite> alphabetList = new List<Sprite>();
-    private GameObject alphabetsInPos;
-    private Animator alphabetAnimator;
+    private GameObject m_alphabetsInPos;
     private ActivitySound m_activitySound;
-
     private void Awake() {
         DontDestroyOnLoad(gameObject);
     }
@@ -19,20 +17,17 @@ public class ActivityManager : MonoBehaviour {
     private void Start() {
         alphabetObjSpawner = FindObjectOfType<AlphabetObjSpawner>();
         m_activitySound = FindObjectOfType<ActivitySound>();
-       // for (int i = 0; i < 9; i++) {
             alphabetList = alphabetObjSpawner.ReturnAlphabetList();
             SetAlphabets(alphabetList);
-            
-            // }
-
     }
 
-    public static void SetAlphabets(List<Sprite> alphabetList) {
+    public void SetAlphabets(List<Sprite> alphabetList) {
         foreach (var alphabet in FindObjectsOfType<GameObject>()) {
             if (alphabet.name.Contains("Alphabet")) {
                 alphabet.GetComponent<Animator>().enabled = false;
                 alphabet.GetComponent<AudioSource>().enabled = false;
-                alphabet.GetComponent<SpriteRenderer>().sprite = alphabetList[UnityEngine.Random.Range(0, alphabetList.Count)];
+                Sprite randomSprite = alphabetList[Random.Range(0, alphabetList.Count)];
+                alphabet.GetComponent<SpriteRenderer>().sprite = randomSprite;
             }
         }
     }
@@ -45,5 +40,7 @@ public class ActivityManager : MonoBehaviour {
         isStart = false;
         SceneManager.LoadScene("E-LR-1");
     }
+
+    
     
 }
