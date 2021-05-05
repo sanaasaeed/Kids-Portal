@@ -35,3 +35,4 @@ public class AlphabetDestroyer : MonoBehaviour {
         
     }
 }
+// TODO: On selecting wrong alphabet see percentage and then repeat the lesson
