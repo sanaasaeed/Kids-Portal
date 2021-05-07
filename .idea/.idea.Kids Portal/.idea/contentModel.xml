@@ -96,6 +96,11 @@
                       </e>
                     </e>
                   </e>
+                  <e p="LR2 Small and Capital" t="Include">
+                    <e p="Scripts" t="Include">
+                      <e p="Main.cs" t="Include" />
+                    </e>
+                  </e>
                 </e>
               </e>
             </e>

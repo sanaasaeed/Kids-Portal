@@ -48,7 +48,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
         }
         
     }
-    private void OnTriggerStay2D(Collider2D other) {
+    /*private void OnTriggerStay2D(Collider2D other) {
         Debug.Log("Trigger Stay");
         if (Input.GetMouseButtonDown(0)) {
             RaycastHit hit;
@@ -59,7 +59,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
                 }
             }
         }
-    }
+    }*/
     IEnumerator WaitAndInitialize() {
         yield return new WaitForSeconds(4);
         instructionPopup.SetActive(false);
