@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameRunner : MonoBehaviour {
-    [SerializeField] private List<Sprite> capitalAlphabets;
+    [SerializeField] public List<Sprite> capitalAlphabets;
     [SerializeField] private List<Sprite> smallAlphabets;
     [SerializeField] private GameObject capitalPrefab;
     [SerializeField] private GameObject smallPrefab;
@@ -15,33 +15,33 @@ public class GameRunner : MonoBehaviour {
     
     private Animation m_anim;
     public static int alphabetNo = 0;
+    public static int interval = 4;
     private AudioSource m_smallAlpAudioSource, m_capitalAlpAudioSource;
     public static int checkPoint;
-   // public static int prevCheckpoint = -4;
-    private GameObject capitalAlphabet;
-    private GameObject smallAlphabet;
+    private GameObject m_capitalAlphabet;
+    private GameObject m_smallAlphabet;
 
     private void Awake() {
         DontDestroyOnLoad(gameObject);
     }
 
     private void Start() {
-        capitalAlphabet = GameObject.Find("Capital Alphabet");
-        smallAlphabet = GameObject.Find("Small Alphabet");
+        m_capitalAlphabet = GameObject.Find("Capital Alphabet");
+        m_smallAlphabet = GameObject.Find("Small Alphabet");
         m_smallAlpAudioSource = smallPrefab.GetComponent<AudioSource>();
         m_capitalAlpAudioSource = capitalPrefab.GetComponent<AudioSource>();
-        capitalAlphabet.GetComponent<SpriteRenderer>().sprite = capitalAlphabets[alphabetNo];
-        smallAlphabet.GetComponent<SpriteRenderer>().sprite = smallAlphabets[alphabetNo];
+        m_capitalAlphabet.GetComponent<SpriteRenderer>().sprite = capitalAlphabets[alphabetNo];
+        m_smallAlphabet.GetComponent<SpriteRenderer>().sprite = smallAlphabets[alphabetNo];
         StartCoroutine(nameof(PlaySound));
     }
 
     public void NextBtn() {
         if (alphabetNo < capitalAlphabets.Count) {
-            capitalAlphabet.GetComponent<SpriteRenderer>().sprite = capitalAlphabets[alphabetNo+1];
-            capitalAlphabet.GetComponent<Animator>().Play("Capital animation", -1, 0f);
+            m_capitalAlphabet.GetComponent<SpriteRenderer>().sprite = capitalAlphabets[alphabetNo+1];
+            m_capitalAlphabet.GetComponent<Animator>().Play("Capital animation", -1, 0f);
             Debug.Log("Inside if: "+ (alphabetNo + 1));
-            smallAlphabet.GetComponent<Animator>().Play("small alphabet", -1, 0f);
-            smallAlphabet.GetComponent<SpriteRenderer>().sprite = smallAlphabets[alphabetNo + 1];
+            m_smallAlphabet.GetComponent<Animator>().Play("small alphabet", -1, 0f);
+            m_smallAlphabet.GetComponent<SpriteRenderer>().sprite = smallAlphabets[alphabetNo + 1];
             StartCoroutine(nameof(PlaySound));
             alphabetNo++;
         }
@@ -49,10 +49,8 @@ public class GameRunner : MonoBehaviour {
             Debug.Log("Display WIN screen");
         }
 
-        if (alphabetNo % 4 == 0) {
+        if (alphabetNo % interval == 0) {
             checkPoint = alphabetNo;
-            //prevCheckpoint = checkPoint;
-            //Debug.Log(prevCheckpoint + "prev");
             SceneManager.LoadScene($"EmbeddedActivity2");
             Debug.Log(alphabetNo);
         }
