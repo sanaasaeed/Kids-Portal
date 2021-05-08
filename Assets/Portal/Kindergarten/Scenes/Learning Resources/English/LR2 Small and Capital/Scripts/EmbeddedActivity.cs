@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
@@ -53,17 +51,4 @@ public class EmbeddedActivity : MonoBehaviour {
             }
         }
     }
-
-    void FillHorizontal2() {
-        
-    }
-
-    void FillHorizontal3() {
-        
-    }
-
-    void FillHorizontal4() {
-        
-    }
-    
 }
