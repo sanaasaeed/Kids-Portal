@@ -39,7 +39,6 @@ public class GameRunner : MonoBehaviour {
         if (alphabetNo < capitalAlphabets.Count) {
             m_capitalAlphabet.GetComponent<SpriteRenderer>().sprite = capitalAlphabets[alphabetNo+1];
             m_capitalAlphabet.GetComponent<Animator>().Play("Capital animation", -1, 0f);
-            Debug.Log("Inside if: "+ (alphabetNo + 1));
             m_smallAlphabet.GetComponent<Animator>().Play("small alphabet", -1, 0f);
             m_smallAlphabet.GetComponent<SpriteRenderer>().sprite = smallAlphabets[alphabetNo + 1];
             StartCoroutine(nameof(PlaySound));
@@ -52,7 +51,6 @@ public class GameRunner : MonoBehaviour {
         if (alphabetNo % interval == 0) {
             checkPoint = alphabetNo;
             SceneManager.LoadScene($"EmbeddedActivity2");
-            Debug.Log(alphabetNo);
         }
     }
 

@@ -16,16 +16,6 @@ public class EmbeddedActivity : MonoBehaviour {
     private void Start() {
         FillCapitalLetters();
         FillHorizontal();
-        
-        horizontalList2[Random.Range(1, horizontalList1.Count)].GetComponent<SpriteRenderer>().sprite =
-            smallAlphabets[GameRunner.alphabetNo - (GameRunner.interval - 1)];
-        horizontalList3[Random.Range(1, horizontalList1.Count)].GetComponent<SpriteRenderer>().sprite =
-            smallAlphabets[GameRunner.alphabetNo - (GameRunner.interval - 2)];
-        horizontalList4[Random.Range(1, horizontalList1.Count)].GetComponent<SpriteRenderer>().sprite =
-            smallAlphabets[GameRunner.alphabetNo - (GameRunner.interval - 3)];
-        
-        
-        //TODO: Do one thing, Take a list fill it, in a method fill it and then apply loop
     }
 
     public void NextBtn() {
@@ -47,12 +37,12 @@ public class EmbeddedActivity : MonoBehaviour {
     }
 
     void FillHorizontal() {
-        FillHorizontal1(GameRunner.interval, horizontalList1);
-        FillHorizontal1((GameRunner.interval - 1), horizontalList2);
-        FillHorizontal1((GameRunner.interval - 2), horizontalList3);
-        FillHorizontal1((GameRunner.interval - 3), horizontalList4);
+        FillAllSprites(GameRunner.interval, horizontalList1);
+        FillAllSprites((GameRunner.interval - 1), horizontalList2);
+        FillAllSprites((GameRunner.interval - 2), horizontalList3);
+        FillAllSprites((GameRunner.interval - 3), horizontalList4);
     }
-    void FillHorizontal1(int minus, List<GameObject> horizontalList) {
+    void FillAllSprites(int minus, List<GameObject> horizontalList) {
         int randomIndex = Random.Range(1, horizontalList1.Count);
         horizontalList[randomIndex].GetComponent<SpriteRenderer>().sprite =
             smallAlphabets[GameRunner.alphabetNo - (minus)];
