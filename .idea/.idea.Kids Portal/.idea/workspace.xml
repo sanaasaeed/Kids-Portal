@@ -20,6 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18fd4037-dc49-412f-af94-81ba1c2b9c3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/EmbeddedActivity2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/EmbeddedActivity2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/Scripts/EmbeddedActivity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/Scripts/EmbeddedActivity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/Scripts/GameRunner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/Scripts/GameRunner.cs" afterDir="false" />
     </list>
@@ -36,6 +40,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/DynamicPlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/PlayerCar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/MusicManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/Scripts/AlphabetCollector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetDestroyer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/UserData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -45,7 +50,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/SpriteSwapper.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/SpinWheel.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/SoundButton.cs" />
@@ -89,13 +93,14 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/SpawnActivityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Recognition/Scripts/PlayerCar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetDestroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivitySound.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/AlphabetObjSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/Scripts/Main.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR1 Recognition/Assets/Scripts/ActivityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/Scripts/EmbeddedActivity.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/Scripts/GameRunner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/Scripts/AlphabetCollector.cs" />
       </list>
     </option>
   </component>
@@ -186,7 +191,7 @@
       <workItem from="1620143741013" duration="40730000" />
       <workItem from="1620298170826" duration="3507000" />
       <workItem from="1620318054274" duration="6294000" />
-      <workItem from="1620372800228" duration="30331000" />
+      <workItem from="1620372800228" duration="32500000" />
     </task>
     <servers />
   </component>

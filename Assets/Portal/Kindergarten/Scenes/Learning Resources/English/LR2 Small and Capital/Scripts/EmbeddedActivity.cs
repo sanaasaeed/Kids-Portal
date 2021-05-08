@@ -4,12 +4,12 @@ using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class EmbeddedActivity : MonoBehaviour {
-    [SerializeField] private List<GameObject> horizontalList1;
-    [SerializeField] private List<GameObject> horizontalList2;
-    [SerializeField] private List<GameObject> horizontalList3;
-    [SerializeField] private List<GameObject> horizontalList4;
-    [SerializeField] private List<Sprite> smallAlphabets;
-    [SerializeField] private List<Sprite> capitalAlphabets;
+    [SerializeField] public List<GameObject> horizontalList1;
+    [SerializeField] public List<GameObject> horizontalList2;
+    [SerializeField] public List<GameObject> horizontalList3;
+    [SerializeField] public List<GameObject> horizontalList4;
+    [SerializeField] public List<Sprite> smallAlphabets;
+    [SerializeField] public List<Sprite> capitalAlphabets;
    
     private void Start() {
         FillCapitalLetters();

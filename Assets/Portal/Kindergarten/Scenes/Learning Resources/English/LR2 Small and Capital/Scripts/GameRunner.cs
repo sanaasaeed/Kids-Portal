@@ -55,13 +55,13 @@ public class GameRunner : MonoBehaviour {
     }
 
     IEnumerator PlaySound() {
-        m_capitalAlpAudioSource.PlayOneShot(capitalAudioClip);
-        yield return new WaitForSeconds(0.5f);
-        m_capitalAlpAudioSource.PlayOneShot(audioClips[alphabetNo]);
-        yield return new WaitForSeconds(0.8f);
-        m_smallAlpAudioSource.PlayOneShot(smallAudioClip);
-        yield return new WaitForSeconds(0.5f);
-        m_smallAlpAudioSource.PlayOneShot(audioClips[alphabetNo]);
+            m_capitalAlpAudioSource.PlayOneShot(capitalAudioClip);
+            yield return new WaitForSeconds(0.5f);
+            m_capitalAlpAudioSource.PlayOneShot(audioClips[alphabetNo]);
+            yield return new WaitForSeconds(0.8f);
+            m_smallAlpAudioSource.PlayOneShot(smallAudioClip);
+            yield return new WaitForSeconds(0.5f);
+            m_smallAlpAudioSource.PlayOneShot(audioClips[alphabetNo]);
     }
     
     public void RepeatBtn() {

@@ -20,7 +20,7 @@ public class ActivityManager : MonoBehaviour {
             alphabetList = alphabetObjSpawner.ReturnAlphabetList();
             SetAlphabets(alphabetList);
     }
-
+    
     public void SetAlphabets(List<Sprite> alphabetList) {
         foreach (var alphabet in FindObjectsOfType<GameObject>()) {
             if (alphabet.name.Contains("Alphabet")) {
