@@ -16,11 +16,6 @@ public class EmbeddedActivity : MonoBehaviour {
         FillHorizontal();
     }
 
-    public void NextBtn() {
-        GameRunner.alphabetNo = GameRunner.checkPoint;
-        SceneManager.LoadScene("E-LR-2");
-    } 
-
     public void PrevBtn() {
         GameRunner.alphabetNo = GameRunner.checkPoint - GameRunner.interval;
         SceneManager.LoadScene("E-LR-2");
@@ -46,8 +41,10 @@ public class EmbeddedActivity : MonoBehaviour {
             smallAlphabets[GameRunner.alphabetNo - (minus)];
         for (int i = 1; i < horizontalList.Count; i++) {
             if (i != randomIndex) {
-                horizontalList[i].GetComponent<SpriteRenderer>().sprite = smallAlphabets[Random.Range(0,
-                    smallAlphabets.Count)];
+                var randomSprite = smallAlphabets[Random.Range(0, smallAlphabets.Count)];
+                if (!randomSprite.name.Contains(horizontalList[0].GetComponent<SpriteRenderer>().sprite.name.ToLower())) {
+                    horizontalList[i].GetComponent<SpriteRenderer>().sprite = randomSprite;
+                }
             }
         }
     }

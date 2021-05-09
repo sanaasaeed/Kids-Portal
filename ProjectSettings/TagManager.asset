@@ -22,6 +22,10 @@ TagManager:
   - Enemy
   - RoadTrigger
   - NumberTrigger
+  - row1
+  - row2
+  - row3
+  - row4
   layers:
   - Default
   - TransparentFX
