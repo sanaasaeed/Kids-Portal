@@ -104,6 +104,13 @@
                     </e>
                   </e>
                 </e>
+                <e p="Urdu" t="Include">
+                  <e p="LR1 Recognition" t="Include">
+                    <e p="Scripts" t="Include">
+                      <e p="Urdu.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
               </e>
             </e>
             <e p="Scripts" t="Include">
