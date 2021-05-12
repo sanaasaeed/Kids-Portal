@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ULR1Activity : MonoBehaviour
-{
-    // Start is called before the first frame update
+public class ULR1Activity : MonoBehaviour {
+    [SerializeField] private List<Sprite> alphabetList;
     void Start() {
+        
     }
 
     public void BackBtn() {
