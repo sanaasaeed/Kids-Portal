@@ -76,6 +76,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Portal/Kindergarten/Scenes/Games/UrduLevels/UL1 Assets/Scenes/UL1-3.unity
     guid: 3fc246a24ba1a894493d8c064985cb82
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/LR1 Recognition/Scenes/ULR-1.unity
+    guid: f381765a274ef144ea7771557907f247
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/LR1 Recognition/Scenes/ULR1-Activity.unity
+    guid: cfbf7362055d8d145a2bea88d42d7e7c
   - enabled: 0
     path: 
     guid: 7c04ba0fdd2244fba8f705a230749b76

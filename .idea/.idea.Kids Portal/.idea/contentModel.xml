@@ -107,6 +107,7 @@
                 <e p="Urdu" t="Include">
                   <e p="LR1 Recognition" t="Include">
                     <e p="Scripts" t="Include">
+                      <e p="ULR1Activity.cs" t="Include" />
                       <e p="Urdu.cs" t="Include" />
                     </e>
                   </e>
