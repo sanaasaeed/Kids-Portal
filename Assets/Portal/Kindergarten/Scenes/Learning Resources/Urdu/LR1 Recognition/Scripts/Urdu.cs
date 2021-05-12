@@ -17,20 +17,28 @@ public class Urdu : MonoBehaviour {
     }
 
     private void Start() {
-        SetChild(0, alphabetNo);
-        for (int i = 1; i < 3; i++) {
-            SetChild(i, alphabetNo + 1);
-            alphabetNo++;
+        if (alphabetNo == 0) {
+            SetChild(0, alphabetNo);
+            for (int i = 1; i < 3; i++) {
+                SetChild(i, alphabetNo + 1);
+                alphabetNo++;
+            }
+            clone =  Instantiate(alphabetContainer, new Vector3(0,0,-1), Quaternion.identity);
+            screenNo++;
         }
-        clone =  Instantiate(alphabetContainer, new Vector3(0,0,-1), Quaternion.identity);
-        screenNo++;
+        else {
+            screenNo++;
+            NextAlphabet();
+        }
     }
 
     public void NextAlphabet() {
+        Debug.Log("Next alphabet - alphabet no" + (alphabetNo + 1));
         Debug.Log("Screen No: " + screenNo);
         if (screenNo % 3 != 0) {
             Destroy(clone);
             for (int i = 0; i < 3; i++) {
+                Debug.Log("For loop alphabet no" + (alphabetNo + 1));
                 SetChild(i, alphabetNo + 1);
                 alphabetNo++;
             }
