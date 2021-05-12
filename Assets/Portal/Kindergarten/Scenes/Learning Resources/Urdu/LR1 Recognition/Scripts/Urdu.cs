@@ -19,7 +19,7 @@ public class Urdu : MonoBehaviour {
         clone =  Instantiate(alphabetContainer, new Vector3(0,0,-1), Quaternion.identity);
     }
 
-    private void NextAlphabet() {
+    public void NextAlphabet() {
             Debug.Log("Space pressed");
             Destroy(clone);
             for (int i = 0; i < 3; i++) {
