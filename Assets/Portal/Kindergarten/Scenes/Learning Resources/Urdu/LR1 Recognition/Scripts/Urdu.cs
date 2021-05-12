@@ -27,9 +27,14 @@ public class Urdu : MonoBehaviour {
             screenNo++;
         }
         else {
+            for (int i = 0; i < 3; i++) {
+                SetChild(i, alphabetNo + 1);
+                alphabetNo++;
+            }
+            clone =  Instantiate(alphabetContainer, new Vector3(0,0,-1), Quaternion.identity);
             screenNo++;
-            NextAlphabet();
         }
+        
     }
 
     public void NextAlphabet() {
