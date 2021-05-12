@@ -8,7 +8,7 @@ public class Urdu : MonoBehaviour {
     [SerializeField] private GameObject alphabetContainer;
     private GameObject clone;
     private static int alphabetNo = 0;
-   
+    private int totalScrens = 13;
 
     private void Start() {
         SetChild(0, alphabetNo);
@@ -19,8 +19,7 @@ public class Urdu : MonoBehaviour {
         clone =  Instantiate(alphabetContainer, new Vector3(0,0,-1), Quaternion.identity);
     }
 
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+    private void NextAlphabet() {
             Debug.Log("Space pressed");
             Destroy(clone);
             for (int i = 0; i < 3; i++) {
@@ -30,7 +29,6 @@ public class Urdu : MonoBehaviour {
             }
             clone = Instantiate(alphabetContainer, new Vector3(0,0,-1), Quaternion.identity); 
         }
-    }
 
     public void SetChild(int childNo, int alphabetNo) {
         alphabetContainer.transform.GetChild(childNo).GetComponent<SpriteRenderer>().sprite = urduAlphabetsSprite[alphabetNo];
