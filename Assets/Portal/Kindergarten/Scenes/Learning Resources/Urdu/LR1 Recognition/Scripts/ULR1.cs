@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Urdu : MonoBehaviour {
+public class ULR1 : MonoBehaviour {
     [SerializeField] private List<Sprite> urduAlphabetsSprite;
     [SerializeField] private GameObject alphabetContainer;
     private GameObject clone;
-    private static int alphabetNo = 0;
+    public static int alphabetNo = 0;
     private int totalScrens = 13;
     private int screenNo = 0;
 
