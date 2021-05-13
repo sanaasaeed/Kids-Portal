@@ -38,12 +38,9 @@ public class ULR1 : MonoBehaviour {
     }
 
     public void NextAlphabet() {
-        Debug.Log("Next alphabet - alphabet no" + (alphabetNo + 1));
-        Debug.Log("Screen No: " + screenNo);
         if (screenNo % 3 != 0) {
             Destroy(clone);
             for (int i = 0; i < 3; i++) {
-                Debug.Log("For loop alphabet no" + (alphabetNo + 1));
                 SetChild(i, alphabetNo + 1);
                 alphabetNo++;
             }
