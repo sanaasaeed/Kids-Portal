@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class ULR1Activity : MonoBehaviour {
     [SerializeField] private List<Sprite> alphabetList;
@@ -16,10 +18,14 @@ public class ULR1Activity : MonoBehaviour {
         Debug.Log(targetAlphabet);
         Debug.Log(nextAlphabet);
         foreach (var otherHarf in otherHarfs) {
-            if (otherHarf.GetComponent<SpriteRenderer>().sprite != targetAlphabet) {
+            if (otherHarf.GetComponent<SpriteRenderer>().sprite != nextAlphabet) {
                 otherHarf.GetComponent<SpriteRenderer>().sprite = alphabetList[Random.Range(0, alphabetList.Count)];
             }
         }
+    }
+
+    private void OnMouseDown() {
+        
     }
 
     public void BackBtn() {
