@@ -38,7 +38,7 @@ public class ULR1 : MonoBehaviour {
     }
 
     public void NextAlphabet() {
-        if (screenNo % 3 != 0) {
+        if (screenNo % 2 != 0) {
             Destroy(clone);
             for (int i = 0; i < 3; i++) {
                 SetChild(i, alphabetNo + 1);

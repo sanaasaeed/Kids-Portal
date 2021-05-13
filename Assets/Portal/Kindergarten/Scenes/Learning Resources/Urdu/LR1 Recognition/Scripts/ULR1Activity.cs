@@ -14,8 +14,6 @@ public class ULR1Activity : MonoBehaviour {
         nextAlphabet = alphabetList[index + 1];
         tarHarf.GetComponent<SpriteRenderer>().sprite = targetAlphabet;
         otherHarfs[Random.Range(0, otherHarfs.Count)].GetComponent<SpriteRenderer>().sprite = nextAlphabet;
-        Debug.Log(targetAlphabet);
-        Debug.Log(nextAlphabet);
         foreach (var otherHarf in otherHarfs) {
             if (otherHarf.GetComponent<SpriteRenderer>().sprite != nextAlphabet) {
                 otherHarf.GetComponent<SpriteRenderer>().sprite = alphabetList[Random.Range(0, alphabetList.Count)];
