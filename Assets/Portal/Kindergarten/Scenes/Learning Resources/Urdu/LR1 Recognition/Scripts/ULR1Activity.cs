@@ -21,7 +21,7 @@ public class ULR1Activity : MonoBehaviour {
         }
     }
 
-    public void BackBtn() {
+    public static void Back() {
         SceneManager.LoadScene("ULR-1");
     }
 }

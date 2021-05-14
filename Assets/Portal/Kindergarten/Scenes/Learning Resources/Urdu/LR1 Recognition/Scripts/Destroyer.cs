@@ -20,17 +20,11 @@ public class Destroyer : MonoBehaviour {
             Destroy(gameObject);
             goodbadText.text = "Excellent";
             panel.SetActive(true);
-            StartCoroutine(Next());
+            SceneManager.LoadScene("ULR-1");
         }
         else {
             goodbadText.text = "Try Again";
             panel.SetActive(true);
         }
-    }
-
-    IEnumerator Next() {
-        yield return null;
-        SceneManager.LoadScene("ULR-1");
-        
     }
 }
