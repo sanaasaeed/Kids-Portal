@@ -30,4 +30,6 @@ public class Destroyer : MonoBehaviour {
             panel.SetActive(true);
         }
     }
+    // TODO: Do take care of end alphabets
+    // TODO: DO ADD THAT LOGIC OF GOING BACK I.E REVERTING
 }
