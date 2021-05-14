@@ -1,13 +1,15 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Destroyer : MonoBehaviour {
-    [SerializeField] private TextMeshProUGUI goodbadText;
+    [SerializeField] private TextMeshProUGUI RemarksText;
     [SerializeField] private GameObject panel;
+
+    private void Start() {
+        panel.SetActive(false);
+    }
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Space)) {
@@ -16,14 +18,15 @@ public class Destroyer : MonoBehaviour {
     }
 
     private void OnMouseDown() {
+        Debug.Log(ULR1Activity.nextAlphabet);
         if (gameObject.GetComponent<SpriteRenderer>().sprite == ULR1Activity.nextAlphabet) {
             Destroy(gameObject);
-            goodbadText.text = "Excellent";
+            RemarksText.text = "Excellent";
             panel.SetActive(true);
             SceneManager.LoadScene("ULR-1");
         }
         else {
-            goodbadText.text = "Try Again";
+            RemarksText.text = "Try Again";
             panel.SetActive(true);
         }
     }

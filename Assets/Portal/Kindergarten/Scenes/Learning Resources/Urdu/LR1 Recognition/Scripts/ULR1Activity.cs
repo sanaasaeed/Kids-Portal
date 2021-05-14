@@ -9,7 +9,7 @@ public class ULR1Activity : MonoBehaviour {
     [SerializeField] private List<GameObject> otherHarfs;
     public static Sprite nextAlphabet;
     void Start() {
-        var index = Random.Range(ULR1.alphabetNo, ULR1.alphabetNo - 9);
+        var index = Random.Range(ULR1.alphabetNo, ULR1.alphabetNo - 6);
         var targetAlphabet = alphabetList[index];
         nextAlphabet = alphabetList[index + 1];
         tarHarf.GetComponent<SpriteRenderer>().sprite = targetAlphabet;
