@@ -37,7 +37,7 @@ public class MLR1 : MonoBehaviour {
         letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
         letterAudioSource.PlayOneShot(audios[letterNo]);
         if (screenNo % 5 == 0) {
-           // SceneManager.LoadScene("MLR1_Activity");
+           SceneManager.LoadScene("MLR1_Activity");
         }
         letterNo++;
         

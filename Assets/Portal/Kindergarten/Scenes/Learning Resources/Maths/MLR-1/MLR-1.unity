@@ -613,6 +613,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0fd02a5e43415074fa8a1adae4415290, type: 3}
   - {fileID: 8300000, guid: 9e65d9fbc142a894ba7c4d69f83d16a3, type: 3}
   letterPrefab: {fileID: 1429417756}
+  endLetter: 0
 --- !u!4 &536584241
 Transform:
   m_ObjectHideFlags: 0
@@ -642,6 +643,8 @@ MonoBehaviour:
   fromInputField: {fileID: 93707720}
   toInputField: {fileID: 1142169027}
   panel: {fileID: 1834137364}
+  from: 0
+  to: 0
 --- !u!1001 &610169903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -718,6 +721,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 9.211079
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052992688159154942, guid: f3fda29d8e9e7ff45b43a00aa024d139,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052992688159154942, guid: f3fda29d8e9e7ff45b43a00aa024d139,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4052992688159154943, guid: f3fda29d8e9e7ff45b43a00aa024d139,
         type: 3}
@@ -2126,7 +2139,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 536584240}
+      - m_Target: {fileID: 536584242}
         m_MethodName: GetInputValue
         m_Mode: 1
         m_Arguments:
