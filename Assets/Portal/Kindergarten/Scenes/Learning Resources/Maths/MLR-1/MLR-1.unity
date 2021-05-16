@@ -245,7 +245,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 80638fe0d60074e44a2cb83d76ba5f97, type: 3}
   - {fileID: 21300000, guid: 6a6941aff259eba48b8a617fb5627754, type: 3}
   letterPrefab: {fileID: 1880908192}
-  sunflowerPrefab: {fileID: 0}
+  sunflowerPrefab: {fileID: 7669712385869186111, guid: d2bda57935530804d954ce3e30ed0760,
+    type: 3}
 --- !u!4 &536584241
 Transform:
   m_ObjectHideFlags: 0
