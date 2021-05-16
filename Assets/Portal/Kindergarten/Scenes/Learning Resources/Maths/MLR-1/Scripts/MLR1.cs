@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MLR1 : MonoBehaviour {
     [SerializeField] private List<Sprite> mathLetters;
@@ -9,7 +12,8 @@ public class MLR1 : MonoBehaviour {
     public static int letterNo = 0;
     private AudioSource letterAudioSource;
     public static int screenNo = 0;
-    void Start() {
+    
+    public void StartLearning() {
         letterAudioSource = letterPrefab.GetComponent<AudioSource>();
         letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
         letterAudioSource.PlayOneShot(audios[letterNo]);
