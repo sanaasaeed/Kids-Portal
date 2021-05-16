@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class MLR1 : MonoBehaviour {
     [SerializeField] public List<Sprite> mathLetters;
-    [SerializeField] private List<AudioClip> audios;
+    [SerializeField] public List<AudioClip> audios;
     [SerializeField] private GameObject letterPrefab;
     public static int letterNo;
     public int endLetter = 0;
