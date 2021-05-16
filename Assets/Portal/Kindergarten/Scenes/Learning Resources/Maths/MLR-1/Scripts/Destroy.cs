@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class Destroy : MonoBehaviour {
     private MLR1_Activity activityScript;
-
+    private InputHandler inputHandler;
     private void Start() {
         activityScript = FindObjectOfType<MLR1_Activity>();
+        inputHandler = FindObjectOfType<InputHandler>();
     }
 
     private void OnMouseDown() {

@@ -13,7 +13,8 @@ public class MLR1 : MonoBehaviour {
     public int endLetter = 0;
     private AudioSource letterAudioSource;
     private InputHandler inputHandlerScript;
-    public static int screenNo;
+    public static int screenNo = 0;
+    public static int times = 0;
 
     private void Awake() {
         DontDestroyOnLoad(gameObject);
@@ -21,16 +22,29 @@ public class MLR1 : MonoBehaviour {
 
     private void Start() {
         inputHandlerScript = GetComponent<InputHandler>();
+        if (times > 0) {
+            inputHandlerScript.panel.SetActive(false);
+        }
+        Debug.Log(times);
+        times++;
+        StartLearning();
     }
 
     public void StartLearning() {
-        letterNo = inputHandlerScript.@from;
-        endLetter = inputHandlerScript.to;
-        Debug.Log(letterNo);
-        letterAudioSource = letterPrefab.GetComponent<AudioSource>();
-        letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
-        letterAudioSource.PlayOneShot(audios[letterNo]);
-        letterNo++;
+        if (screenNo == 0) {
+            letterNo = inputHandlerScript.@from;
+            endLetter = inputHandlerScript.to;
+            letterAudioSource = letterPrefab.GetComponent<AudioSource>();
+            letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
+            letterAudioSource.PlayOneShot(audios[letterNo]);
+            letterNo++;
+        }
+        else {
+            letterAudioSource = letterPrefab.GetComponent<AudioSource>();
+            letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
+            letterAudioSource.PlayOneShot(audios[letterNo]);
+            letterNo++;
+        }
     }
 
     public void NextBtn() {
