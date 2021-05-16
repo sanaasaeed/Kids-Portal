@@ -9,7 +9,12 @@ public class MLR1_Activity : MonoBehaviour {
     void Start() {
         mainScript = FindObjectOfType<MLR1>();
         Sprite randomSprite = mainScript.mathLetters[Random.Range(MLR1.letterNo-5, MLR1.letterNo)];
-        Debug.Log("Random Sprite coming from activity" + randomSprite.name);
-        Debug.Log("Dividing: " + (15/7));
+        int initialIndex = Random.Range(0, numbers.Count);
+        numbers[initialIndex].GetComponent<SpriteRenderer>().sprite = randomSprite;
+        foreach (var number in numbers) {
+            if (number.GetComponent<SpriteRenderer>().sprite != randomSprite) {
+                number.GetComponent<SpriteRenderer>().sprite = mainScript.mathLetters[Random.Range(0, mainScript.mathLetters.Count)];
+            }
+        }
     }
 }

@@ -13,8 +13,7 @@ public class MLR1 : MonoBehaviour {
     public int endLetter = 0;
     private AudioSource letterAudioSource;
     private InputHandler inputHandlerScript;
-    public int screenNo;
-    public int endScreen;
+    public static int screenNo;
 
     private void Awake() {
         DontDestroyOnLoad(gameObject);
@@ -27,15 +26,10 @@ public class MLR1 : MonoBehaviour {
     public void StartLearning() {
         letterNo = inputHandlerScript.@from;
         endLetter = inputHandlerScript.to;
-        endScreen = (endLetter - letterNo) / 2;
-        Debug.Log("END SCREEN"  + endScreen) ;
         Debug.Log(letterNo);
         letterAudioSource = letterPrefab.GetComponent<AudioSource>();
         letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
         letterAudioSource.PlayOneShot(audios[letterNo]);
-        /*for (int i = 0; i < Int32.Parse(mathLetters[0].name); i++) {
-            clone = Instantiate(sunflowerPrefab, new Vector3(0, -2, -1), quaternion.identity);
-        }*/
         letterNo++;
     }
 
@@ -43,7 +37,7 @@ public class MLR1 : MonoBehaviour {
         screenNo++;
         letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
         letterAudioSource.PlayOneShot(audios[letterNo]);
-        if (screenNo % endScreen == 0) {
+        if (screenNo % 3 == 0) {
            SceneManager.LoadScene("MLR1_Activity");
         }
         letterNo++;
