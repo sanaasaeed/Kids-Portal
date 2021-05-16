@@ -12,8 +12,11 @@ public class MLR1 : MonoBehaviour {
     [SerializeField] private GameObject sunflowerPrefab;
     private int letterNo = 0;
     private GameObject clone;
+    private AudioSource letterAudioSource;
     void Start() {
+        letterAudioSource = letterPrefab.GetComponent<AudioSource>();
         letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
+        letterAudioSource.PlayOneShot(audios[letterNo]);
         for (int i = 0; i < Int32.Parse(mathLetters[0].name); i++) {
             clone = Instantiate(sunflowerPrefab, new Vector3(0, -2, -1), quaternion.identity);
         }
@@ -22,6 +25,7 @@ public class MLR1 : MonoBehaviour {
 
     public void NextBtn() {
         letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
+        letterAudioSource.PlayOneShot(audios[letterNo]);
         var allClones = FindObjectsOfType<GameObject>();
         foreach (var allClone in allClones) {
             if (allClone.name.Contains("Clone")) {
