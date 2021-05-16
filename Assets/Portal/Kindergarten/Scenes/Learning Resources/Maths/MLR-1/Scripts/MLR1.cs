@@ -10,7 +10,7 @@ public class MLR1 : MonoBehaviour {
     [SerializeField] public List<AudioClip> audios;
     [SerializeField] private GameObject letterPrefab;
     public static int letterNo;
-    public int endLetter = 0;
+    public static int endLetter = 0;
     private AudioSource letterAudioSource;
     private InputHandler inputHandlerScript;
     public static int screenNo = 0;
@@ -48,14 +48,20 @@ public class MLR1 : MonoBehaviour {
     }
 
     public void NextBtn() {
-        screenNo++;
-        letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
-        letterAudioSource.PlayOneShot(audios[letterNo]);
-        if (screenNo % 3 == 0) {
-           SceneManager.LoadScene("MLR1_Activity");
+        Debug.Log("End ketter " + endLetter);
+        if (letterNo <= endLetter) {
+            screenNo++;
+            letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
+            letterAudioSource.PlayOneShot(audios[letterNo]);
+            if (screenNo % 3 == 0) {
+                SceneManager.LoadScene("MLR1_Activity");
+            }
+            letterNo++;
         }
-        letterNo++;
-        
+        else {
+            Debug.Log("You did great");
+            // TODO:  SHow win screen
+        }
     }
 
     public void RepeatBtn() {
