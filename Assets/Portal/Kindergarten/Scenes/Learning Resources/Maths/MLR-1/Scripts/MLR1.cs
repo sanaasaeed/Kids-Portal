@@ -6,14 +6,19 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MLR1 : MonoBehaviour {
-    [SerializeField] private List<Sprite> mathLetters;
+    [SerializeField] public List<Sprite> mathLetters;
     [SerializeField] private List<AudioClip> audios;
     [SerializeField] private GameObject letterPrefab;
     public static int letterNo;
     public int endLetter = 0;
     private AudioSource letterAudioSource;
     private InputHandler inputHandlerScript;
-    public static int screenNo;
+    public int screenNo;
+    public int endScreen;
+
+    private void Awake() {
+        DontDestroyOnLoad(gameObject);
+    }
 
     private void Start() {
         inputHandlerScript = GetComponent<InputHandler>();
@@ -22,6 +27,8 @@ public class MLR1 : MonoBehaviour {
     public void StartLearning() {
         letterNo = inputHandlerScript.@from;
         endLetter = inputHandlerScript.to;
+        endScreen = (endLetter - letterNo) / 2;
+        Debug.Log("END SCREEN"  + endScreen) ;
         Debug.Log(letterNo);
         letterAudioSource = letterPrefab.GetComponent<AudioSource>();
         letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
@@ -36,7 +43,7 @@ public class MLR1 : MonoBehaviour {
         screenNo++;
         letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
         letterAudioSource.PlayOneShot(audios[letterNo]);
-        if (screenNo % 5 == 0) {
+        if (screenNo % endScreen == 0) {
            SceneManager.LoadScene("MLR1_Activity");
         }
         letterNo++;
