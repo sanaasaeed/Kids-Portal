@@ -9,8 +9,8 @@ public class InputHandler : MonoBehaviour {
     [SerializeField] private TMP_InputField fromInputField;
     [SerializeField] private TMP_InputField toInputField;
     [SerializeField] private GameObject panel;
-    public int from = 0;
-    public int to = 0;
+    public int from;
+    public int to;
     private MLR1 mainScript;
 
     private void Start() {
