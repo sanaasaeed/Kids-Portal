@@ -104,6 +104,13 @@
                     </e>
                   </e>
                 </e>
+                <e p="Maths" t="Include">
+                  <e p="MLR-1" t="Include">
+                    <e p="Scripts" t="Include">
+                      <e p="MLR1.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
                 <e p="Urdu" t="Include">
                   <e p="LR1 Recognition" t="Include">
                     <e p="Scripts" t="Include">
