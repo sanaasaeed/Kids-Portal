@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MLR1 : MonoBehaviour {
     [SerializeField] private List<Sprite> mathLetters;
     [SerializeField] private List<AudioClip> audios;
     [SerializeField] private GameObject letterPrefab;
-    private int letterNo = 0;
+    public static int letterNo = 0;
     private AudioSource letterAudioSource;
-    private int screenNo = 0;
+    public static int screenNo = 0;
     void Start() {
         letterAudioSource = letterPrefab.GetComponent<AudioSource>();
         letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
@@ -23,7 +24,7 @@ public class MLR1 : MonoBehaviour {
         letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
         letterAudioSource.PlayOneShot(audios[letterNo]);
         if (screenNo % 5 == 0) {
-            
+            SceneManager.LoadScene("MLR1_Activity");
         }
         /*var allClones = FindObjectsOfType<GameObject>();
         foreach (var allClone in allClones) {
