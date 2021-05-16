@@ -6,12 +6,13 @@ public class MLR1_Activity : MonoBehaviour {
     [SerializeField] private List<GameObject> numbers;
     private MLR1 mainScript;
     private AudioSource audioSrc;
+    public Sprite randomSprite;
     
     void Start() {
         audioSrc = GetComponent<AudioSource>();
         mainScript = FindObjectOfType<MLR1>();
         int randomIndex = Random.Range(MLR1.letterNo - 5, MLR1.letterNo);
-        Sprite randomSprite = mainScript.mathLetters[randomIndex];
+        randomSprite = mainScript.mathLetters[randomIndex];
         numbers[Random.Range(0, numbers.Count)].GetComponent<SpriteRenderer>().sprite = randomSprite;
         StartCoroutine(Wait(randomIndex));
         foreach (var number in numbers) {
@@ -23,7 +24,6 @@ public class MLR1_Activity : MonoBehaviour {
 
     IEnumerator Wait(int index) {
         yield return new WaitForSeconds(0.5f);
-        Debug.Log(index);
         audioSrc.PlayOneShot(mainScript.audios[index]);
     }
 }

@@ -1,18 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Destroy : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class Destroy : MonoBehaviour {
+    private MLR1_Activity activityScript;
+
+    private void Start() {
+        activityScript = FindObjectOfType<MLR1_Activity>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void OnMouseDown() {
+        if (gameObject.GetComponent<SpriteRenderer>().sprite == activityScript.randomSprite) {
+            Destroy(gameObject);
+            SceneManager.LoadScene("MLR-1");
+        }
     }
 }

@@ -107,6 +107,7 @@
                 <e p="Maths" t="Include">
                   <e p="MLR-1" t="Include">
                     <e p="Scripts" t="Include">
+                      <e p="Destroy.cs" t="Include" />
                       <e p="InputHandler.cs" t="Include" />
                       <e p="MLR1.cs" t="Include" />
                       <e p="MLR1_Activity.cs" t="Include" />
