@@ -613,7 +613,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0fd02a5e43415074fa8a1adae4415290, type: 3}
   - {fileID: 8300000, guid: 9e65d9fbc142a894ba7c4d69f83d16a3, type: 3}
   letterPrefab: {fileID: 1429417756}
-  endLetter: 0
 --- !u!4 &536584241
 Transform:
   m_ObjectHideFlags: 0
@@ -2493,7 +2492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1834137365
 RectTransform:
   m_ObjectHideFlags: 0
