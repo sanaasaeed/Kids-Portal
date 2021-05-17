@@ -88,6 +88,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/LR1 Recognition/Scenes/ULR1-Activity.unity
     guid: cfbf7362055d8d145a2bea88d42d7e7c
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2/MLR-2.unity
+    guid: d0a01a0cc3f97804c99466fcd83acc6f
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2/MLR2Activity.unity
+    guid: a8e2ac0b62b6d514dae7067a9a7dc362
   - enabled: 0
     path: 
     guid: 7c04ba0fdd2244fba8f705a230749b76
