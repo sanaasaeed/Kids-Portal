@@ -113,6 +113,11 @@
                       <e p="MLR1_Activity.cs" t="Include" />
                     </e>
                   </e>
+                  <e p="MLR-2" t="Include">
+                    <e p="Scripts" t="Include">
+                      <e p="MLR2.cs" t="Include" />
+                    </e>
+                  </e>
                 </e>
                 <e p="Urdu" t="Include">
                   <e p="LR1 Recognition" t="Include">
