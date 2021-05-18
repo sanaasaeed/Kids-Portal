@@ -19,7 +19,7 @@ public class Activity1 : MonoBehaviour {
             digitPrefab.GetComponent<SpriteRenderer>().sprite = numbers[randomIndex];
             numbers.Remove(numbers[randomIndex]);
             int randomYIndex = Random.Range(0, yPositions.Count); 
-            Debug.Log("Random Y index: " + randomYIndex);
+            Debug.Log("Random Y index: " + yPositions[randomYIndex]);
             foreach (var objPrefab in objPrefabs) {
                 if (objPrefab.name == currentNo.name) {
                     Instantiate(objPrefab, new Vector3(0, yPositions[randomYIndex], 0), Quaternion.identity);

@@ -38,10 +38,10 @@ EditorBuildSettings:
       and Capital/Scenes/EmbeddedActivity2.unity
     guid: a2642eb06c829b74682eb9e91dfc1520
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1/MLR-1.unity
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/MLR-1.unity
     guid: 255299dbc0665c447894200ec8e6f2e1
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1/MLR1_Activity.unity
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/MLR1_Activity.unity
     guid: 42cf7e61a7d6ab1468935323d5a794a6
   - enabled: 1
     path: Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/Level 1/EL1 Assets/Scenes/EL1-1.unity
@@ -89,10 +89,10 @@ EditorBuildSettings:
     path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/LR1 Recognition/Scenes/ULR1-Activity.unity
     guid: cfbf7362055d8d145a2bea88d42d7e7c
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2/MLR-2.unity
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/MLR-2.unity
     guid: d0a01a0cc3f97804c99466fcd83acc6f
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2/MLR2Activity.unity
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/MLR2Activity.unity
     guid: a8e2ac0b62b6d514dae7067a9a7dc362
   - enabled: 0
     path: 
