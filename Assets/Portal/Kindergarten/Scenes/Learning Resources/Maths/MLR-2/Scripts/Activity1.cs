@@ -16,13 +16,16 @@ public class Activity1 : MonoBehaviour {
             currentNo = numbers[randomIndex];
             digitPrefab.GetComponent<SpriteRenderer>().sprite = numbers[randomIndex];
             numbers.Remove(numbers[randomIndex]);
+            List<float> yPositions = new List<float>(){2f, 0f, -2.2f, -4.5f};
+            int randomYIndex = Random.Range(0, yPositions.Count);
             foreach (var objPrefab in objPrefabs) {
-                Debug.Log(objPrefab.name + " Object prefab");
-                Debug.Log(currentNo.name + " Current name");
+                
                 if (objPrefab.name == currentNo.name) {
-                    Instantiate(objPrefab);
+                    Instantiate(objPrefab, new Vector3(0, yPositions[randomYIndex], 0), Quaternion.identity);
                 }
             }
+            yPositions.RemoveAt(randomYIndex);
+
         }
     }
 }
