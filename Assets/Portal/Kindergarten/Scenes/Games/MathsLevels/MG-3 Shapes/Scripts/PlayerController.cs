@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     public float speed = 5f;
-
+    public float minY, maxY;
+    
+    
     private void Update() {
         MovePlayer();
     }
@@ -14,10 +16,16 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetAxisRaw("Vertical") > 0f) {
             Vector3 temp = transform.position;
             temp.y += speed * Time.deltaTime;
+            if (temp.y > maxY) {
+                temp.y = maxY;
+            }
             transform.position = temp;
         }else if (Input.GetAxisRaw("Vertical") < 0f) {
             Vector3 temp = transform.position;
             temp.y -= speed * Time.deltaTime;
+            if (temp.y < minY) {
+                temp.y = minY;
+            }
             transform.position = temp;
         }
     }
