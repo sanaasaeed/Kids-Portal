@@ -6,12 +6,10 @@ public class Shape : MonoBehaviour {
     private Vector2 initalPos;
     private Vector2 mousePos;
     [SerializeField] GameObject SpawnManager;
-    private Score gameManager;
     private float deltaX, deltaY;
     public static int moves = 0;
 
     private void Start() {
-        gameManager = FindObjectOfType<Score>();
         initalPos = transform.position;
     }
     
@@ -38,20 +36,18 @@ public class Shape : MonoBehaviour {
     private void OnTriggerStay2D(Collider2D other) {
         if (Input.GetMouseButtonUp(0)) {
             if (gameObject.CompareTag(other.tag)) {
-                /*if (Mathf.Abs(transform.position.x - other.transform.position.x) <= 3f &&
-                    Mathf.Abs(transform.position.y - other.transform.position.y) <= 3f) {*/
                     transform.position = new Vector3(other.transform.position.x, other.transform.position.y, -1);
                     gameObject.name += "done";
                     moves += 1;
                     Debug.Log(moves);
-                    gameManager.IncreaseScore();
                     NextRound();
                    
             }
             else {
                 transform.position = new Vector3(initalPos.x, initalPos.y, -1);
-                gameManager.DecreaseScore();
             }
         }
     }
 }
+
+// TODO: Here the back logic

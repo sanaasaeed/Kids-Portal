@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -41,6 +42,9 @@ public class MLR3 : MonoBehaviour {
             audioSrc.PlayOneShot(audios[shapeIndex]);
             shapeText.text = currentPrefab.name;
             index++;
+        }
+        else {
+            SceneManager.LoadScene("MLR-3Activity");
         }
     }
 
