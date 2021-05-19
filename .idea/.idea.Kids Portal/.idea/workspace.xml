@@ -20,6 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18fd4037-dc49-412f-af94-81ba1c2b9c3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/MG-3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/MG-3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Materials/BG Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Materials/BG Material.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Spaceship.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Spaceship.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/PlayerController.cs" afterDir="false" />
     </list>
@@ -36,6 +40,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/DynamicPlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/BGScroll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/MusicManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/LineDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,7 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/MathsLevels/Shapes/Scripts/Shape.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/Level 2/EL2 Assets/Scripts/LoadScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/Level 2/EL2 Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/Counting/ML-1 Assets/Scripts/ClickHandler.cs" />
@@ -96,6 +100,7 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/LineHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/LineDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/BGScroll.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/PlayerController.cs" />
       </list>
     </option>
@@ -196,7 +201,7 @@
       <workItem from="1621055782437" duration="1195000" />
       <workItem from="1621109781227" duration="26014000" />
       <workItem from="1621273291076" duration="24792000" />
-      <workItem from="1621419586644" duration="8986000" />
+      <workItem from="1621419586644" duration="10179000" />
     </task>
     <servers />
   </component>

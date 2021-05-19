@@ -6,8 +6,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
     public float speed = 5f;
     public float minY, maxY;
-    
-    
+    [SerializeField] private GameObject PlayerBullet;
+    [SerializeField] private Transform attackPoint;
     private void Update() {
         MovePlayer();
     }
