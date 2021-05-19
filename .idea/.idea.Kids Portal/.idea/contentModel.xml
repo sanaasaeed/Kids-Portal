@@ -14,7 +14,7 @@
             <e p="Scenes" t="Include">
               <e p="Games" t="Include">
                 <e p="EnglishLevels" t="Include">
-                  <e p="Level 1" t="Include">
+                  <e p="EG-1 Recognition" t="Include">
                     <e p="EL1 Assets" t="Include">
                       <e p="Scripts" t="Include">
                         <e p="Alphabets.cs" t="Include" />
@@ -28,7 +28,7 @@
                       </e>
                     </e>
                   </e>
-                  <e p="Level 2" t="Include">
+                  <e p="EG-2 Small And Capital" t="Include">
                     <e p="EL2 Assets" t="Include">
                       <e p="Scripts" t="Include">
                         <e p="ClickLetters.cs" t="Include" />
@@ -41,16 +41,7 @@
                   </e>
                 </e>
                 <e p="MathsLevels" t="Include">
-                  <e p="Counting" t="Include">
-                    <e p="ML-1 Assets" t="Include">
-                      <e p="Scripts" t="Include">
-                        <e p="ClickHandler.cs" t="Include" />
-                        <e p="RandomSelection.cs" t="Include" />
-                        <e p="ScoreHandler.cs" t="Include" />
-                      </e>
-                    </e>
-                  </e>
-                  <e p="Recognition" t="Include">
+                  <e p="MG-1 Recognition" t="Include">
                     <e p="Scripts" t="Include">
                       <e p="CameraController.cs" t="Include" />
                       <e p="LevelManager.cs" t="Include" />
@@ -62,16 +53,18 @@
                       <e p="SpawnManagerMath.cs" t="Include" />
                     </e>
                   </e>
-                  <e p="Shapes" t="Include">
-                    <e p="Scripts" t="Include">
-                      <e p="ObjectSpawner.cs" t="Include" />
-                      <e p="Score.cs" t="Include" />
-                      <e p="Shape.cs" t="Include" />
+                  <e p="MG-2 Counting" t="Include">
+                    <e p="ML-1 Assets" t="Include">
+                      <e p="Scripts" t="Include">
+                        <e p="ClickHandler.cs" t="Include" />
+                        <e p="RandomSelection.cs" t="Include" />
+                        <e p="ScoreHandler.cs" t="Include" />
+                      </e>
                     </e>
                   </e>
                 </e>
                 <e p="UrduLevels" t="Include">
-                  <e p="UL1 Assets" t="Include">
+                  <e p="UG-1 Recognition" t="Include">
                     <e p="Scripts" t="Include">
                       <e p="AudioManager.cs" t="Include" />
                       <e p="Balloon.cs" t="Include" />
@@ -85,7 +78,7 @@
               </e>
               <e p="Learning Resources" t="Include">
                 <e p="English" t="Include">
-                  <e p="LR1 Recognition" t="Include">
+                  <e p="ELR-1 Recognition" t="Include">
                     <e p="Assets" t="Include">
                       <e p="Scripts" t="Include">
                         <e p="ActivityManager.cs" t="Include" />
@@ -96,7 +89,7 @@
                       </e>
                     </e>
                   </e>
-                  <e p="LR2 Small and Capital" t="Include">
+                  <e p="ELR-2 Small and Capital" t="Include">
                     <e p="Scripts" t="Include">
                       <e p="AlphabetCollector.cs" t="Include" />
                       <e p="EmbeddedActivity.cs" t="Include" />
@@ -121,13 +114,20 @@
                     </e>
                   </e>
                   <e p="MLR-3 Shapes" t="Include">
+                    <e p="MLR-3 Activity" t="Include">
+                      <e p="Scripts" t="Include">
+                        <e p="ObjectSpawner.cs" t="Include" />
+                        <e p="Score.cs" t="Include" />
+                        <e p="Shape.cs" t="Include" />
+                      </e>
+                    </e>
                     <e p="Scripts" t="Include">
                       <e p="MLR3.cs" t="Include" />
                     </e>
                   </e>
                 </e>
                 <e p="Urdu" t="Include">
-                  <e p="LR1 Recognition" t="Include">
+                  <e p="ULR-1 Recognition" t="Include">
                     <e p="Scripts" t="Include">
                       <e p="Destroyer.cs" t="Include" />
                       <e p="ULR1.cs" t="Include" />
