@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour {
     public float minY, maxY;
     [SerializeField] private GameObject PlayerBullet;
     [SerializeField] private Transform attackPoint;
-    public float attackTimer = 0.35f;
+    public float attackTimer = 0.15f;
     private float currectAttackTimer;
     private bool canAttack;
 

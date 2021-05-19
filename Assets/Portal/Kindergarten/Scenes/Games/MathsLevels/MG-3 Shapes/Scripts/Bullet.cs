@@ -22,6 +22,6 @@ public class Bullet : MonoBehaviour
        transform.position = tmp;
    }
    void DeactivateGameObject() {
-       gameObject.SetActive(false);
+       Destroy(gameObject);
    }
 }
