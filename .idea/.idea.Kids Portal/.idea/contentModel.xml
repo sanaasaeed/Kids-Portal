@@ -62,6 +62,11 @@
                       </e>
                     </e>
                   </e>
+                  <e p="MG-3 Shapes" t="Include">
+                    <e p="Scripts" t="Include">
+                      <e p="BGScroll.cs" t="Include" />
+                    </e>
+                  </e>
                 </e>
                 <e p="UrduLevels" t="Include">
                   <e p="UG-1 Recognition" t="Include">
