@@ -105,7 +105,7 @@
                   </e>
                 </e>
                 <e p="Maths" t="Include">
-                  <e p="MLR-1" t="Include">
+                  <e p="MLR-1 Recognition" t="Include">
                     <e p="Scripts" t="Include">
                       <e p="Destroy.cs" t="Include" />
                       <e p="InputHandler.cs" t="Include" />
@@ -113,11 +113,16 @@
                       <e p="MLR1_Activity.cs" t="Include" />
                     </e>
                   </e>
-                  <e p="MLR-2" t="Include">
+                  <e p="MLR-2 Counting" t="Include">
                     <e p="Scripts" t="Include">
                       <e p="Activity1.cs" t="Include" />
                       <e p="LineDrawer.cs" t="Include" />
                       <e p="MLR2.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="MLR-3 Shapes" t="Include">
+                    <e p="Scripts" t="Include">
+                      <e p="MLR3.cs" t="Include" />
                     </e>
                   </e>
                 </e>
