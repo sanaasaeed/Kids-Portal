@@ -965,6 +965,15 @@ MonoBehaviour:
   - {fileID: 6839815589223895586, guid: 3d51206b410ef2148b6a331314baeb4e, type: 3}
   - {fileID: 7857424772083528261, guid: 0de65fcc73be9aa45bc8922d8a2d5a49, type: 3}
   shapeText: {fileID: 426692735}
+  audios:
+  - {fileID: 8300000, guid: e662513a0bcdd8a40b73769b9ab0dbd3, type: 3}
+  - {fileID: 8300000, guid: de39973543358bd46af7f5cb2b206fbd, type: 3}
+  - {fileID: 8300000, guid: 415604bc5bddbff478ed150e4861ba32, type: 3}
+  - {fileID: 8300000, guid: 5de7b969ed9e98d4fb333a8355ff4908, type: 3}
+  - {fileID: 8300000, guid: 4b6ce7aa2ed106e4b94fdc28b25a1e17, type: 3}
+  - {fileID: 8300000, guid: 2beea04d861d8e04288e0353ddba25ee, type: 3}
+  - {fileID: 8300000, guid: 141aa600bc749ae48ae729f704efb205, type: 3}
+  - {fileID: 8300000, guid: 1fab6857681c9394a900fe2ceedf03d6, type: 3}
   shapes: []
 --- !u!4 &1440152061
 Transform:

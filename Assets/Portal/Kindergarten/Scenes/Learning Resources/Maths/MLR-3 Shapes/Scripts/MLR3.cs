@@ -10,29 +10,38 @@ using Random = UnityEngine.Random;
 public class MLR3 : MonoBehaviour {
     [SerializeField] private List<GameObject> shapesPrefab;
     [SerializeField] private TextMeshProUGUI shapeText;
-    [SerializeField] private List<Sprite> shapes;
-    public static int randomNextIndex;
+    [SerializeField] private List<AudioClip> audios;
+    private AudioSource audioSrc;
+    public static int index = 0;
 
     private void Start() {
-        int randomIndex = Random.Range(0, shapesPrefab.Count);
-        SetShape(randomIndex);
+        audioSrc = GetComponent<AudioSource>();
+        SetShape(index);
     }
     
     public void NextBtn() {
         RemoveClones();
-        randomNextIndex = Random.Range(0, shapesPrefab.Count);
-        SetShape(randomNextIndex);
+        SetShape(index);
     }
 
     public void RepeatBtn() {
         RemoveClones();
-        SetShape(randomNextIndex);
+        index--;
+        GameObject currentPrefab = shapesPrefab[index];
+        Instantiate(currentPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        audioSrc.PlayOneShot(audios[index]);
+        shapeText.text = currentPrefab.name;
+        index++;
     }
 
-    public void SetShape(int randomIndex) {
-        GameObject currentPrefab = shapesPrefab[randomIndex];
-        Instantiate(currentPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-        shapeText.text = currentPrefab.name;
+    public void SetShape(int shapeIndex) {
+        if (shapeIndex < shapesPrefab.Count) {
+            GameObject currentPrefab = shapesPrefab[shapeIndex];
+            Instantiate(currentPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+            audioSrc.PlayOneShot(audios[shapeIndex]);
+            shapeText.text = currentPrefab.name;
+            index++;
+        }
     }
 
     void RemoveClones() {
