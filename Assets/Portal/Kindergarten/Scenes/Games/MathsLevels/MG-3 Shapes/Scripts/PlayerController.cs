@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
@@ -8,8 +9,17 @@ public class PlayerController : MonoBehaviour {
     public float minY, maxY;
     [SerializeField] private GameObject PlayerBullet;
     [SerializeField] private Transform attackPoint;
+    public float attackTimer = 0.35f;
+    private float currectAttackTimer;
+    private bool canAttack;
+
+    private void Start() {
+        currectAttackTimer = attackTimer;
+    }
+
     private void Update() {
         MovePlayer();
+        Attack();
     }
 
     void MovePlayer() {
@@ -29,5 +39,22 @@ public class PlayerController : MonoBehaviour {
             transform.position = temp;
         }
     }
+
+    void Attack() {
+        attackTimer += Time.deltaTime;
+        if (attackTimer > currectAttackTimer) {
+            canAttack = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            if (canAttack) {
+                canAttack = false;
+                attackTimer = 0f;
+                Instantiate(PlayerBullet, attackPoint.position, Quaternion.identity);
+            }
+        }
+    }
+
+   
 
 } // class

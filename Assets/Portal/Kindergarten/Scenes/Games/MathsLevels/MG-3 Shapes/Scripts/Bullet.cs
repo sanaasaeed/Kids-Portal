@@ -8,6 +8,10 @@ public class Bullet : MonoBehaviour
    public float speed = 5f;
    public float deactivateTimer = 3f;
 
+   private void Start() {
+       Invoke("DeactivateGameObject", deactivateTimer);
+   }
+
    private void Update() {
        Move();
    }
@@ -16,5 +20,8 @@ public class Bullet : MonoBehaviour
        Vector3 tmp = transform.position;
        tmp.x += speed * Time.deltaTime;
        transform.position = tmp;
+   }
+   void DeactivateGameObject() {
+       gameObject.SetActive(false);
    }
 }
