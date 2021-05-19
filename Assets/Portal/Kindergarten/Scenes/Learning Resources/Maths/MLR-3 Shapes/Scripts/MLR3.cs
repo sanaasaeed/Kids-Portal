@@ -18,4 +18,7 @@ public class MLR3 : MonoBehaviour {
         shapeText.text = currentPrefab.name;
     }
     
+    public void NextBtn(){
+    
+        }
 }
