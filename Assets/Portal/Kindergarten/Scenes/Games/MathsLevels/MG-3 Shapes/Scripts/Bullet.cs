@@ -7,8 +7,11 @@ public class Bullet : MonoBehaviour
 {
    public float speed = 5f;
    public float deactivateTimer = 3f;
-
+   [HideInInspector] public bool isEmemyBullet = false;
    private void Start() {
+       if (isEmemyBullet) {
+           speed *= -1f;
+       }
        Invoke("DeactivateGameObject", deactivateTimer);
    }
 
