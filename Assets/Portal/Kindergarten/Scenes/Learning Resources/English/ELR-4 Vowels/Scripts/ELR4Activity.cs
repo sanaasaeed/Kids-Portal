@@ -17,12 +17,10 @@ public class ELR4Activity : MonoBehaviour {
 
     void SpawnVowels(int childNo, int i) {
         if (!vowelsChilds.Contains(childNo)) {
-            Debug.Log(childNo);
             alphabetPrefab.transform.GetChild(childNo).GetComponent<SpriteRenderer>().sprite = vowels[i];
             vowelsChilds.Add(childNo);
         }
         else {
-            Debug.Log("Else: "+ childNo);
             childNo = Random.Range(0, alphabetPrefab.transform.childCount);
             SpawnVowels(childNo, i);
         }

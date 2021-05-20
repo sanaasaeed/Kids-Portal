@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ELR4 : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI panelText;
@@ -35,7 +36,7 @@ public class ELR4 : MonoBehaviour {
             StartCoroutine(Wait(3f));
         }
         else {
-            // TODO: Win screen
+            SceneManager.LoadScene("ELR4Activity");
         }
     }
 }
