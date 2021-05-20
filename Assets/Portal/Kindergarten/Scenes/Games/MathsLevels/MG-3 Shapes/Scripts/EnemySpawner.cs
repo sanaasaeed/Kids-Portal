@@ -24,7 +24,7 @@ public class EnemySpawner : MonoBehaviour {
             Instantiate(objectPrefab[Random.Range(0, objectPrefab.Count)], tmp, Quaternion.identity);
         }
         else {
-            Instantiate(enemyPrefab, tmp, Quaternion.Euler(0f, 0f, -90f));
+            Instantiate(enemyPrefab, tmp, Quaternion.Euler(0f, 0f, 90f));
         }
         Invoke("SpawnEnemies", timer);
     }
