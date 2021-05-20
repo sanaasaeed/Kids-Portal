@@ -16,6 +16,7 @@ public class ELR4 : MonoBehaviour {
         audioSrc = GetComponent<AudioSource>();
         panelText.text = texts[screenIndex];
         boardSet.GetComponent<SpriteRenderer>().sprite = boardImages[screenIndex];
+        audioSrc.PlayOneShot(audios[screenIndex]);
         screenIndex++;
         StartCoroutine(Wait(2f));
     }
@@ -29,8 +30,9 @@ public class ELR4 : MonoBehaviour {
         if (screenIndex < texts.Count && screenIndex < boardImages.Count) {
             panelText.text = texts[screenIndex];
             boardSet.GetComponent<SpriteRenderer>().sprite = boardImages[screenIndex];
+            audioSrc.PlayOneShot(audios[screenIndex]);
             screenIndex++;
-            StartCoroutine(Wait(3f));
+            StartCoroutine(Wait(5f));
         }
         else {
             // TODO: Win screen
