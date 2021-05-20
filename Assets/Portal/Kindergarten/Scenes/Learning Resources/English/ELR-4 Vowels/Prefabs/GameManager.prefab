@@ -63,7 +63,7 @@ MonoBehaviour:
   - Here a is the vowel
   - h e n hen
   - Here e is the vowel
-  - k i d kid
+  - p i g pig
   - Here i is the vowel
   - b o y boy
   - Here o is the vowel
@@ -73,6 +73,23 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 19e52908b9bcf9b48a1752a3d4c7740e, type: 3}
   - {fileID: 21300000, guid: 537e36d0a52443c4fbe6a68df8edda8c, type: 3}
   - {fileID: 21300000, guid: abc63921ce1a19944ba458e6cbeb1f30, type: 3}
+  - {fileID: 21300000, guid: 537e36d0a52443c4fbe6a68df8edda8c, type: 3}
+  - {fileID: 21300000, guid: ca767e795ba78384e9bf972091f4dfe5, type: 3}
+  - {fileID: 21300000, guid: e57d2b2d5430b8849b66b610ca4af862, type: 3}
+  - {fileID: 21300000, guid: 0aee4c66350059042aa9420393a2f8d1, type: 3}
+  - {fileID: 21300000, guid: adb5cd110941fdd46974f3df9b573f09, type: 3}
+  - {fileID: 21300000, guid: d1c079bfaade4c241be789a200d533f7, type: 3}
+  - {fileID: 21300000, guid: 535b5d721bc706f47aa2c361cd6461b5, type: 3}
+  - {fileID: 21300000, guid: 7d66b2c6039d9ca4eb9483cf4d4b7b32, type: 3}
+  - {fileID: 21300000, guid: 337074bd81a242f419368db9e03f5f94, type: 3}
+  - {fileID: 21300000, guid: 8cddf1e17260a8641aa0064adb872faa, type: 3}
+  - {fileID: 21300000, guid: d89a6d3456719d543b022f0c619165c2, type: 3}
+  - {fileID: 21300000, guid: 29a4871196b169744bef974f5eb71e8d, type: 3}
+  - {fileID: 21300000, guid: cbf139236cec8dc47b5089993ce55998, type: 3}
+  - {fileID: 21300000, guid: 407838f17aab262488cad316a7b4ae0f, type: 3}
+  - {fileID: 21300000, guid: 15432bbf8a85f704886d37f7b773b947, type: 3}
+  - {fileID: 21300000, guid: 82705fab1c87b3c459b3a8098b1b738f, type: 3}
+  - {fileID: 21300000, guid: aff0a26d2d3d55a439b9e901a96cf1fe, type: 3}
   audios:
   - {fileID: 8300000, guid: 7a2bd0508c6dc16408d1b6e059d4218e, type: 3}
   - {fileID: 8300000, guid: 513a8c429780caa49a21c7d072c7d8d9, type: 3}
