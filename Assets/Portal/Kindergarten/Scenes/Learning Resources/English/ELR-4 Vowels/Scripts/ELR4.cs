@@ -32,7 +32,7 @@ public class ELR4 : MonoBehaviour {
             boardSet.GetComponent<SpriteRenderer>().sprite = boardImages[screenIndex];
             audioSrc.PlayOneShot(audios[screenIndex]);
             screenIndex++;
-            StartCoroutine(Wait(5f));
+            StartCoroutine(Wait(3f));
         }
         else {
             // TODO: Win screen
