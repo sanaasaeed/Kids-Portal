@@ -15,18 +15,28 @@ public class ELR4Activity : MonoBehaviour {
         SpawnAlphabets();
     }
 
+    void SpawnVowels(int childNo, int i) {
+        if (!vowelsChilds.Contains(childNo)) {
+            Debug.Log(childNo);
+            alphabetPrefab.transform.GetChild(childNo).GetComponent<SpriteRenderer>().sprite = vowels[i];
+            vowelsChilds.Add(childNo);
+        }
+        else {
+            Debug.Log("Else: "+ childNo);
+            childNo = Random.Range(0, alphabetPrefab.transform.childCount);
+            SpawnVowels(childNo, i);
+        }
+    }
+    
     void SpawnAlphabets() {
         for (int i = 0; i < vowels.Count; i++) {
             int childNo = Random.Range(0, alphabetPrefab.transform.childCount);
-            vowelsChilds.Add(childNo);
-            alphabetPrefab.transform.GetChild(childNo).GetComponent<SpriteRenderer>().sprite = vowels[i];
+            SpawnVowels(childNo, i);
         }
         
         for (int i = 0; i < alphabetPrefab.transform.childCount; i++) {
-            foreach (var vowelsChild in vowelsChilds) {
-                if (i != vowelsChild) {
-                    alphabetPrefab.transform.GetChild(i).GetComponent<SpriteRenderer>().sprite = consonants[Random.Range(0, consonants.Count)];
-                }
+            if (!vowelsChilds.Contains(i)) {
+                alphabetPrefab.transform.GetChild(i).GetComponent<SpriteRenderer>().sprite = consonants[Random.Range(0, consonants.Count)];
             }
             
         }
