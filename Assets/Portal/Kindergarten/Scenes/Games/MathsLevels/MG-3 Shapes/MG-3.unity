@@ -343,7 +343,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minY: -4.3
   maxY: 4.3
-  objectPrefab: []
+  objectPrefab:
+  - {fileID: 1719050592743278993, guid: 08b0dc15d722690478f2026651e77836, type: 3}
+  - {fileID: 4152197751211254444, guid: 61cf04514528bb340af101ea229cd905, type: 3}
+  - {fileID: 2055324358942645017, guid: 10862b6dce354ec4cae0b92a7f9ba15b, type: 3}
+  - {fileID: 5512570740757022794, guid: 6cc6e622506ca334bbd0bdae6aa9b529, type: 3}
+  - {fileID: 2833389291502751364, guid: 1ac311b5474347e4db60fb9e82d19d06, type: 3}
+  - {fileID: 16026487613052616, guid: 650c565630d0d2e4199c43b9607984aa, type: 3}
+  - {fileID: 6839815589223895586, guid: 1bc8d7a148aa8f7419792714d4aba9a8, type: 3}
+  - {fileID: 7857424772083528261, guid: c54ebb0d96faaf1469526e1b31e5dd7f, type: 3}
   enemyPrefab: {fileID: 4108459765066299430, guid: 3f09434e4e0f25847ae7196c328104bf,
     type: 3}
   timer: 2
@@ -356,7 +364,7 @@ Transform:
   m_GameObject: {fileID: 1485916680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.11, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -575,6 +583,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2641403437432556362, guid: 5930c9b8f0f093c4095269c4ad780911,
+        type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8562161696884464912, guid: 5930c9b8f0f093c4095269c4ad780911,
         type: 3}
       propertyPath: m_Name

@@ -27,4 +27,10 @@ public class Bullet : MonoBehaviour
    void DeactivateGameObject() {
        Destroy(gameObject);
    }
+
+   private void OnTriggerEnter(Collider other) {
+       if (other.CompareTag("bullet")) {
+           
+       }
+   }
 }

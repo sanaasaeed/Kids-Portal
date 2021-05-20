@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18fd4037-dc49-412f-af94-81ba1c2b9c3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/MG-3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/MG-3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Materials/BG Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Materials/BG Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Enemy 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Enemy 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Enemy Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Enemy Bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Bullet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Enemy.cs" afterDir="false" />
     </list>
@@ -102,9 +99,9 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/BGScroll.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scripts/ELR4.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/EnemySpawner.cs" />
       </list>
     </option>
   </component>
@@ -204,7 +201,7 @@
       <workItem from="1621055782437" duration="1195000" />
       <workItem from="1621109781227" duration="26014000" />
       <workItem from="1621273291076" duration="24792000" />
-      <workItem from="1621419586644" duration="27880000" />
+      <workItem from="1621419586644" duration="30206000" />
     </task>
     <servers />
   </component>

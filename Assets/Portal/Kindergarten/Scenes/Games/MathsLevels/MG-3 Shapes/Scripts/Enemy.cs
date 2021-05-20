@@ -66,4 +66,7 @@ public class Enemy : MonoBehaviour {
         }
 
     }
+    private void OnTriggerEnter(Collider other) {
+        
+    }
 }
