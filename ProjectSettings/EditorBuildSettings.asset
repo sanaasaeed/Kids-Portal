@@ -38,6 +38,12 @@ EditorBuildSettings:
       and Capital/Scenes/EmbeddedActivity2.unity
     guid: a2642eb06c829b74682eb9e91dfc1520
   - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scenes/ELR4.unity
+    guid: cceae83ea7048824a8dd363f8109537a
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scenes/ELR4Activity.unity
+    guid: f9bc44b4841bef84bb5b8f2ca9001011
+  - enabled: 1
     path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/MLR-1.unity
     guid: 255299dbc0665c447894200ec8e6f2e1
   - enabled: 1
