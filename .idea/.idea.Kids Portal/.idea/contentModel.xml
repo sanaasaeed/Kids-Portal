@@ -108,6 +108,7 @@
                   <e p="ELR-4 Vowels" t="Include">
                     <e p="Scripts" t="Include">
                       <e p="ELR4.cs" t="Include" />
+                      <e p="ELR4Activity.cs" t="Include" />
                     </e>
                   </e>
                 </e>
