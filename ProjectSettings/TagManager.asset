@@ -26,6 +26,11 @@ TagManager:
   - row2
   - row3
   - row4
+  - bullet
+  - enemySpaceship
+  - playerSpaceship
+  - rightShape
+  - playerbullet
   layers:
   - Default
   - TransparentFX

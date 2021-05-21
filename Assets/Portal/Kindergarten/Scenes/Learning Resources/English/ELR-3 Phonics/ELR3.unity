@@ -230,7 +230,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29, y: 0.000011206}
+  m_AnchoredPosition: {x: -9, y: 0.000011206}
   m_SizeDelta: {x: 288.14624, y: 30.941315}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &882293923
@@ -596,7 +596,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1328687532
 GameObject:
@@ -691,7 +691,7 @@ RectTransform:
   - {fileID: 432063904}
   - {fileID: 995887886}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -707,6 +707,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1723902718}
+  - component: {fileID: 1723902719}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -726,8 +727,23 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1723902719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723902717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86fb4a558e716ad4183b6037b5556909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texts:
+  - 'Repeat & learn these '
+  images: []
 --- !u!1 &1811181102
 GameObject:
   m_ObjectHideFlags: 0

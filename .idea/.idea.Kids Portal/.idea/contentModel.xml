@@ -105,6 +105,11 @@
                       <e p="GameRunner.cs" t="Include" />
                     </e>
                   </e>
+                  <e p="ELR-3 Phonics" t="Include">
+                    <e p="Scripts" t="Include">
+                      <e p="ELR3.cs" t="Include" />
+                    </e>
+                  </e>
                   <e p="ELR-4 Vowels" t="Include">
                     <e p="Scripts" t="Include">
                       <e p="ELR4.cs" t="Include" />

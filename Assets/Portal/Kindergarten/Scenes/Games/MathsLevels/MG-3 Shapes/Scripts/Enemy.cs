@@ -66,7 +66,17 @@ public class Enemy : MonoBehaviour {
         }
 
     }
-    private void OnTriggerEnter(Collider other) {
-        
+    private void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log("Trigger Entered");
+        if (other.CompareTag("playerbullet")) {
+            anim.Play("Destroy");
+            //Destroy(gameObject);
+            StartCoroutine(WaitAndDestroy());
+        }
+    }
+
+    IEnumerator WaitAndDestroy() {
+        yield return new WaitForSeconds(0.5f);
+        Destroy(gameObject);
     }
 }
