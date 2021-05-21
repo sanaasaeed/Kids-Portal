@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
@@ -12,6 +13,7 @@ public class PlayerController : MonoBehaviour {
     public float attackTimer = 0.15f;
     private float currectAttackTimer;
     private bool canAttack;
+    
 
     private void Start() {
         currectAttackTimer = attackTimer;
@@ -55,6 +57,10 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-   
-
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("bullet")) {
+            canAttack = false;
+            Destroy(gameObject);
+        }
+    }
 } // class

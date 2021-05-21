@@ -31,6 +31,7 @@ TagManager:
   - playerSpaceship
   - rightShape
   - playerbullet
+  - shape
   layers:
   - Default
   - TransparentFX

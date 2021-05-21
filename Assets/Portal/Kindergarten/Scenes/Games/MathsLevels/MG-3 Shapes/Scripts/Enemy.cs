@@ -67,11 +67,16 @@ public class Enemy : MonoBehaviour {
 
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log("Trigger Entered");
-        if (other.CompareTag("playerbullet")) {
+        if (other.CompareTag("playerbullet") && gameObject.CompareTag("enemySpaceship")) {
+            canShoot = false;
             anim.Play("Destroy");
+            explosionSound.Play();
             //Destroy(gameObject);
             StartCoroutine(WaitAndDestroy());
+        }
+
+        if (gameObject.CompareTag("shape")) {
+            Destroy(gameObject);
         }
     }
 

@@ -69,6 +69,7 @@
                       <e p="Enemy.cs" t="Include" />
                       <e p="EnemySpawner.cs" t="Include" />
                       <e p="PlayerController.cs" t="Include" />
+                      <e p="ShapeManager.cs" t="Include" />
                     </e>
                   </e>
                 </e>
