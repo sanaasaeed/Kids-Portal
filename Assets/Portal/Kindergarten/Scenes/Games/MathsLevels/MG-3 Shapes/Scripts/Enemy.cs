@@ -16,10 +16,12 @@ public class Enemy : MonoBehaviour {
     public GameObject enemyBullet;
     private Animator anim;
     private AudioSource explosionSound;
+    private ShapeManager shapeMngr;
 
     private void Awake() {
         anim = GetComponent<Animator>();
         explosionSound = GetComponent<AudioSource>();
+        shapeMngr = FindObjectOfType<ShapeManager>();
     }
 
     private void Start() {
@@ -76,6 +78,7 @@ public class Enemy : MonoBehaviour {
         }
 
         if (gameObject.CompareTag("shape")) {
+            shapeMngr.IncreaseScore();
             Destroy(gameObject);
         }
     }

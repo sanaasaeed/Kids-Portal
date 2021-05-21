@@ -1,18 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class ShapeManager : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class ShapeManager : MonoBehaviour {
+    [SerializeField] private TextMeshProUGUI scoreText;
+    private static int score = 0;
+    public void IncreaseScore() {
+        score += 10;
+        scoreText.text = score.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void DecreaseScore() {
+        score -= 10;
+        scoreText.text = score.ToString();
     }
 }

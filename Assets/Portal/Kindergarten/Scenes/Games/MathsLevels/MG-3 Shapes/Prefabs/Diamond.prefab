@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 886946542634330993}
   - component: {fileID: -7631150144895086024}
   - component: {fileID: 4753823866958500986}
-  - component: {fileID: -4380538766656570664}
+  - component: {fileID: 4265450962911007699}
   m_Layer: 0
   m_Name: Diamond
   m_TagString: shape
@@ -157,7 +157,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &-4380538766656570664
+--- !u!61 &4265450962911007699
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,10 +167,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.013739347, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -181,7 +181,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.1433926, y: 3.143392}
   m_EdgeRadius: 0
 --- !u!1 &6488866440065116857
 GameObject:
