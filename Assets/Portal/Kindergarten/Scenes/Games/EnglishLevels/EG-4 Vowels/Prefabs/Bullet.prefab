@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4582901107259282736}
   - component: {fileID: 1915711841}
   m_Layer: 0
-  m_Name: Laser shoot
+  m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,4 +143,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a0589d46c4441e48b275bfcbbed94b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 6
