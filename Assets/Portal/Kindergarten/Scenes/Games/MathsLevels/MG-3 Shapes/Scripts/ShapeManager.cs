@@ -9,6 +9,9 @@ public class ShapeManager : MonoBehaviour {
     public void IncreaseScore() {
         score += 10;
         scoreText.text = score.ToString();
+        if (score == 100) {
+            Debug.Log("WINNN");
+        }
     }
 
     public void DecreaseScore() {

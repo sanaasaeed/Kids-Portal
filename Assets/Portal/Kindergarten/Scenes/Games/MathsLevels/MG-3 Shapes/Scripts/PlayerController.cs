@@ -8,10 +8,11 @@ public class PlayerController : MonoBehaviour {
     public float attackTimer = 0.15f;
     private float currectAttackTimer;
     private bool canAttack;
-    
+    private AudioSource audioSrc;
 
     private void Start() {
         currectAttackTimer = attackTimer;
+        audioSrc = GetComponent<AudioSource>();
     }
 
     private void Update() {
@@ -45,13 +46,15 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space)) {
             if (canAttack) {
+                audioSrc.Play();
                 canAttack = false;
                 attackTimer = 0f;
                 Instantiate(PlayerBullet, attackPoint.position, Quaternion.identity);
+                
             }
         }
     }
-
+    
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("bullet")) {
             canAttack = false;
