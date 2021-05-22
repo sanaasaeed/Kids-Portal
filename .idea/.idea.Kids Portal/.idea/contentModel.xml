@@ -42,6 +42,7 @@
                   <e p="EG-4 Vowels" t="Include">
                     <e p="Scripts" t="Include">
                       <e p="CharacterController.cs" t="Include" />
+                      <e p="ThrowBullet.cs" t="Include" />
                       <e p="WordSpawner.cs" t="Include" />
                     </e>
                   </e>
