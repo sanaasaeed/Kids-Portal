@@ -10266,7 +10266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: ML1
+  scene: MLR-1
   duration: 1
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!82 &1004105984
@@ -12236,13 +12236,14 @@ GameObject:
   - component: {fileID: 1396042621}
   - component: {fileID: 1396042622}
   - component: {fileID: 1396042623}
+  - component: {fileID: 1396042624}
   m_Layer: 5
   m_Name: Level3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1396042619
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12301,8 +12302,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1396042622}
-        m_MethodName: OpenPopup
+      - m_Target: {fileID: 1396042624}
+        m_MethodName: PerformTransition
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12433,6 +12434,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1396042624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396042618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: MLR-3
+  duration: 1
+  color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1396904597
 GameObject:
   m_ObjectHideFlags: 0
@@ -15608,7 +15624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: ML2
+  scene: MLR-2
   duration: 1
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!82 &2018110228

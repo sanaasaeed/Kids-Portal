@@ -5,14 +5,21 @@ using TMPro;
 using UnityEngine;
 
 public class WordSpawner : MonoBehaviour {
-    [SerializeField] private TextMeshProUGUI fillInWordText;
-    [SerializeField] private GameObject image;
-    [SerializeField] private List<string> words;
-    [SerializeField] private List<string> wordsAns;
+    [SerializeField] public TextMeshProUGUI fillInWordText;
+    [SerializeField] public GameObject image;
+    [SerializeField] public List<string> words;
+    [SerializeField] public List<string> wordsAns;
     [SerializeField] private List<Sprite> images;
+    public static int indexNo = 0;
 
     private void Start() {
-        fillInWordText.text = words[0];
-        image.GetComponent<SpriteRenderer>().sprite = images[0];
+        DisplayTextAndImage();
+    }
+
+    public void DisplayTextAndImage() {
+        fillInWordText.enabled = true;
+        fillInWordText.text = words[indexNo];
+        image.GetComponent<SpriteRenderer>().sprite = images[indexNo];
+       // indexNo++;
     }
 }

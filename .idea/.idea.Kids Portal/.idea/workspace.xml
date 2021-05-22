@@ -20,7 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18fd4037-dc49-412f-af94-81ba1c2b9c3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/CharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-1 Recognition/EL1 Assets/Audio/correct.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-1 Recognition/EL1 Assets/Audio/correct.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-2 Small And Capital/EL2 Assets/Audio/wrong.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-2 Small And Capital/EL2 Assets/Audio/wrong.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/EG4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/EG4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/ThrowBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/ThrowBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/WordSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/WordSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/EnglishLRs.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/EnglishLRs.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/MLR-2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/MLR-2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/MLR2Activity.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/MLR2Activity.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Prefabs/Digit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Prefabs/Digit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/MathsLRs.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/MathsLRs.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,9 +115,9 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/ShapeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/CharacterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/WordSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/ThrowBullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/CharacterController.cs" />
       </list>
     </option>
   </component>
@@ -203,7 +217,7 @@
       <workItem from="1621055782437" duration="1195000" />
       <workItem from="1621109781227" duration="26014000" />
       <workItem from="1621273291076" duration="24792000" />
-      <workItem from="1621419586644" duration="55633000" />
+      <workItem from="1621419586644" duration="62153000" />
     </task>
     <servers />
   </component>

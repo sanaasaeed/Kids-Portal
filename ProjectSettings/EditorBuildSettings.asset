@@ -75,10 +75,6 @@ EditorBuildSettings:
     path: Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-2 Counting/ML1.unity
     guid: a6bbe21899d951242babc906f584be5e
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/MLR-3
-      Activity/MLR-3Activity.unity
-    guid: 48038d409ec82d24b8a6cf830cffe2fc
-  - enabled: 1
     path: Assets/Portal/Kindergarten/Scenes/Games/Subjects/UrduLevels.unity
     guid: 2b5bbfc3b814a1341861aeeee7274799
   - enabled: 1
@@ -105,9 +101,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/MLR2Activity.unity
     guid: a8e2ac0b62b6d514dae7067a9a7dc362
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/MLR-3.unity
+    guid: 831fc9af3caf038439d98d422a371b78
+  - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/MLR-3
+      Activity/MLR-3Activity.unity
+    guid: 48038d409ec82d24b8a6cf830cffe2fc
   - enabled: 0
     path: 
-    guid: 7c04ba0fdd2244fba8f705a230749b76
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Portal/Kindergarten/Scenes/GameOver.unity
     guid: c3ce1866e0e91af4c9e4dd3a46448cd3

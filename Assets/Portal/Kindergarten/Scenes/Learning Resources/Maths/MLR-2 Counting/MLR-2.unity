@@ -409,7 +409,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3913c5f6717081e4cb074e98073eb8b5, type: 3}
   - {fileID: 8300000, guid: a363f31016d742441a2735391cc5698a, type: 3}
   - {fileID: 8300000, guid: 89e14d71746bcdd4e81787042c595e58, type: 3}
-  audioSrc: []
+  audioSrc: {fileID: 0}
 --- !u!4 &625480076
 Transform:
   m_ObjectHideFlags: 0
@@ -990,7 +990,7 @@ PrefabInstance:
     - target: {fileID: 3554187875030058383, guid: b5a0d9a31fe4cd9449c00e0fb214a9e2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3554187875030058383, guid: b5a0d9a31fe4cd9449c00e0fb214a9e2,
         type: 3}
