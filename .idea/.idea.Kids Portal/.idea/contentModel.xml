@@ -124,6 +124,7 @@
                       <e p="AlphabetCollector.cs" t="Include" />
                       <e p="EmbeddedActivity.cs" t="Include" />
                       <e p="GameRunner.cs" t="Include" />
+                      <e p="TweenPanel.cs" t="Include" />
                     </e>
                   </e>
                   <e p="ELR-3 Phonics" t="Include">

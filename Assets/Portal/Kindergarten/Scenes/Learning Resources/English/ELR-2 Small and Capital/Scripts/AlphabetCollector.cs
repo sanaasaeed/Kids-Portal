@@ -7,9 +7,13 @@ using UnityEngine.SceneManagement;
 public class AlphabetCollector : MonoBehaviour {
     private EmbeddedActivity m_embeddedActivity;
     private static int correctAns;
+    public static int totalClicks;
+    private TweenPanel tweenPanel;
     private void Start() {
         correctAns = 0;
+        totalClicks = 0;
         m_embeddedActivity = FindObjectOfType<EmbeddedActivity>();
+        tweenPanel = FindObjectOfType<TweenPanel>();
     }
 
     private void OnMouseDown() {
@@ -34,9 +38,34 @@ public class AlphabetCollector : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        if (correctAns == 4) {
-            GameRunner.alphabetNo = GameRunner.checkPoint;
-            SceneManager.LoadScene("E-LR-2");
+        totalClicks++;
+
+        if (correctAns == GameRunner.interval) {
+            int percentage = CalculateMarks();
+            Debug.Log(percentage);
+            if (percentage > 50) {
+                GameRunner.alphabetNo = GameRunner.checkPoint;
+                tweenPanel.OpenPanel();
+                tweenPanel.resultText.text = "Activity Done. Good Work";
+                SceneManager.LoadScene("E-LR-2");
+            }
+            else {
+                GameRunner.alphabetNo = GameRunner.checkPoint - GameRunner.interval;
+                tweenPanel.resultText.text = "Activity Not completed. Repeat Again";
+                SceneManager.LoadScene("E-LR-2");
+            }
+            
         }
     }
+
+    public int CalculateMarks() {
+        int percentage = (int) (0.5f + ((100f * correctAns) / totalClicks));
+        return percentage;
+    }
+
+    /*IEnumerator ShowPanel(string resultMsg, float delay) {
+        tweenPanel.resultText.text = resultMsg;
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene("E-LR-2");
+    } */
 }
