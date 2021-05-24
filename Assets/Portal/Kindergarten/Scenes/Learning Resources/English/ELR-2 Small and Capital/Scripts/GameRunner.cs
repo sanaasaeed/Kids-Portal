@@ -62,7 +62,7 @@ public class GameRunner : MonoBehaviour {
             m_smallAlpAudioSource.PlayOneShot(smallAudioClip);
             yield return new WaitForSeconds(0.5f);
             m_smallAlpAudioSource.PlayOneShot(audioClips[alphabetNo]);
-    }
+        }
     
     public void RepeatBtn() {
         alphabetNo--;

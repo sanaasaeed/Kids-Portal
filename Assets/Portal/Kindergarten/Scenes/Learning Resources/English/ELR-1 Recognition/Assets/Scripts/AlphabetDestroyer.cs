@@ -53,7 +53,9 @@ public class AlphabetDestroyer : MonoBehaviour {
     
     IEnumerator ShowPopup (string resultMsg, float delay) {
         tweenPopup.resultText.text = resultMsg;
+        Debug.Log("I m working here");
         yield return new WaitForSeconds(delay);
+        Debug.Log("I m not working here");
         SceneManager.LoadScene("E-LR-1");
     }
 }
