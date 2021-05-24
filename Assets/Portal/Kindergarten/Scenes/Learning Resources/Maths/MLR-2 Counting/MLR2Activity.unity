@@ -305,6 +305,11 @@ MonoBehaviour:
   - {fileID: 3161333495419272405, guid: e5700f0970f27194ab4db3650a1bb402, type: 3}
   - {fileID: 7081497178784598612, guid: d04e3452c5f69bf48b40d0960e221e28, type: 3}
   clones: []
+  inputFields:
+  - {fileID: 715322570}
+  - {fileID: 834575524}
+  - {fileID: 356044363}
+  - {fileID: 1623192438}
 --- !u!4 &221411298
 Transform:
   m_ObjectHideFlags: 0
@@ -740,7 +745,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Next
+  m_text: Done
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae26f0130c7ba7b4a92d5aedf4e1adc4, type: 2}
   m_sharedMaterial: {fileID: 7806200389774566723, guid: ae26f0130c7ba7b4a92d5aedf4e1adc4,
@@ -2235,7 +2240,7 @@ GameObject:
   - component: {fileID: 1864256442}
   - component: {fileID: 1864256441}
   m_Layer: 5
-  m_Name: Next Btn
+  m_Name: Done Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2303,7 +2308,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1864256442}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 221411297}
+        m_MethodName: ExtractAnswers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1864256442
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class ActivityManager : MonoBehaviour {
-    public AlphabetObjSpawner alphabetObjSpawner;
+    private AlphabetObjSpawner alphabetObjSpawner;
     public static bool isStart = true;
     public static List<Sprite> alphabetList = new List<Sprite>();
     private GameObject m_alphabetsInPos;
@@ -30,10 +30,6 @@ public class ActivityManager : MonoBehaviour {
                 alphabet.GetComponent<SpriteRenderer>().sprite = randomSprite;
             }
         }
-    }
-
-    private void OnMouseEnter() {
-        Debug.Log("Mouse Entered");
     }
 
     public void BackBtn() {

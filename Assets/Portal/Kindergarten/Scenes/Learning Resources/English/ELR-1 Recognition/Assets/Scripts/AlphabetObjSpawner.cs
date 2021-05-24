@@ -21,7 +21,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
     private Animator alphabetAnimator;
     private Animator objAnimator;
     private int rounds = 4;
-    private static int alphabetNo = 0;
+    public static int alphabetNo = 0;
 
     private void Awake() {
         DontDestroyOnLoad(gameObject);

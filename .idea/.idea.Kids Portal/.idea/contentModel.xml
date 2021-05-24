@@ -6,6 +6,18 @@
     <e p="C:\Users\sunfu\Kids Portal\Kids Portal" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="LeanTween" t="Include">
+          <e p="Framework" t="Include">
+            <e p="LeanAudio.cs" t="Include" />
+            <e p="LeanSmooth.cs" t="Include" />
+            <e p="LeanTest.cs" t="Include" />
+            <e p="LeanTween.cs" t="Include" />
+            <e p="LeanTweenExt.cs" t="Include" />
+            <e p="LTDescr.cs" t="Include" />
+            <e p="LTDescrOptional.cs" t="Include" />
+            <e p="LTSeq.cs" t="Include" />
+          </e>
+        </e>
         <e p="Portal" t="Include">
           <e p="Kindergarten" t="Include">
             <e p="Fonts" t="Include">
@@ -103,6 +115,7 @@
                         <e p="AlphabetDestroyer.cs" t="Include" />
                         <e p="AlphabetObjSpawner.cs" t="Include" />
                         <e p="Popups.cs" t="Include" />
+                        <e p="TweenPopup.cs" t="Include" />
                       </e>
                     </e>
                   </e>

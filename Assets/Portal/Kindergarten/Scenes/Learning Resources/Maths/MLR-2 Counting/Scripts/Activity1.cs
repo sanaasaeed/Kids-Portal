@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class Activity1 : MonoBehaviour {
@@ -9,6 +11,7 @@ public class Activity1 : MonoBehaviour {
     [SerializeField] private List<Sprite> objects;
     [SerializeField] private List<GameObject> objPrefabs;
     [SerializeField] private List<GameObject> clones;
+    [SerializeField] private List<TMP_InputField> inputFields; 
     private Sprite currentNo;
     private List<float> yPositions;
     private void Start() {
@@ -44,6 +47,19 @@ public class Activity1 : MonoBehaviour {
                 }
             }
             Debug.Log(clones[i]);
+        }
+    }
+
+    public void ExtractAnswers() {
+        for (int i = 0; i < 4; i++) {
+            string ans = inputFields[i].text;
+            CheckAnswers(ans, i);
+        }
+    }
+
+    void CheckAnswers(string ans, int i) {
+        if (clones[i].name.Contains(ans)) {
+            Debug.Log("Correct ans");
         }
     }
 }
