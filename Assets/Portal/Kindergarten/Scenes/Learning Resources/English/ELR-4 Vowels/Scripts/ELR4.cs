@@ -19,21 +19,17 @@ public class ELR4 : MonoBehaviour {
         boardSet.GetComponent<SpriteRenderer>().sprite = boardImages[screenIndex];
         audioSrc.PlayOneShot(audios[screenIndex]);
         screenIndex++;
-        StartCoroutine(Wait(2f));
     }
 
-    IEnumerator Wait(float noOfSeconds) {
-        yield return new WaitForSeconds(noOfSeconds);
+    public void NextBtn() {
         ChangeScene();
     }
-
     void ChangeScene() {
         if (screenIndex < texts.Count && screenIndex < boardImages.Count) {
             panelText.text = texts[screenIndex];
             boardSet.GetComponent<SpriteRenderer>().sprite = boardImages[screenIndex];
             audioSrc.PlayOneShot(audios[screenIndex]);
             screenIndex++;
-            StartCoroutine(Wait(3f));
         }
         else {
             SceneManager.LoadScene("ELR4Activity");

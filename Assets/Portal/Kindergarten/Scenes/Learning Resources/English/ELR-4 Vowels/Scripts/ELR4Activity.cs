@@ -8,8 +8,7 @@ public class ELR4Activity : MonoBehaviour {
     [SerializeField] private List<Sprite> consonants;
     [SerializeField] private List<Sprite> vowels;
     [SerializeField] private GameObject alphabetPrefab;
-    [SerializeField] private List<float> xPos;
-    [SerializeField] private List<float> yPos;
+    [SerializeField] public GameObject resultPanel;
     private List<int> vowelsChilds = new List<int>();
     private void Start() {
         SpawnAlphabets();
