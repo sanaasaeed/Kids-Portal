@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -11,30 +12,17 @@ public class Activity1 : MonoBehaviour {
     [SerializeField] private List<Sprite> objects;
     [SerializeField] private List<GameObject> objPrefabs;
     [SerializeField] private List<GameObject> clones;
-    [SerializeField] private List<TMP_InputField> inputFields; 
+    [SerializeField] private List<TMP_InputField> inputFields;
+    [SerializeField] private GameObject resultPanel;
     private Sprite currentNo;
     private List<float> yPositions;
+    public static int correctAnswers;
     private void Start() {
-        /*yPositions = new List<float>(){2f, 0f, -2.2f, -4.5f};
-        foreach (var digitPrefab in digitPrefabs) {
-            int randomIndex = Random.Range(0, numbers.Count);
-            currentNo = numbers[randomIndex];
-            digitPrefab.GetComponent<SpriteRenderer>().sprite = numbers[randomIndex];
-            numbers.Remove(numbers[randomIndex]);
-            int randomYIndex = Random.Range(0, yPositions.Count); 
-            Debug.Log("Random Y index: " + yPositions[randomYIndex]);
-            foreach (var objPrefab in objPrefabs) {
-                if (objPrefab.name == currentNo.name) {
-                    Instantiate(objPrefab, new Vector3(0, yPositions[randomYIndex], 0), Quaternion.identity);
-                }
-            }
-            yPositions.Remove(yPositions[randomYIndex]);
-        }*/
         SetCountingObjects();
     }
 
     void SetCountingObjects() {
-        yPositions = new List<float>(){2f, 0f, -2.2f, -4.5f};
+        yPositions = new List<float>(){2f, 0f, -2.2f, -4.1f};
         int indexNo = 0;
         for (int i = 0; i < 4; i++) {    
             int randomIndex = Random.Range(0, numbers.Count);
@@ -53,13 +41,38 @@ public class Activity1 : MonoBehaviour {
     public void ExtractAnswers() {
         for (int i = 0; i < 4; i++) {
             string ans = inputFields[i].text;
-            CheckAnswers(ans, i);
+            if (!string.IsNullOrEmpty(ans) && !string.IsNullOrWhiteSpace(ans)) {
+                CheckAnswers(ans, i);
+            }
+        }
+
+        if (correctAnswers > 2) {
+            Debug.Log("UNLOCK GAME");
+        }
+        else {
+            OpenPanel();
+            StartCoroutine(ChangeScene());
         }
     }
 
     void CheckAnswers(string ans, int i) {
         if (clones[i].name.Contains(ans)) {
-            Debug.Log("Correct ans");
+            correctAnswers++;
         }
+    }
+
+    public void OpenPanel() {
+        resultPanel.transform.LeanScale(Vector3.one, 0.3f);
+    }
+
+    public void ClosePanel() {
+        resultPanel.transform.LeanScale(Vector3.one, 0.3f);
+    }
+
+    IEnumerator ChangeScene() {
+        yield return new WaitForSeconds(0.3f);
+        ClosePanel();
+        yield return new WaitForSeconds(0.2f);
+        SceneManager.LoadScene("MLR-2");
     }
 }

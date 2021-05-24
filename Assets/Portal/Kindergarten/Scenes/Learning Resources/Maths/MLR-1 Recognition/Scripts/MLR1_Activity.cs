@@ -6,9 +6,13 @@ public class MLR1_Activity : MonoBehaviour {
     [SerializeField] private List<GameObject> numbers;
     private MLR1 mainScript;
     private AudioSource audioSrc;
-    public Sprite randomSprite;
+    [HideInInspector] public Sprite randomSprite;
+    [SerializeField] public List<AudioClip> rightWrongAudios;
+    public GameObject cameraGameObject;
+    [HideInInspector] public AudioSource cameraAudioSrc;
     
     void Start() {
+        cameraAudioSrc = cameraGameObject.GetComponent<AudioSource>();
         audioSrc = GetComponent<AudioSource>();
         mainScript = FindObjectOfType<MLR1>();
         int randomIndex = Random.Range(MLR1.letterNo - 5, MLR1.letterNo);

@@ -47,7 +47,6 @@ public class VowelsCollector : MonoBehaviour {
     IEnumerator SceneChange() {
         yield return new WaitForSeconds(1f);
         m_activity.resultPanel.SetActive(false);
-        Debug.Log("I m here");
         SceneManager.LoadScene("ELR4");
     }
 
