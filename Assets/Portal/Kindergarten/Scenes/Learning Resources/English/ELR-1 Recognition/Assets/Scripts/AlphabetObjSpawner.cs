@@ -16,6 +16,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
     [SerializeField] private GameObject instructionPopup;
     [SerializeField] private GameObject playActivityBtn;
     [SerializeField] private GameObject canvas;
+    private LevelLockUnlockHandler lockHandler;
     private ActivityManager m_activityManager;
     private AudioSource alphabetAudio;
     private Animator alphabetAnimator;
@@ -28,6 +29,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
     }
 
     void Start() {
+        lockHandler = FindObjectOfType<LevelLockUnlockHandler>();
         m_activityManager = FindObjectOfType<ActivityManager>();
         alphabetAnimator = alphabetPrefab.GetComponent<Animator>();
         objAnimator = objectPrefab.GetComponent<Animator>();
@@ -85,8 +87,15 @@ public class AlphabetObjSpawner : MonoBehaviour {
             alphabetNo += 1;
         }
         else {
-            nextBtn.SetActive(false);   // TODO: WIn Screen
-            Debug.Log("Learning Resource completed Game Unlocked");
+            nextBtn.SetActive(false);  
+            // TODO: Popup to display link to the game
+            if (lockHandler != null) {
+                PlayerPrefs.SetInt("engLevelNo", 2);
+                LevelLockUnlockHandler.Instance.UnlockLevel("english");
+                SceneManager.LoadScene("SubjectSelect");
+                Debug.Log("Learning Resource completed Game Unlocked");
+            }
+            
         }
         
         if (alphabetNo % rounds == 0) {
@@ -112,7 +121,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
         }
     }
 
-    public void PlayAlphabetAndObjActivity() {
+    /*public void PlayAlphabetAndObjActivity() {
         alphabetAudio.enabled = false;
         alphabetAnimator.enabled = false;
         objAnimator.enabled = false;
@@ -128,7 +137,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
             activityAlphabet -= 1;
             posIncrease += 4;
         }
-    }
+    }*/
     
     
     public List<Sprite> ReturnAlphabetList() {

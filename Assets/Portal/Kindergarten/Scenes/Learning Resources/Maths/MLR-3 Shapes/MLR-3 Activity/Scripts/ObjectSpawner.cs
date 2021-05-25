@@ -8,6 +8,7 @@ public class ObjectSpawner : MonoBehaviour {
     [SerializeField] private List<GameObject> outlinedShapePrefab;
     [SerializeField] private List<GameObject> filledShapePrefab;
     public static List<GameObject> clonedObjects = new List<GameObject>();
+    [SerializeField] private GameObject resultPanel;
     
     void Start() {
        SetShapes();
@@ -30,5 +31,9 @@ public class ObjectSpawner : MonoBehaviour {
             clonedObjects.Add(shapedInstance);
             i += 5.5f;
         }
+    }
+
+    public void OpenPanel() {
+        resultPanel.transform.LeanScale(Vector3.one, 0.4f);
     }
 }

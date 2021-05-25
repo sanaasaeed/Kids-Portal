@@ -63,3 +63,4 @@ MonoBehaviour:
   - {fileID: 7421045378382074085, guid: da61d3ab2cf5a2c44933f58a4128a135, type: 3}
   - {fileID: 6448950263972328225, guid: 03e5373c6c39f8c448714d57ca917ee2, type: 3}
   - {fileID: 7771732380828913519, guid: 8f8042df48fbdec4281a921f89337f15, type: 3}
+  resultPanel: {fileID: 0}

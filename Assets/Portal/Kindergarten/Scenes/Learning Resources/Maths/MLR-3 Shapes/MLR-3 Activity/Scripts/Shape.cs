@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Shape : MonoBehaviour {
     private Transform shapePos;
@@ -8,8 +10,12 @@ public class Shape : MonoBehaviour {
     [SerializeField] GameObject SpawnManager;
     private float deltaX, deltaY;
     public static int moves = 0;
+    private static int rightMoves = 0;
+    private static int wrongMoves = 0;
+    private ObjectSpawner objspawner;
 
     private void Start() {
+        objspawner = FindObjectOfType<ObjectSpawner>();
         initalPos = transform.position;
     }
     
@@ -34,20 +40,48 @@ public class Shape : MonoBehaviour {
     }
 
     private void OnTriggerStay2D(Collider2D other) {
-        if (Input.GetMouseButtonUp(0)) {
-            if (gameObject.CompareTag(other.tag)) {
+        if (rightMoves < 20) {
+            if (Input.GetMouseButtonUp(0)) {
+                if (gameObject.CompareTag(other.tag)) {
                     transform.position = new Vector3(other.transform.position.x, other.transform.position.y, -1);
                     gameObject.name += "done";
+                    rightMoves++;
+                    Debug.Log("Right moves: " + rightMoves);
                     moves += 1;
                     Debug.Log(moves);
                     NextRound();
-                   
-            }
-            else {
-                transform.position = new Vector3(initalPos.x, initalPos.y, -1);
+                }
+                else {
+                    wrongMoves++;
+                    Debug.Log("Wrong Moves: " + wrongMoves);
+                    transform.position = new Vector3(initalPos.x, initalPos.y, -1);
+                    // TODO: here back logic
+                }
             }
         }
+        else {
+            EndActivity();
+        }
+    }
+
+    public void EndActivity() {
+        int percentage = CalculatePercentage();
+        Debug.Log(percentage);
+        if (percentage > 70) {
+            Debug.Log("GAME UNLOCKED");
+        }
+        else {
+            objspawner.OpenPanel();
+            StartCoroutine(ChangeScene());
+        }
+    }
+
+    public int CalculatePercentage() {
+        return (int) (0.5f + ((100f * rightMoves) / (rightMoves + wrongMoves)));
+    }
+
+    IEnumerator ChangeScene() {
+        yield return new WaitForSeconds(1.2f);
+        SceneManager.LoadScene("MLR-3");
     }
 }
-
-// TODO: Here the back logic

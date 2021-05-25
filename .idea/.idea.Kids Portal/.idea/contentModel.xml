@@ -186,6 +186,7 @@
               <e p="DynamicPlay.cs" t="Include" />
               <e p="Fader.cs" t="Include" />
               <e p="InitialPlayerPrefs.cs" t="Include" />
+              <e p="LevelLockUnlockHandler.cs" t="Include" />
               <e p="LevelScene.cs" t="Include" />
               <e p="MusicButton.cs" t="Include" />
               <e p="MusicManager.cs" t="Include" />
