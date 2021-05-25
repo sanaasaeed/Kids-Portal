@@ -5522,7 +5522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: EnglishLevels
+  scene: English
   duration: 1
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!82 &1004105984
@@ -6152,7 +6152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: MathsLevels
+  scene: Math
   duration: 1
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!82 &1396042623
@@ -7223,7 +7223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: UrduLevels
+  scene: Urdu
   duration: 1
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!82 &2018110228
