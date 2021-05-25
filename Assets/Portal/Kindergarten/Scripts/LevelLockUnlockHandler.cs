@@ -1,46 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelLockUnlockHandler : MonoBehaviour {
-    [SerializeField] public List<GameObject> engLevelButtons;
-    [SerializeField] public List<GameObject> urduLevelButtons;
-    [SerializeField] public List<GameObject> mathLevelButtons;
-    
-    public static LevelLockUnlockHandler Instance;
+    [SerializeField] public List<GameObject> lrLevelBtns;
+    [SerializeField] public List<GameObject> gameLevelBtns;
 
-    void Awake ()   
-    {
-        if (Instance == null)
-        {
-            DontDestroyOnLoad(gameObject);
-            Instance = this;
-        }
-        else if (Instance != this)
-        {
-            Destroy (gameObject);
-        }
+    private void Start(){
+        int currentLRLevel = PlayerPrefs.GetInt("lrLevelEng", 0);
+        int currentGameLevel = PlayerPrefs.GetInt("gameLevelEng", 0);
+        UnlockGame(currentLRLevel - 1);
+        UnlockLearningResource(currentGameLevel + 1);
     }
-    void Start() {
-        PlayerPrefs.SetInt("engLevelNo", 1);
-        PlayerPrefs.SetInt("urduLevelNo", 1);
-        PlayerPrefs.SetInt("mathLevelNo", 1);
+    public void UnlockGame(int currentLevel) {
+        gameLevelBtns[currentLevel].GetComponent<AnimatedButton>().interactable = true;
+        gameLevelBtns[currentLevel].transform.GetChild(3).gameObject.SetActive(false);
     }
 
-    public void UnlockLevel(string subject) {
-        if (subject.ToLower().Contains("english")) {
-            int  currentLevelNo = PlayerPrefs.GetInt("engLevelNo");
-            engLevelButtons[currentLevelNo - 1].GetComponent<AnimatedButton>().interactable = true;
-            //englLevelButtons[currentLevelNo - 1]
-        } else if (subject.ToLower().Contains("maths")) {
-           int currentLevelNo = PlayerPrefs.GetInt("urduLevelNo");
-            engLevelButtons[currentLevelNo - 1].GetComponent<AnimatedButton>().interactable = true;
-        }
-        else {
-           int currentLevelNo = PlayerPrefs.GetInt("mathLevelNo");
-            engLevelButtons[currentLevelNo - 1].GetComponent<AnimatedButton>().interactable = true;
-        }
-        
+    public void UnlockLearningResource(int currentLevel) {
+        lrLevelBtns[currentLevel].GetComponent<AnimatedButton>().interactable = true;
+        lrLevelBtns[currentLevel].transform.GetChild(3).gameObject.SetActive(false);
     }
-    
+
 }

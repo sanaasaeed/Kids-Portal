@@ -27,7 +27,7 @@
               <e p="Games" t="Include">
                 <e p="EnglishLevels" t="Include">
                   <e p="EG-1 Recognition" t="Include">
-                    <e p="EL1 Assets" t="Include">
+                    <e p="EG1 Assets" t="Include">
                       <e p="Scripts" t="Include">
                         <e p="Alphabets.cs" t="Include" />
                         <e p="AudioManager.cs" t="Include" />
@@ -125,11 +125,6 @@
                       <e p="EmbeddedActivity.cs" t="Include" />
                       <e p="GameRunner.cs" t="Include" />
                       <e p="TweenPanel.cs" t="Include" />
-                    </e>
-                  </e>
-                  <e p="ELR-3 Phonics" t="Include">
-                    <e p="Scripts" t="Include">
-                      <e p="ELR3.cs" t="Include" />
                     </e>
                   </e>
                   <e p="ELR-4 Vowels" t="Include">

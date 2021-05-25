@@ -29,6 +29,8 @@ public class AlphabetObjSpawner : MonoBehaviour {
     }
 
     void Start() {
+        PlayerPrefs.SetInt("currEngLevelNo", 1);
+        PlayerPrefs.Save();
         lockHandler = FindObjectOfType<LevelLockUnlockHandler>();
         m_activityManager = FindObjectOfType<ActivityManager>();
         alphabetAnimator = alphabetPrefab.GetComponent<Animator>();
@@ -89,13 +91,11 @@ public class AlphabetObjSpawner : MonoBehaviour {
         else {
             nextBtn.SetActive(false);  
             // TODO: Popup to display link to the game
-            if (lockHandler != null) {
-                PlayerPrefs.SetInt("engLevelNo", 2);
-                LevelLockUnlockHandler.Instance.UnlockLevel("english");
-                SceneManager.LoadScene("SubjectSelect");
-                Debug.Log("Learning Resource completed Game Unlocked");
-            }
-            
+            PlayerPrefs.SetInt("lrLevelEng", 1);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("SubjectSelect");
+            Debug.Log("Learning Resource completed Game Unlocked");
+
         }
         
         if (alphabetNo % rounds == 0) {

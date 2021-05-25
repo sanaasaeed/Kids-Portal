@@ -5678,7 +5678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &280978106
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5714,7 +5714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: MG-2
+  scene: E-LR-2
   duration: 1
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!82 &280978108
@@ -7539,7 +7539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: MLR-1
+  scene: ULR-1
   duration: 1
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!82 &1004105984
@@ -8688,7 +8688,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Math Games
+  m_Text: Urdu Games
 --- !u!222 &1329802994
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8938,7 +8938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1396042619
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9032,7 +9032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: MLR-3
+  scene: ELR4
   duration: 1
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!82 &1396042623
@@ -9224,7 +9224,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1429989511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9261,7 +9261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: MG-3
+  scene: ELR4
   duration: 1
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!82 &1429989513
@@ -9866,7 +9866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: MG-1
+  scene: UL1-1
   duration: 1
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!82 &1578782087
@@ -9977,7 +9977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edc5e7a8a5bcb4acf98d4521e8a88aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactable: 1
+  interactable: 0
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -11204,7 +11204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2018110224
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11297,7 +11297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: MLR-2
+  scene: E-LR-2
   duration: 1
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!82 &2018110228
@@ -12155,7 +12155,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Maths Learning Resources
+  m_Text: Urdu Learning Resources
 --- !u!222 &2119406213
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12267,7 +12267,7 @@ PrefabInstance:
     - target: {fileID: 3812508358524014161, guid: 13443acf51b930e4c9ba17ba874b915a,
         type: 3}
       propertyPath: scene
-      value: SubjectSelect LR
+      value: SubjectSelect
       objectReference: {fileID: 0}
     - target: {fileID: 3812508358524014173, guid: 13443acf51b930e4c9ba17ba874b915a,
         type: 3}

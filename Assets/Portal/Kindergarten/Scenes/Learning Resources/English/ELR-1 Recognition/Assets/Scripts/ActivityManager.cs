@@ -34,7 +34,7 @@ public class ActivityManager : MonoBehaviour {
 
     public void BackBtn() {
         isStart = false;
-        SceneManager.LoadScene("E-LR-1");
+        SceneManager.LoadScene("ELR-1");
     }
 
     

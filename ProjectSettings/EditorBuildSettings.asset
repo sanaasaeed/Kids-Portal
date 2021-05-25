@@ -12,13 +12,13 @@ EditorBuildSettings:
     path: Assets/Portal/Kindergarten/Scenes/SubjectSelect.unity
     guid: 2f674d8037756c64eaff7fc18b75ab68
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/English.unity
+    path: Assets/Portal/Kindergarten/Scenes/SubjectS/English.unity
     guid: 9b66fc34ff193c6499275d6a90e08a5c
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/Urdu.unity
+    path: Assets/Portal/Kindergarten/Scenes/SubjectS/Urdu.unity
     guid: c292c212c02c77a49b0f5aebd92e4e4e
   - enabled: 1
-    path: Assets/Portal/Kindergarten/Scenes/Math.unity
+    path: Assets/Portal/Kindergarten/Scenes/SubjectS/Math.unity
     guid: 161a049510e49794f82253180e02a7d5
   - enabled: 1
     path: Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-1 Recognition/Assets/Scenes/ELR-1.unity

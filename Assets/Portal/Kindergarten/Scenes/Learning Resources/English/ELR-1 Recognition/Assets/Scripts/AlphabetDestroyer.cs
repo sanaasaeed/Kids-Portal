@@ -54,6 +54,6 @@ public class AlphabetDestroyer : MonoBehaviour {
     IEnumerator ShowPopup (string resultMsg, float delay) {
         tweenPopup.resultText.text = resultMsg;
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene("E-LR-1");
+        SceneManager.LoadScene("ELR-1");
     }
 }
