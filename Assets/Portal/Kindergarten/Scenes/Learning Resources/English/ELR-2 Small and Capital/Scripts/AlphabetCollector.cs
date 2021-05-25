@@ -47,12 +47,12 @@ public class AlphabetCollector : MonoBehaviour {
                 GameRunner.alphabetNo = GameRunner.checkPoint;
                 tweenPanel.OpenPanel();
                 tweenPanel.resultText.text = "Activity Done. Good Work";
-                SceneManager.LoadScene("E-LR-2");
+                SceneManager.LoadScene("ELR-2");
             }
             else {
                 GameRunner.alphabetNo = GameRunner.checkPoint - GameRunner.interval;
                 tweenPanel.resultText.text = "Activity Not completed. Repeat Again";
-                SceneManager.LoadScene("E-LR-2");
+                SceneManager.LoadScene("ELR-2");
             }
             
         }

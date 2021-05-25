@@ -31,6 +31,7 @@ public class VowelsCollector : MonoBehaviour {
             Debug.Log(percentage);
             if (percentage > 50) {
                 Debug.Log("Game UNLOCKED");
+                SceneManager.LoadScene("English");
             } else {
                 m_activity.resultPanel.SetActive(true);
                 StartCoroutine(SceneChange());

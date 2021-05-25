@@ -16,7 +16,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
     [SerializeField] private GameObject instructionPopup;
     [SerializeField] private GameObject playActivityBtn;
     [SerializeField] private GameObject canvas;
-    private LevelLockUnlockHandler lockHandler;
+    private levelUnlocker lockHandler;
     private ActivityManager m_activityManager;
     private AudioSource alphabetAudio;
     private Animator alphabetAnimator;
@@ -31,7 +31,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
     void Start() {
         PlayerPrefs.SetInt("currEngLevelNo", 1);
         PlayerPrefs.Save();
-        lockHandler = FindObjectOfType<LevelLockUnlockHandler>();
+        lockHandler = FindObjectOfType<levelUnlocker>();
         m_activityManager = FindObjectOfType<ActivityManager>();
         alphabetAnimator = alphabetPrefab.GetComponent<Animator>();
         objAnimator = objectPrefab.GetComponent<Animator>();

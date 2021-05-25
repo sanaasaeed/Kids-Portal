@@ -36,16 +36,22 @@ public class GameRunner : MonoBehaviour {
     }
 
     public void NextBtn() {
-        if (alphabetNo < capitalAlphabets.Count) {
-            m_capitalAlphabet.GetComponent<SpriteRenderer>().sprite = capitalAlphabets[alphabetNo+1];
+        int newAlphabetNo = alphabetNo + 1;
+        if (newAlphabetNo < capitalAlphabets.Count) {
+            Debug.Log(newAlphabetNo);
+            Debug.Log("Total " + capitalAlphabets.Count);
+            m_capitalAlphabet.GetComponent<SpriteRenderer>().sprite = capitalAlphabets[newAlphabetNo];
             m_capitalAlphabet.GetComponent<Animator>().Play("Capital animation", -1, 0f);
             m_smallAlphabet.GetComponent<Animator>().Play("small alphabet", -1, 0f);
-            m_smallAlphabet.GetComponent<SpriteRenderer>().sprite = smallAlphabets[alphabetNo + 1];
+            m_smallAlphabet.GetComponent<SpriteRenderer>().sprite = smallAlphabets[newAlphabetNo];
             StartCoroutine(nameof(PlaySound));
             alphabetNo++;
         }
         else {
             Debug.Log("Display WIN screen");
+            PlayerPrefs.SetInt("lrLevelEng", 2);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("English");
         }
 
         if (alphabetNo % interval == 0) {

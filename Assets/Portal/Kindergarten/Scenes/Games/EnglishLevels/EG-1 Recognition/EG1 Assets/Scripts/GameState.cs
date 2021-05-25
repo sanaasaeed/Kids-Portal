@@ -43,8 +43,9 @@ public class GameState : MonoBehaviour
                 SceneLoader.LoadNextSceneWithoutLoading();
             }
             else {
-                DynamicPlay.sceneName = SceneManager.GetActiveScene().name;
-                SceneManager.LoadScene("EnglishLevels"); // TODO: Here insert WinScreen scene Name
+               // DynamicPlay.sceneName = SceneManager.GetActiveScene().name;
+                PlayerPrefs.SetInt("gameLevelEng", 1);
+                SceneManager.LoadScene("English");
             }
         }
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
     [SerializeField] List<AudioClip> audioClips;
@@ -57,7 +58,8 @@ public class GameController : MonoBehaviour {
         if(correctClicks >= correctAnswers) {
             // Setting original letter to the next letter basically resetting the board here
             if (OriginalLetter >= 'z') {
-                LoadScene.LoadNextSceneWithoutLoading("EnglishLevels"); // TODO: WIN SCREEN INSERT HERE
+                PlayerPrefs.SetInt("gameLevelEng", 2);
+                SceneManager.LoadScene("English");
             }
             if (OriginalLetter < 'z') {
                 OriginalLetter++;    
