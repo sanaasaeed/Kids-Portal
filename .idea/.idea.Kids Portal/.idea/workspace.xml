@@ -20,18 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18fd4037-dc49-412f-af94-81ba1c2b9c3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-1 Recognition/EG1 Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-1 Recognition/EG1 Assets/Scripts/GameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-2 Small And Capital/EL2 Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-2 Small And Capital/EL2 Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/WordSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/WordSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-1 Recognition/Assets/Scripts/AlphabetObjSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-1 Recognition/Assets/Scripts/AlphabetObjSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-2 Small and Capital/Scripts/AlphabetCollector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-2 Small and Capital/Scripts/AlphabetCollector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-2 Small and Capital/Scripts/GameRunner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-2 Small and Capital/Scripts/GameRunner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scripts/VowelsCollector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scripts/VowelsCollector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/English.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/English.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/LevelLockUnlockHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/LevelLockUnlockHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Resources/Prefabs/LevelManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Resources/Prefabs/LevelManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/Scripts/MLR1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/Scripts/MLR1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/Math.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/Math.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/levelUnlocker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/levelUnlocker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/Scripts/EmbeddedActivity.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/LR2 Small and Capital/Scripts/AlphabetCollector.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/LR1 Recognition/Scripts/ULR1-Activity.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/LR1 Recognition/Scripts/Urdu.cs" />
@@ -116,6 +108,7 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/EnglishLevelUnlocker.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/UrduLevelUnlocker.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/levelUnlocker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/Scripts/MLR1.cs" />
       </list>
     </option>
   </component>
@@ -215,7 +208,7 @@
       <workItem from="1621055782437" duration="1195000" />
       <workItem from="1621109781227" duration="26014000" />
       <workItem from="1621273291076" duration="24792000" />
-      <workItem from="1621419586644" duration="127949000" />
+      <workItem from="1621419586644" duration="132005000" />
     </task>
     <servers />
   </component>

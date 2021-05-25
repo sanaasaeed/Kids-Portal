@@ -6,11 +6,12 @@ using UnityEngine;
 public class levelUnlocker : MonoBehaviour {
     [SerializeField] public List<GameObject> lrLevelBtns;
     [SerializeField] public List<GameObject> gameLevelBtns;
-    
+    [SerializeField] private string lrPlayerPref;
+    [SerializeField] private string gamePlayerPref;
 
     private void Start(){
-        int currentLRLevel = PlayerPrefs.GetInt("lrLevelEng", 0);
-        int currentGameLevel = PlayerPrefs.GetInt("gameLevelEng", 0);
+        int currentLRLevel = PlayerPrefs.GetInt(lrPlayerPref, 0);
+        int currentGameLevel = PlayerPrefs.GetInt(gamePlayerPref, 0);
         UnlockGame(currentLRLevel);
         if (currentGameLevel > 0) {
             UnlockLearningResource(currentGameLevel);

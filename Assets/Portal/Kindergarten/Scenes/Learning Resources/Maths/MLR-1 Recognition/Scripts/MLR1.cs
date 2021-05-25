@@ -48,7 +48,6 @@ public class MLR1 : MonoBehaviour {
     }
 
     public void NextBtn() {
-        Debug.Log("End ketter " + endLetter);
         if (letterNo <= endLetter) {
             screenNo++;
             letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo];
@@ -60,21 +59,13 @@ public class MLR1 : MonoBehaviour {
         }
         else {
             Debug.Log("You did great");
-            // TODO:  SHow win screen
+            PlayerPrefs.SetInt("lrMathLevel", 1);
+            SceneManager.LoadScene("Math");
         }
     }
 
     public void RepeatBtn() {
         letterPrefab.GetComponent<SpriteRenderer>().sprite = mathLetters[letterNo-1];
         letterAudioSource.PlayOneShot(audios[letterNo-1]);
-        /*var allClones = FindObjectsOfType<GameObject>();
-        foreach (var allClone in allClones) {
-            if (allClone.name.Contains("Clone")) {
-                Destroy(allClone);
-            }
-        }
-        for (int i = 0; i < Int32.Parse(mathLetters[letterNo-1].name); i++) {
-            Instantiate(sunflowerPrefab, new Vector3(0+ i, -2, -1), quaternion.identity);
-        }*/
     }
 }
