@@ -10,13 +10,15 @@ public class ConnectionManager : MonoBehaviour {
     [SerializeField] private Text usernameText;
     private void Start() {
         StartCoroutine(GetSignInInfo());
+        SubmitData();
     }
-    /*public void SubmitData() {
-        StartCoroutine(HandleDataSend(name, age));
+    public void SubmitData() {
+        StartCoroutine(HandleDataSend("Sana Saeed", 22));
     }
 
     IEnumerator HandleDataSend(string name, int age) {
         WWWForm form = new WWWForm();
+        // Add here more and more fields and yeah done
         form.AddField("name", name);
         form.AddField("age", age);
         UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "data", form);
@@ -27,7 +29,7 @@ public class ConnectionManager : MonoBehaviour {
         else {
             Debug.Log("Submitted successfully " + webRequest.downloadHandler.text);
         }
-    }*/
+    }
 
     IEnumerator GetSignInInfo() {
         UnityWebRequest webRequest = UnityWebRequest.Get(WebServices.mainUrl + "connectunity");
@@ -39,7 +41,7 @@ public class ConnectionManager : MonoBehaviour {
             Debug.Log("Submitted successfully Data: " + webRequest.downloadHandler.text);
             Kid kid = JsonUtility.FromJson<Kid>(webRequest.downloadHandler.text);
             usernameText.text = kid.kidName;
-           // Debug.Log(kid.kidName);
+            // Debug.Log(kid.kidName);
         }
     }
 
@@ -47,5 +49,6 @@ public class ConnectionManager : MonoBehaviour {
         public string kidName;
         public string kidAge;
         public string experiencePoints;
+        
     }
 }
