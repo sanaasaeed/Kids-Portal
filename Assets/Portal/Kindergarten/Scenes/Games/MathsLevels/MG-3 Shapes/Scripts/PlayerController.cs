@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
     public float speed = 5f;
@@ -8,9 +9,11 @@ public class PlayerController : MonoBehaviour {
     public float attackTimer = 0.15f;
     private float currectAttackTimer;
     private bool canAttack;
-    private AudioSource audioSrc;
+    private AudioSource audioSrc;    
+    private ShapeManager shapeManager;
 
     private void Start() {
+        shapeManager = FindObjectOfType<ShapeManager>();
         currectAttackTimer = attackTimer;
         audioSrc = GetComponent<AudioSource>();
     }
@@ -50,15 +53,26 @@ public class PlayerController : MonoBehaviour {
                 canAttack = false;
                 attackTimer = 0f;
                 Instantiate(PlayerBullet, attackPoint.position, Quaternion.identity);
-                
             }
         }
     }
     
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("bullet")) {
-            canAttack = false;
-            Destroy(gameObject);
+            shapeManager.DecreaseHeart(gameObject);
+        }
+
+        if (other.CompareTag("shape") && (!other.name.Contains(shapeManager.randomShape.GetComponent<Image>().sprite
+        .name))) {
+            Debug.Log("Shape other than random");
+            Destroy(other);
+            shapeManager.DecreaseHeart(gameObject);
+            
+            
+        } else if(other.CompareTag("shape") && (other.name.Contains(shapeManager.randomShape.GetComponent<Image>().sprite.name))){
+            Debug.Log("Shape random");
+            Destroy(other);
+            shapeManager.IncreaseScore();
         }
     }
-} // class
+} 

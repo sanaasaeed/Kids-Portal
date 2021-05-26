@@ -21,7 +21,30 @@
   <component name="ChangeListManager">
     <list default="true" id="18fd4037-dc49-412f-af94-81ba1c2b9c3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/ConnectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/ConnectionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scenes/MG-1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scenes/MG-1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scripts/PlayerCar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scripts/PlayerCar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scripts/RoadSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scripts/RoadSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-2 Counting/MG-2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-2 Counting/MG-2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-2 Counting/ML-1 Assets/Prefabs/Item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-2 Counting/ML-1 Assets/Prefabs/Item.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-2 Counting/ML-1 Assets/Scripts/ScoreHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-2 Counting/ML-1 Assets/Scripts/ScoreHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/MG-3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/MG-3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Materials/BG Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Materials/BG Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Circle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Circle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Diamond.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Diamond.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Enemy 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Enemy 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Hexagon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Hexagon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Pentagon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Pentagon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Rectangle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Rectangle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Spaceship.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Spaceship.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Square.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Square.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Star.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Triangle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Prefabs/Triangle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/ShapeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/ShapeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/Activity1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/Activity1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/MLR-3 Activity/Scripts/Shape.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/MLR-3 Activity/Scripts/Shape.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/LR1 Recognition/Scripts/ULR1-Activity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/LR1 Recognition/Scripts/Urdu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/LR1 Recognition/Scripts/ULR1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/LR1 Recognition/Scripts/ULR1Activity.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/LR1 Recognition/Scripts/Destroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1/Scripts/MLR!.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1/Scripts/MLR1_Activity.cs" />
@@ -74,10 +93,7 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/BGScroll.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-3 Phonics/Scripts/ELR3.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/ShapeManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/CharacterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/ThrowBullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-1 Recognition/Assets/Scripts/TweenPopup.cs" />
@@ -87,9 +103,7 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/ULR-1 Recognition/Scripts/Destroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/Scripts/MLR1_Activity.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/Scripts/Destroy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/Activity1.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/MLR-3 Activity/Scripts/ObjectSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/MLR-3 Activity/Scripts/Shape.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-1 Recognition/Assets/Scripts/AlphabetDestroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-1 Recognition/Assets/Scripts/ActivityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/Level.cs" />
@@ -106,6 +120,15 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/levelUnlocker.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/Scripts/MLR1.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/ConnectionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scripts/RoadSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scripts/PlayerCar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/Activity1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-2 Counting/ML-1 Assets/Scripts/ScoreHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/MLR-3 Activity/Scripts/Shape.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/ShapeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -205,7 +228,7 @@
       <workItem from="1621055782437" duration="1195000" />
       <workItem from="1621109781227" duration="26014000" />
       <workItem from="1621273291076" duration="24792000" />
-      <workItem from="1621419586644" duration="139225000" />
+      <workItem from="1621419586644" duration="159926000" />
     </task>
     <servers />
   </component>

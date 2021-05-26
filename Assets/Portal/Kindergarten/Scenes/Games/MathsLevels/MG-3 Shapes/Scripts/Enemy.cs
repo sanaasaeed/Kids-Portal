@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour {
     public bool canRotate;
     public bool canMove = true;
     public float boundX = -11f;
+    public GameObject player;
     public Transform attackPoint;
     public GameObject enemyBullet;
     private Animator anim;
@@ -74,17 +75,24 @@ public class Enemy : MonoBehaviour {
             anim.Play("Destroy");
             explosionSound.Play();
             //Destroy(gameObject);
-            StartCoroutine(WaitAndDestroy());
+            StartCoroutine(WaitAndDestroy(0.5f));
         }
 
-        if (gameObject.CompareTag("shape")) {
+        if (gameObject.CompareTag("shape") && (!gameObject.name.Contains(shapeMngr.randomShape.GetComponent<Image>()
+        .sprite.name) && (other.CompareTag("playerbullet"))
+        )) {
             shapeMngr.IncreaseScore();
-            Destroy(gameObject);
+            explosionSound.Play();
+            StartCoroutine(WaitAndDestroy(0.1f));
+            
+        } else if(gameObject.CompareTag("shape") && (gameObject.name.Contains(shapeMngr.randomShape.GetComponent<Image>()
+            .sprite.name) && (other.CompareTag("playerbullet")))){
+            shapeMngr.DecreaseHeart(player);
         }
     }
 
-    IEnumerator WaitAndDestroy() {
-        yield return new WaitForSeconds(0.5f);
+    IEnumerator WaitAndDestroy(float time) {
+        yield return new WaitForSeconds(time);
         Destroy(gameObject);
     }
 }

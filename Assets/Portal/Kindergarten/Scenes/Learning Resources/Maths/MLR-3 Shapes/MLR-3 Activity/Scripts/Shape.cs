@@ -68,7 +68,9 @@ public class Shape : MonoBehaviour {
         int percentage = CalculatePercentage();
         Debug.Log(percentage);
         if (percentage > 70) {
-            Debug.Log("GAME UNLOCKED");
+            PlayerPrefs.SetInt("lrMathLevel", 3);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("Math");
         }
         else {
             objspawner.OpenPanel();

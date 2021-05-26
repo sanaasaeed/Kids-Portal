@@ -31,8 +31,9 @@ public class PlayerCar : MonoBehaviour {
             Destroy(other.gameObject);
             levelManager.IncreaseScore();
         } else if (!other.name.Contains(LevelManager.numberToGet.ToString())) {
-            Time.timeScale = 0f;
-            levelManager.RestartLevel();
+            levelManager.DecreaseLives();
+            //Time.timeScale = 0f;
+            // Decrease Score
             // TODO: if time permits then destroy car physically
             // TODO: Shrink the colliders
             // TODO: See level problems solve them

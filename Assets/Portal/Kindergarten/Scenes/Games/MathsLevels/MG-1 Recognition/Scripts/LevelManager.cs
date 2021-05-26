@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class LevelManager : MonoBehaviour {
@@ -9,6 +11,10 @@ public class LevelManager : MonoBehaviour {
     public static int levelNo = 1;
     public static int numberToGet;
     public static int score;
+    public static int indexHeart = 0;
+    public static int totalLives = 4;
+    [SerializeField] private List<GameObject> hearts;
+    [SerializeField] private Sprite emptyHeart;
     [SerializeField] private GameObject levelPopup;
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private TextMeshProUGUI randomNumber;
@@ -46,7 +52,6 @@ public class LevelManager : MonoBehaviour {
         Time.timeScale = 0f;
         isPopupOpened = true;
     }
-
     public void DisableLevelPopup() {
         levelPopup.SetActive(false);
         Time.timeScale = 1f;
@@ -65,17 +70,21 @@ public class LevelManager : MonoBehaviour {
             SetLevelVars();
             EnableLevelPopup();
         } else if (score == 60) {
-            levelNo = 4;
-            numberToGet = Random.Range(0, 9);
-            SetLevelVars();
-            EnableLevelPopup();
+            PlayerPrefs.SetInt("gameMathLevel", 1);
+            SceneManager.LoadScene("Math");
         }
-
         scoreText.text = score.ToString();
     }
 
-    public void RestartLevel() {
-        Scene activeScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(activeScene.buildIndex);
+    public void DecreaseLives() {
+        totalLives -= 1;
+        if (totalLives < 1) {
+            Debug.Log("GameOver");
+            SceneManager.LoadScene("GameOver");
+        }
+        else {
+            hearts[indexHeart].GetComponent<Image>().sprite = emptyHeart;
+            indexHeart++;
+        }
     }
 }

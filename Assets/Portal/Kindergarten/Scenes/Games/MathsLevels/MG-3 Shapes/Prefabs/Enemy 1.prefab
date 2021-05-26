@@ -297,6 +297,7 @@ MonoBehaviour:
   canRotate: 0
   canMove: 1
   boundX: -11
+  player: {fileID: 8562161696884464912, guid: 5930c9b8f0f093c4095269c4ad780911, type: 3}
   attackPoint: {fileID: 1165824301624871334}
   enemyBullet: {fileID: 2091301810774790404, guid: 701eb1d8f2a26854f88135d8431c3d04,
     type: 3}

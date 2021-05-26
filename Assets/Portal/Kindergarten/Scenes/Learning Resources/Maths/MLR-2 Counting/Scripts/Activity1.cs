@@ -45,9 +45,11 @@ public class Activity1 : MonoBehaviour {
                 CheckAnswers(ans, i);
             }
         }
-
+        // GREATER THAN 2 TO MAKE IT 50% PASSING
         if (correctAnswers > 2) {
-            Debug.Log("UNLOCK GAME");
+            PlayerPrefs.SetInt("lrMathLevel", 2);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("Math");
         }
         else {
             OpenPanel();
