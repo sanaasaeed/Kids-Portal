@@ -119,8 +119,8 @@ public class AlphabetObjSpawner : MonoBehaviour {
         Debug.Log(levelTimer);
         PlayerPrefs.SetInt("lrLevelEng", 1);
         PlayerPrefs.Save();
-        SaveManager.Instance.UpdateExperiencePoints(20);
         SaveManager.Instance.SaveAllPlayerPrefsToDatabase();
+        SaveManager.Instance.SaveLRData("English", "Alphabet Recogition", 1, levelTimer.ToString());
         SceneManager.LoadScene("SubjectSelect");
         Destroy(gameObject);
         Debug.Log("Learning Resource completed Game Unlocked");

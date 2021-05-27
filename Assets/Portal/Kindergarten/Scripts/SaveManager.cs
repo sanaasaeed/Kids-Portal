@@ -14,28 +14,25 @@ public class SaveManager : MonoBehaviour {
     public int mathLrProgress;
     public int urduLrProgress;
     private void Awake() {
-        if (Instance == null)
-        {
+        if (Instance == null) {
             DontDestroyOnLoad(gameObject);
             Instance = this;
             PlayerPrefs.DeleteAll();
         }
-        else if (Instance != this)
-        {
+        else if (Instance != this) {
             Destroy (gameObject);
         }
     }
-    
 
     public void LoadAllPlayerPrefs() {
-        //Load here all of them and then set them
+        StartCoroutine(GetProgress());
     }
 
     // To be called while saving player prefs in any game or LR
     public void SaveAllPlayerPrefsToDatabase() {
         engGamesProgress = PlayerPrefs.GetInt("engGameLevel", 0);
         mathGamesProgress = PlayerPrefs.GetInt("gameMathLevel", 0);
-        urduGamesProgress = PlayerPrefs.GetInt("engGameLevel", 0);
+        urduGamesProgress = PlayerPrefs.GetInt("urduGameLevel", 0);
         engLrProgress = PlayerPrefs.GetInt("lrLevelEng", 0);
         mathLrProgress = PlayerPrefs.GetInt("lrMathLevel", 0);
         urduLrProgress = PlayerPrefs.GetInt("lrUrduLevel", 0);
@@ -44,13 +41,13 @@ public class SaveManager : MonoBehaviour {
 
     public void UpdateExperiencePoints(int pointsToAdd) {
         experiencePoints += pointsToAdd;
-        StartCoroutine(SaveToDatabase("experiencePoints", experiencePoints));
+        StartCoroutine(SaveToDatabase("experiencePoints", experiencePoints, "updatexp"));
     }
 
-    IEnumerator SaveToDatabase(string key, int value) {
+    IEnumerator SaveToDatabase(string key, int value, string url) {
         WWWForm form = new WWWForm();
         form.AddField(key, value);
-        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "data", form);
+        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + url, form);
         yield return webRequest.SendWebRequest();
         if (webRequest.isNetworkError || webRequest.isHttpError) {
             Debug.Log(webRequest.error);
@@ -67,7 +64,7 @@ public class SaveManager : MonoBehaviour {
         form.AddField("engLrProgress", engLrProgress);
         form.AddField("mathLrProgress", mathLrProgress);
         form.AddField("urduLrProgress", urduLrProgress);
-        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "data", form);
+        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "progress", form);
         yield return webRequest.SendWebRequest();
         if (webRequest.isNetworkError || webRequest.isHttpError) {
             Debug.Log(webRequest.error);
@@ -75,6 +72,79 @@ public class SaveManager : MonoBehaviour {
         else {
             Debug.Log("Submitted successfully " + webRequest.downloadHandler.text);
         }
+    }
+
+    IEnumerator SaveGameDataToDB(string subject, string gameTitle, int gameScore, string gameTime, int experiencePoints, int gameStatus) {
+        WWWForm form = new WWWForm();
+        form.AddField("subject", subject);
+        form.AddField("gameTitle", gameTitle);
+        form.AddField("gameScore", gameScore);
+        form.AddField("gameTime", gameTime);
+        form.AddField("experiencePoints", experiencePoints);
+        form.AddField("gameStatus", gameStatus);
+        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "add-game-score", form);
+        yield return webRequest.SendWebRequest();
+        if (webRequest.isNetworkError || webRequest.isHttpError) {
+            Debug.Log(webRequest.error);
+        }
+        else {
+            Debug.Log("Game Data Submitted successfully " + webRequest.downloadHandler.text);
+        }
+    }
+
+    public void SaveGameData(string subject, string gameTitle, int gameScore, string gameTime, int experiencePoints, int gameStatus) {
+        StartCoroutine(SaveGameDataToDB(subject, gameTitle, gameScore, gameTime, experiencePoints, gameStatus));
+    }
+    
+    IEnumerator SaveLRDataToDB(string subject, string name, int status, string learningTime){
+        WWWForm form = new WWWForm();
+        form.AddField("subject", subject);
+        form.AddField("name", name);
+        form.AddField("status", status);
+        form.AddField("learningTime", learningTime);
+        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "add-lr-data", form);
+        yield return webRequest.SendWebRequest();
+        if (webRequest.isNetworkError || webRequest.isHttpError) {
+            Debug.Log(webRequest.error);
+        }
+        else {
+            Debug.Log("Game Data Submitted successfully " + webRequest.downloadHandler.text);
+        }
+    }
+    
+    IEnumerator GetProgress() {
+        UnityWebRequest webRequest = UnityWebRequest.Get(WebServices.mainUrl + "progress");
+        yield return webRequest.SendWebRequest();
+        if (webRequest.isNetworkError || webRequest.isHttpError) {
+            Debug.Log(webRequest.error);
+        }
+        else {
+            Debug.Log("Submitted successfully Data: " + webRequest.downloadHandler.text);
+            Progress progress = JsonUtility.FromJson<Progress>(webRequest.downloadHandler.text);
+            progress.SetPlayerPrefsFromDb("lrLevelEng", progress.engLrProgress);
+            progress.SetPlayerPrefsFromDb("lrMathLevel", progress.mathLrProgress);
+            progress.SetPlayerPrefsFromDb("lrUrduLevel", progress.urduLrProgress);
+            progress.SetPlayerPrefsFromDb("engGameLevel", progress.engGamesProgress);
+            progress.SetPlayerPrefsFromDb("gameMathLevel", progress.mathGamesProgress);
+            progress.SetPlayerPrefsFromDb("urduGameLevel", progress.urduGamesProgress);
+        }
+    }
+
+    public void SaveLRData(string subject, string name, int status, string learningTime) {
+        StartCoroutine(SaveLRDataToDB(subject, name, status, learningTime));
+    }
+}
+
+class Progress {
+    public int engGamesProgress;
+    public int mathGamesProgress;
+    public int urduGamesProgress;
+    public int engLrProgress;
+    public int mathLrProgress;
+    public int urduLrProgress;
+
+    public void SetPlayerPrefsFromDb(string key, int value) {
+        PlayerPrefs.SetInt(key, value);
     }
 }
 
