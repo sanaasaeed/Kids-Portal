@@ -25,12 +25,6 @@ public class ScoreHandler : MonoBehaviour {
     }
 
     public void DecreaseScore() {
-        /*score -= 10;
-        tmpText.text = score.ToString();
-        if (score <= 0) {
-            DynamicPlay.sceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene("GameOver");
-        }*/
         totalLives--;
         if (totalLives < 1) {
             SceneManager.LoadScene("GameOver");

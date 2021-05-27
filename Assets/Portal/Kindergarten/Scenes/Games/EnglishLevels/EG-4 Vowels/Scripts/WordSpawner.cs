@@ -25,6 +25,7 @@ public class WordSpawner : MonoBehaviour {
         }
         else {
          PlayerPrefs.SetInt("gameLevelEng", 3);
+         PlayerPrefs.Save();
          SceneManager.LoadScene("English");
         }
     }

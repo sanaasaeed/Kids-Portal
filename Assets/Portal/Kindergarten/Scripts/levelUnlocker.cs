@@ -10,7 +10,6 @@ public class levelUnlocker : MonoBehaviour {
     [SerializeField] private string gamePlayerPref;
 
     private void Start(){
-        SaveManager.Instance.LoadAllPlayerPrefs();
         int currentLRLevel = PlayerPrefs.GetInt(lrPlayerPref, 0);
         int currentGameLevel = PlayerPrefs.GetInt(gamePlayerPref, 0);
         UnlockGame(currentLRLevel);

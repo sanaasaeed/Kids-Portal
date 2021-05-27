@@ -60,6 +60,7 @@ public class MLR1 : MonoBehaviour {
         else {
             Debug.Log("You did great");
             PlayerPrefs.SetInt("lrMathLevel", 1);
+            PlayerPrefs.Save();
             SceneManager.LoadScene("Math");
         }
     }

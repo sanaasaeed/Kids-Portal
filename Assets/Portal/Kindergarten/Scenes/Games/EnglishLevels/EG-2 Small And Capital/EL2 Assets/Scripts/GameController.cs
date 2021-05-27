@@ -59,6 +59,7 @@ public class GameController : MonoBehaviour {
             // Setting original letter to the next letter basically resetting the board here
             if (OriginalLetter >= 'z') {
                 PlayerPrefs.SetInt("gameLevelEng", 2);
+                PlayerPrefs.Save();
                 SceneManager.LoadScene("English");
             }
             if (OriginalLetter < 'z') {

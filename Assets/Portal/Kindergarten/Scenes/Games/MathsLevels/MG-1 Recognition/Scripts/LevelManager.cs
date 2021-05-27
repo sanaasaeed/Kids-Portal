@@ -71,6 +71,7 @@ public class LevelManager : MonoBehaviour {
             EnableLevelPopup();
         } else if (score == 60) {
             PlayerPrefs.SetInt("gameMathLevel", 1);
+            PlayerPrefs.Save();
             SceneManager.LoadScene("Math");
         }
         scoreText.text = score.ToString();

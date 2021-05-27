@@ -10,8 +10,6 @@ public class ConnectionManager : MonoBehaviour {
     [SerializeField] private Text usernameText;
     private void Start() {
         StartCoroutine(GetSignInInfo());
-        SaveManager.Instance.SaveAllPlayerPrefsToDatabase();
-        SaveManager.Instance.UpdateExperiencePoints(80);
     }
     
 

@@ -7,17 +7,10 @@ using UnityEngine.Networking;
 public class SaveManager : MonoBehaviour {
     public static SaveManager Instance;
     public int experiencePoints;
-    public int engGamesProgress;
-    public int mathGamesProgress;
-    public int urduGamesProgress;
-    public int engLrProgress;
-    public int mathLrProgress;
-    public int urduLrProgress;
     private void Awake() {
         if (Instance == null) {
             DontDestroyOnLoad(gameObject);
             Instance = this;
-            PlayerPrefs.DeleteAll();
         }
         else if (Instance != this) {
             Destroy (gameObject);
@@ -30,12 +23,6 @@ public class SaveManager : MonoBehaviour {
 
     // To be called while saving player prefs in any game or LR
     public void SaveAllPlayerPrefsToDatabase() {
-        engGamesProgress = PlayerPrefs.GetInt("engGameLevel", 0);
-        mathGamesProgress = PlayerPrefs.GetInt("gameMathLevel", 0);
-        urduGamesProgress = PlayerPrefs.GetInt("urduGameLevel", 0);
-        engLrProgress = PlayerPrefs.GetInt("lrLevelEng", 0);
-        mathLrProgress = PlayerPrefs.GetInt("lrMathLevel", 0);
-        urduLrProgress = PlayerPrefs.GetInt("lrUrduLevel", 0);
         StartCoroutine(UpdatePlayerPrefs());
     }
 
@@ -58,12 +45,12 @@ public class SaveManager : MonoBehaviour {
     }
     IEnumerator UpdatePlayerPrefs() {
         WWWForm form = new WWWForm();
-        form.AddField("engGamesProgress", engGamesProgress);
-        form.AddField("mathGamesProgress", mathGamesProgress);
-        form.AddField("urduGamesProgress", urduGamesProgress);
-        form.AddField("engLrProgress", engLrProgress);
-        form.AddField("mathLrProgress", mathLrProgress);
-        form.AddField("urduLrProgress", urduLrProgress);
+        form.AddField("engGamesProgress", PlayerPrefs.GetInt("engGameLevel", 0));
+        form.AddField("mathGamesProgress", PlayerPrefs.GetInt("gameMathLevel", 0));
+        form.AddField("urduGamesProgress", PlayerPrefs.GetInt("urduGameLevel", 0));
+        form.AddField("engLrProgress", PlayerPrefs.GetInt("lrLevelEng", 0));
+        form.AddField("mathLrProgress", PlayerPrefs.GetInt("lrMathLevel", 0));
+        form.AddField("urduLrProgress", PlayerPrefs.GetInt("lrUrduLevel", 0));
         UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "progress", form);
         yield return webRequest.SendWebRequest();
         if (webRequest.isNetworkError || webRequest.isHttpError) {
@@ -127,6 +114,7 @@ public class SaveManager : MonoBehaviour {
             progress.SetPlayerPrefsFromDb("engGameLevel", progress.engGamesProgress);
             progress.SetPlayerPrefsFromDb("gameMathLevel", progress.mathGamesProgress);
             progress.SetPlayerPrefsFromDb("urduGameLevel", progress.urduGamesProgress);
+            
         }
     }
 

@@ -39,13 +39,13 @@ public class GameState : MonoBehaviour
     public void IncreaseScore() {
         count += 10;
         if (count == levelScore) {
-            SaveManager.Instance.UpdateExperiencePoints(20);
             if (SceneManager.GetActiveScene().name != "EL1-3") {
                 SceneLoader.LoadNextSceneWithoutLoading();
             }
             else {
                // DynamicPlay.sceneName = SceneManager.GetActiveScene().name;
                PlayerPrefs.SetInt("gameLevelEng", 1);
+               PlayerPrefs.Save();
                SceneManager.LoadScene("English");
             }
         }

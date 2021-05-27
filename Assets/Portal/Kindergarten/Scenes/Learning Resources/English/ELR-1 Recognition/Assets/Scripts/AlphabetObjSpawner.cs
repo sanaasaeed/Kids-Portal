@@ -52,7 +52,6 @@ public class AlphabetObjSpawner : MonoBehaviour {
             instructionPopup.SetActive(false);
             NextAlphabet();
         }
-        
     }
 
     private void Update() {
@@ -119,8 +118,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
         Debug.Log(levelTimer);
         PlayerPrefs.SetInt("lrLevelEng", 1);
         PlayerPrefs.Save();
-        SaveManager.Instance.SaveAllPlayerPrefsToDatabase();
-        SaveManager.Instance.SaveLRData("English", "Alphabet Recogition", 1, levelTimer.ToString());
+        SaveManager.Instance.SaveLRData("English", "Alphabet Recogition", 0, levelTimer.ToString());
         SceneManager.LoadScene("SubjectSelect");
         Destroy(gameObject);
         Debug.Log("Learning Resource completed Game Unlocked");
