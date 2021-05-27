@@ -191,6 +191,7 @@
               <e p="PlayPopupOpener.cs" t="Include" />
               <e p="Popup.cs" t="Include" />
               <e p="PopupOpener.cs" t="Include" />
+              <e p="SaveManager.cs" t="Include" />
               <e p="SceneTransition.cs" t="Include" />
               <e p="SoundButton.cs" t="Include" />
               <e p="SoundManager.cs" t="Include" />

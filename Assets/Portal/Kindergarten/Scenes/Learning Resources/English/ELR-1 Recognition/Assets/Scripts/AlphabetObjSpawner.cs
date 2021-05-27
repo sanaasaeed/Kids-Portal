@@ -22,6 +22,8 @@ public class AlphabetObjSpawner : MonoBehaviour {
     private Animator alphabetAnimator;
     private Animator objAnimator;
     private int rounds = 4;
+    public static float levelTimer = 0;
+    public static bool isTimerRunning = true;
     public static int alphabetNo = 0;
 
     private void Awake() {
@@ -52,18 +54,13 @@ public class AlphabetObjSpawner : MonoBehaviour {
         }
         
     }
-    /*private void OnTriggerStay2D(Collider2D other) {
-        Debug.Log("Trigger Stay");
-        if (Input.GetMouseButtonDown(0)) {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit)) {
-                if (hit.transform.name == "Alphabet(Clone)") {
-                    Debug.Log("Object is clicked");
-                }
-            }
+
+    private void Update() {
+        if (isTimerRunning) {
+            levelTimer += Time.deltaTime;
         }
-    }*/
+    }
+    
     IEnumerator WaitAndInitialize() {
         yield return new WaitForSeconds(4);
         instructionPopup.SetActive(false);
@@ -90,12 +87,8 @@ public class AlphabetObjSpawner : MonoBehaviour {
         }
         else {
             nextBtn.SetActive(false);  
-            // TODO: Popup to display link to the game
-            PlayerPrefs.SetInt("lrLevelEng", 1);
-            PlayerPrefs.Save();
-            SceneManager.LoadScene("SubjectSelect");
-            Debug.Log("Learning Resource completed Game Unlocked");
-
+            // Finish the Game
+            FinishResource();
         }
         
         if (alphabetNo % rounds == 0) {
@@ -119,6 +112,18 @@ public class AlphabetObjSpawner : MonoBehaviour {
                 Destroy(clones);
             }
         }
+    }
+
+    public void FinishResource() {
+        isTimerRunning = false;
+        Debug.Log(levelTimer);
+        PlayerPrefs.SetInt("lrLevelEng", 1);
+        PlayerPrefs.Save();
+        SaveManager.Instance.UpdateExperiencePoints(20);
+        SaveManager.Instance.SaveAllPlayerPrefsToDatabase();
+        SceneManager.LoadScene("SubjectSelect");
+        Destroy(gameObject);
+        Debug.Log("Learning Resource completed Game Unlocked");
     }
 
     /*public void PlayAlphabetAndObjActivity() {
