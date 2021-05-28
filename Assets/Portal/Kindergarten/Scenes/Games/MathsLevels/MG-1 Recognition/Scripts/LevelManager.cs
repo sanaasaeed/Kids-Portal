@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour {
     public static int numberToGet;
     public static int score;
     public static int indexHeart = 0;
-    public static int totalLives = 4;
+    public static int totalLives = 14;
     [SerializeField] private List<GameObject> hearts;
     [SerializeField] private Sprite emptyHeart;
     [SerializeField] private GameObject levelPopup;
@@ -30,6 +30,13 @@ public class LevelManager : MonoBehaviour {
         scoreText.text = score.ToString();
         SetLevelVars();
     }
+
+    private void Update() {
+        if (isTimerRunning) {
+            timer += Time.deltaTime;
+        }
+    }
+
     private void SetLevelVars() {
         if (levelNo == 1) {
             PlayerCar.speed = 20f;
@@ -74,8 +81,11 @@ public class LevelManager : MonoBehaviour {
             SetLevelVars();
             EnableLevelPopup();
         } else if (score == 60) {
+            isTimerRunning = false;
+            int marks = (int) Math.Round(CalculateMarks());
             PlayerPrefs.SetInt("gameMathLevel", 1);
             PlayerPrefs.Save();
+            SaveManager.Instance.SaveGameData("English", "Number Recognition", marks,timer.ToString(),40,1);
             SceneManager.LoadScene("Math");
         }
         scoreText.text = score.ToString();
@@ -83,7 +93,7 @@ public class LevelManager : MonoBehaviour {
 
     public void DecreaseLives() {
         totalLives -= 1;
-        if (totalLives < 1) {
+        if (totalLives % 5 == 0) {
             Debug.Log("GameOver");
             SceneManager.LoadScene("GameOver");
         }
@@ -91,5 +101,14 @@ public class LevelManager : MonoBehaviour {
             hearts[indexHeart].GetComponent<Image>().sprite = emptyHeart;
             indexHeart++;
         }
+    }
+    
+    private float CalculateMarks() {
+        float totalMarks = totalNumbersCollected;
+        float obtainedMarks = totalScore;
+
+        float result = (obtainedMarks / totalMarks) * 10;
+        Debug.Log("Result: " + result);
+        return result;
     }
 }

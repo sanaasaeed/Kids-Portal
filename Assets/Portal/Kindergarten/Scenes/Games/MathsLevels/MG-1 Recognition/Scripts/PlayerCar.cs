@@ -29,8 +29,12 @@ public class PlayerCar : MonoBehaviour {
         } else if (other.name.Contains(LevelManager.numberToGet.ToString())) {
             audio.Play();
             Destroy(other.gameObject);
+            LevelManager.totalScore++;
+            LevelManager.totalNumbersCollected++;
             levelManager.IncreaseScore();
         } else if (!other.name.Contains(LevelManager.numberToGet.ToString())) {
+            LevelManager.totalNumbersCollected++;
+            LevelManager.totalScore--;
             levelManager.DecreaseLives();
         }
     }
