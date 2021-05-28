@@ -8,10 +8,14 @@ public class EnemySpawner : MonoBehaviour {
     public float minY = -4.3f;
     public float maxY = 4.3f;
     public List<GameObject> objectPrefab;
-    public GameObject enemyPrefab;
+    public GameObject targetPrefab;
     public float timer = 2f;
+    private ShapeManager shapemanager;
 
     private void Start() {
+        shapemanager = FindObjectOfType<ShapeManager>();
+        Debug.Log(shapemanager.randmShapeSprite);
+        targetPrefab.GetComponent<SpriteRenderer>().sprite = shapemanager.randmShapeSprite;
         Invoke("SpawnEnemies", timer);
     }
 
@@ -24,7 +28,7 @@ public class EnemySpawner : MonoBehaviour {
             Instantiate(objectPrefab[Random.Range(0, objectPrefab.Count)], tmp, Quaternion.identity);
         }
         else {
-            Instantiate(enemyPrefab, tmp, Quaternion.Euler(0f, 0f, 90f));
+            Instantiate(targetPrefab, tmp, Quaternion.Euler(0f, 0f, 90f));
         }
         Invoke("SpawnEnemies", timer);
     }

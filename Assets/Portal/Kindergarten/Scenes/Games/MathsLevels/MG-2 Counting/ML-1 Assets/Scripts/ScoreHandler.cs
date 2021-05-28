@@ -52,8 +52,7 @@ public class ScoreHandler : MonoBehaviour {
             else {
                 gameverPanel.SetActive(true);
                 m_resultPanel = FindObjectOfType<ResultPanel>();
-                m_resultPanel.SetStatus("Game Over", marks.ToString(), totalClicks.ToString(), correctClicks.ToString
-                ());
+                m_resultPanel.SetStatus("Game Over", "Score: " + marks, "Total Clicks: " + totalClicks, "Correct: " + correctClicks);
             }
         }
     }

@@ -57,22 +57,4 @@ public class PlayerController : MonoBehaviour {
         }
     }
     
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("bullet")) {
-            shapeManager.DecreaseHeart(gameObject);
-        }
-
-        if (other.CompareTag("shape") && (!other.name.Contains(shapeManager.randomShape.GetComponent<Image>().sprite
-        .name))) {
-            Debug.Log("Shape other than random");
-            Destroy(other);
-            shapeManager.DecreaseHeart(gameObject);
-            
-            
-        } else if(other.CompareTag("shape") && (other.name.Contains(shapeManager.randomShape.GetComponent<Image>().sprite.name))){
-            Debug.Log("Shape random");
-            Destroy(other);
-            shapeManager.IncreaseScore();
-        }
-    }
 } 

@@ -13,8 +13,8 @@ public class ResultPanel : MonoBehaviour {
 
     public void SetStatus(string gameStatus, string score, string totalClicks, string correct) {
         this.gameStatus.text = gameStatus;
-        yourScoreText.text = "Score: " + score;
-        totalClicksText.text = "Total Clicks: " + totalClicks;
-        correctText.text = "Correct: " + correct;
+        yourScoreText.text = score;
+        totalClicksText.text = totalClicks;
+        correctText.text = correct;
     }
 }
