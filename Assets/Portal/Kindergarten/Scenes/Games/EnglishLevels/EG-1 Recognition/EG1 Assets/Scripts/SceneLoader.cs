@@ -24,6 +24,10 @@ public class SceneLoader : MonoBehaviour {
     public static void LoadLastScene() {
         SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
     }
+
+    public void LoadLevelsScene() {
+        SceneManager.LoadScene("English");
+    }
     public void LoadNextScene() {
         StartCoroutine(LoadSceneAsync());
     }

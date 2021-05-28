@@ -1,13 +1,19 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class GameController : MonoBehaviour {
     [SerializeField] List<AudioClip> audioClips;
     public char OriginalLetter = 'a';
     int correctAnswers = 4;
     private int correctClicks;
+    private float timer;
+    private bool isTimeRunning = true;
+    public int totalClicks = 0;
+    public int totalScore = 0;
     private AudioSource _audioSource;
     public static GameController Instance { get; private set; }
     private void Awake() {
@@ -40,6 +46,12 @@ public class GameController : MonoBehaviour {
         FindObjectOfType<RemainingCounter>().SetRemaining(correctAnswers - correctClicks);
     }
 
+    private void Update() {
+        if (isTimeRunning) {
+            timer += Time.deltaTime;
+        }
+    }
+
     public char ChooseLetters() {
         int ranNum = Random.Range(0, 26);
         var randomLetter = (char)('a' + ranNum);
@@ -52,14 +64,20 @@ public class GameController : MonoBehaviour {
 
     internal void HandleCorrectLetterClick(bool uppercase) {
         AudioClip clip = audioClips.FirstOrDefault(t => t.name == OriginalLetter.ToString());
-            _audioSource.PlayOneShot(clip);
+        _audioSource.PlayOneShot(clip);
         correctClicks++;
+        totalScore++;
+        totalClicks++;
         FindObjectOfType<RemainingCounter>().SetRemaining(correctAnswers - correctClicks);
-        if(correctClicks >= correctAnswers) {
+        if(correctClicks >= (correctAnswers-1)) {
             // Setting original letter to the next letter basically resetting the board here
             if (OriginalLetter >= 'z') {
+                isTimeRunning = false;
+                Debug.Log("Timer: " +timer);
                 PlayerPrefs.SetInt("gameLevelEng", 2);
                 PlayerPrefs.Save();
+                int marks = (int) Math.Round(CalculateMarks());
+                SaveManager.Instance.SaveGameData("English", "Capital small letters", marks, timer.ToString(), 40, 1);
                 SceneManager.LoadScene("English");
             }
             if (OriginalLetter < 'z') {
@@ -77,6 +95,15 @@ public class GameController : MonoBehaviour {
             displayLetter.SetLetter(OriginalLetter);
         }
         
+    }
+    
+    private float CalculateMarks() {
+        float totalMarks = totalClicks;
+        float obtainedMarks = totalScore;
+
+        float result = (obtainedMarks / totalMarks) * 10;
+        Debug.Log("Result: " + result);
+        return result;
     }
 }
 

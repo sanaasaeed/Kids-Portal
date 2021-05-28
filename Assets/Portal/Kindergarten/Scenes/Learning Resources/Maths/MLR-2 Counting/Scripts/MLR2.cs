@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
@@ -14,6 +13,8 @@ public class MLR2 : MonoBehaviour {
     public static int letterNo = 0;
     private float lastEggPos = -6.8f;
     private GameObject clone;
+    public float levelTimer = 0;
+    private bool isTimerRunning = true;
     private int screenNo = 0;
     void Start() {
         audioSrc = GetComponent<AudioSource>();
@@ -25,9 +26,16 @@ public class MLR2 : MonoBehaviour {
         letterNo++;
     }
 
+    private void Update() {
+        if (isTimerRunning) {
+            levelTimer += Time.deltaTime;
+        }
+    }
+
     public void NextBtn() {
         screenNo++;
         if (letterNo == 10) {
+            isTimerRunning = false;
             SceneManager.LoadScene("MLR2Activity");
         }
         var allClones = FindObjectsOfType<GameObject>();

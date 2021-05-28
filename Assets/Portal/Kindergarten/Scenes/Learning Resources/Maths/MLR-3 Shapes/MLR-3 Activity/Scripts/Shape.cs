@@ -13,12 +13,22 @@ public class Shape : MonoBehaviour {
     private static int rightMoves = 0;
     private static int wrongMoves = 0;
     private ObjectSpawner objspawner;
+    private MLR3 mainScript;
+    private float activityTimer = 0;
+    private bool isActivityRunning = true;
 
     private void Start() {
+        mainScript = FindObjectOfType<MLR3>();
         objspawner = FindObjectOfType<ObjectSpawner>();
         initalPos = transform.position;
+        activityTimer = mainScript.levelTimer;
     }
-    
+
+    private void Update() {
+        if (isActivityRunning) {
+            activityTimer += Time.deltaTime;
+        }
+    }
 
     private void OnMouseDrag() {
         if (!gameObject.name.Contains("done")) {
@@ -55,7 +65,7 @@ public class Shape : MonoBehaviour {
                     wrongMoves++;
                     Debug.Log("Wrong Moves: " + wrongMoves);
                     transform.position = new Vector3(initalPos.x, initalPos.y, -1);
-                    // TODO: here back logic
+                    
                 }
             }
         }
@@ -68,8 +78,10 @@ public class Shape : MonoBehaviour {
         int percentage = CalculatePercentage();
         Debug.Log(percentage);
         if (percentage > 70) {
+            isActivityRunning = false;
             PlayerPrefs.SetInt("lrMathLevel", 3);
             PlayerPrefs.Save();
+            SaveManager.Instance.SaveLRData("Maths", "Shapes", 1, activityTimer.ToString());
             SceneManager.LoadScene("Math");
         }
         else {

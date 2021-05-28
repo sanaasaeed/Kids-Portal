@@ -1766,14 +1766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7516390a077ca7e44a21773f0f77b744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instance: {fileID: 0}
   experiencePoints: 0
-  engGamesProgress: 0
-  mathGamesProgress: 0
-  urduGamesProgress: 0
-  engLrProgress: 0
-  mathLrProgress: 0
-  urduLrProgress: 0
 --- !u!1 &683709253
 GameObject:
   m_ObjectHideFlags: 0
@@ -2664,6 +2657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usernameText: {fileID: 1463198426}
+  experiencePointsText: {fileID: 1272305778}
 --- !u!4 &1189807686
 Transform:
   m_ObjectHideFlags: 0

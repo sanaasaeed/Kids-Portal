@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  wrongAudioClip: {fileID: 8300000, guid: b27efbcc4d37f6048bae9e223f4bdd72, type: 3}
 --- !u!82 &-497666914312566360
 AudioSource:
   m_ObjectHideFlags: 0

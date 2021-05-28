@@ -19,6 +19,10 @@ public class LevelManager : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private TextMeshProUGUI randomNumber;
     [SerializeField] private TextMeshProUGUI scoreText;
+    public static float timer = 0;
+    public static bool isTimerRunning = true;
+    public static int totalScore = 0;
+    public static int totalNumbersCollected = 0;
     private void Start() {
         numberToGet = Random.Range(0, 9);
         randomNumber.text = numberToGet.ToString();

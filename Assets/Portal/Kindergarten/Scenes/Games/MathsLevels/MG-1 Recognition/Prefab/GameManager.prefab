@@ -43,9 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4c25dede14384a941702a3b0dd667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelPopup: {fileID: 8124872603093209780, guid: 13777900988b8d140ac5b6431b32b4d0,
-    type: 3}
-  levelText: {fileID: 8281878828631243675, guid: 56e69250cb98eaa4389f5304a4118be5,
-    type: 3}
-  randomNumber: {fileID: 4142487339551861812, guid: 8336c87ca446c7b4180f11f2d6f1521d,
-    type: 3}
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  emptyHeart: {fileID: 21300000, guid: 1e64b7dda38d0c34dbfd549ea725d9bc, type: 3}
+  levelPopup: {fileID: 0}
+  levelText: {fileID: 0}
+  randomNumber: {fileID: 0}
+  scoreText: {fileID: 0}

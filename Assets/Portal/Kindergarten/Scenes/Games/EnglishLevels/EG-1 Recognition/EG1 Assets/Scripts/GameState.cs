@@ -1,26 +1,41 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public class GameState : MonoBehaviour
-{
+public class GameState : MonoBehaviour{
     private Animator basketAnimation;
     [SerializeField] private GameObject targetAlphabetPrefab;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private List<Sprite> alphabets;
     private int count = 0;
+    private int totalLives = 11;
+    private static int totalScore = 0;
+    private static int totalAlphabetsCollected = 0;
+    private int level1score = 30;
+    private int level2score = 50;
+    private int level3score = 70;
     public static Sprite target;
     public static int levelScore;
+    public static float timer = 0;
+    public static bool isTimerRunning = true;
 
     private void OnEnable() {
         SetTargetAlphabet();
-        SetLevelScore();
+        SetLevelScore(level1score, level2score, level3score);
     }
 
     void Start() {
         basketAnimation = FindObjectOfType<Animator>();
+    }
+
+    private void Update() {
+        if (isTimerRunning) {
+            timer += Time.deltaTime;
+        }
     }
 
     public void SetTargetAlphabet() {
@@ -37,15 +52,23 @@ public class GameState : MonoBehaviour
     }
 
     public void IncreaseScore() {
+        totalAlphabetsCollected++;
+        totalScore++;
+        Debug.Log(totalScore);
         count += 10;
         if (count == levelScore) {
             if (SceneManager.GetActiveScene().name != "EL1-3") {
                 SceneLoader.LoadNextSceneWithoutLoading();
             }
             else {
+                int marksToSend = (int)Math.Round(CalculateMarks());
                // DynamicPlay.sceneName = SceneManager.GetActiveScene().name;
+               isTimerRunning = false;
                PlayerPrefs.SetInt("gameLevelEng", 1);
                PlayerPrefs.Save();
+               SaveManager.Instance.SaveGameData("English", "AlphabetRecognition", marksToSend,timer.ToString(), 40,1);
+              // if(ConnectionManage)
+               SaveManager.Instance.UpdateExperiencePoints(40);
                SceneManager.LoadScene("English");
             }
         }
@@ -54,25 +77,31 @@ public class GameState : MonoBehaviour
     }
 
     public void DecreaseScore() {
-        count -= 10;
-        if(count < 0) {
-            DynamicPlay.sceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene("GameOver");
-        }
-        scoreText.text = count.ToString();
+        totalAlphabetsCollected++;
+        totalScore--;
+        Debug.Log(totalScore);
     }
 
-    public void SetLevelScore() {
+    public void SetLevelScore(int level1score, int level2score, int level3score) {
         if (SceneManager.GetActiveScene().name == "EL1-1") {
-            levelScore = 50;
+            levelScore = level1score;
         }
 
         if (SceneManager.GetActiveScene().name == "EL1-2") {
-            levelScore = 70;
+            levelScore = level2score;
         }
 
         if (SceneManager.GetActiveScene().name == "EL1-3") {
-            levelScore = 80;
+            levelScore = level3score;
         }
+    }
+
+    private float CalculateMarks() {
+        float totalMarks = totalAlphabetsCollected;
+        float obtainedMarks = totalScore;
+
+        float result = (obtainedMarks / totalMarks) * 10;
+        Debug.Log("Result: " + result);
+        return result;
     }
 }

@@ -11,10 +11,20 @@ public class WordSpawner : MonoBehaviour {
     [SerializeField] public List<string> words;
     [SerializeField] public List<string> wordsAns;
     [SerializeField] private List<Sprite> images;
+    public int totalScore = 0;
+    public int totalBulletsHit = 0;
+    private float levelTimer = 0;
+    private bool isTimerRunning = true;
     public static int indexNo = 0;
 
     private void Start() {
         DisplayTextAndImage();
+    }
+
+    private void Update() {
+        if (isTimerRunning) {
+            levelTimer += Time.deltaTime;
+        }
     }
 
     public void DisplayTextAndImage() {
@@ -24,9 +34,19 @@ public class WordSpawner : MonoBehaviour {
             image.GetComponent<SpriteRenderer>().sprite = images[indexNo]; 
         }
         else {
-         PlayerPrefs.SetInt("gameLevelEng", 3);
-         PlayerPrefs.Save();
-         SceneManager.LoadScene("English");
+            isTimerRunning = false;
+            int marks = (int) Math.Round(CalculateMarks());
+            SaveManager.Instance.SaveGameData("English", "Vowels", marks, levelTimer.ToString(),40,1);
+            SceneManager.LoadScene("English");
         }
+    }
+    
+    private float CalculateMarks() {
+        float totalMarks = totalBulletsHit;
+        float obtainedMarks = totalScore;
+
+        float result = (obtainedMarks / totalMarks) * 10;
+        Debug.Log("Result: " + result);
+        return result;
     }
 }

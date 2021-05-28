@@ -174,30 +174,32 @@
               </e>
             </e>
             <e p="Scripts" t="Include">
-              <e p="AnimatedButton.cs" t="Include" />
-              <e p="BackgroundMusic.cs" t="Include" />
-              <e p="ColorSwapper.cs" t="Include" />
               <e p="ConnectionManager.cs" t="Include" />
               <e p="DynamicPlay.cs" t="Include" />
-              <e p="Fader.cs" t="Include" />
               <e p="InitialPlayerPrefs.cs" t="Include" />
-              <e p="LevelScene.cs" t="Include" />
               <e p="levelUnlocker.cs" t="Include" />
-              <e p="MusicButton.cs" t="Include" />
-              <e p="MusicManager.cs" t="Include" />
-              <e p="MuteBackgroundMusic.cs" t="Include" />
               <e p="PlayerData.cs" t="Include" />
-              <e p="PlayPopup.cs" t="Include" />
-              <e p="PlayPopupOpener.cs" t="Include" />
-              <e p="Popup.cs" t="Include" />
-              <e p="PopupOpener.cs" t="Include" />
               <e p="SaveManager.cs" t="Include" />
-              <e p="SceneTransition.cs" t="Include" />
-              <e p="SoundButton.cs" t="Include" />
-              <e p="SoundManager.cs" t="Include" />
-              <e p="SpriteSwapper.cs" t="Include" />
-              <e p="TintedButton.cs" t="Include" />
-              <e p="Transition.cs" t="Include" />
+              <e p="UIScripts" t="Include">
+                <e p="AnimatedButton.cs" t="Include" />
+                <e p="BackgroundMusic.cs" t="Include" />
+                <e p="ColorSwapper.cs" t="Include" />
+                <e p="Fader.cs" t="Include" />
+                <e p="LevelScene.cs" t="Include" />
+                <e p="MusicButton.cs" t="Include" />
+                <e p="MusicManager.cs" t="Include" />
+                <e p="MuteBackgroundMusic.cs" t="Include" />
+                <e p="PlayPopup.cs" t="Include" />
+                <e p="PlayPopupOpener.cs" t="Include" />
+                <e p="Popup.cs" t="Include" />
+                <e p="PopupOpener.cs" t="Include" />
+                <e p="SceneTransition.cs" t="Include" />
+                <e p="SoundButton.cs" t="Include" />
+                <e p="SoundManager.cs" t="Include" />
+                <e p="SpriteSwapper.cs" t="Include" />
+                <e p="TintedButton.cs" t="Include" />
+                <e p="Transition.cs" t="Include" />
+              </e>
               <e p="UserData.cs" t="Include" />
               <e p="WebServices.cs" t="Include" />
             </e>

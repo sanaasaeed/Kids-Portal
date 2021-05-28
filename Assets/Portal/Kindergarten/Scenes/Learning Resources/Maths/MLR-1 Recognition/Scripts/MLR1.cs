@@ -15,6 +15,8 @@ public class MLR1 : MonoBehaviour {
     private InputHandler inputHandlerScript;
     public static int screenNo = 0;
     public static int times = 0;
+    private float levelTimer = 0;
+    private bool isTimerRunning = true;
 
     private void Awake() {
         DontDestroyOnLoad(gameObject);
@@ -28,6 +30,12 @@ public class MLR1 : MonoBehaviour {
         Debug.Log(times);
         times++;
         StartLearning();
+    }
+
+    private void Update() {
+        if (isTimerRunning) {
+            levelTimer += Time.deltaTime;
+        }
     }
 
     public void StartLearning() {
@@ -59,8 +67,10 @@ public class MLR1 : MonoBehaviour {
         }
         else {
             Debug.Log("You did great");
+            isTimerRunning = false;
             PlayerPrefs.SetInt("lrMathLevel", 1);
             PlayerPrefs.Save();
+            SaveManager.Instance.SaveLRData("Maths", "Number Recognition", 1,levelTimer.ToString());
             SceneManager.LoadScene("Math");
         }
     }

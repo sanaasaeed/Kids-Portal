@@ -8,8 +8,19 @@ public class VowelsCollector : MonoBehaviour {
     public static int count = 0;
     public static int totalCount = 0;
     private ELR4Activity m_activity;
+    private ELR4 main;
+    private float activityTimer = 0;
+    private bool activityRunning = true;
     private void Start() {
+        main = FindObjectOfType<ELR4>();
         m_activity = FindObjectOfType<ELR4Activity>();
+        activityTimer = main.levelTimer;
+    }
+
+    private void Update() {
+        if (activityRunning) {
+            activityTimer += Time.deltaTime;
+        }
     }
 
     private void OnMouseDown() {
@@ -31,6 +42,8 @@ public class VowelsCollector : MonoBehaviour {
             Debug.Log(percentage);
             if (percentage > 50) {
                 Debug.Log("Game UNLOCKED");
+                activityRunning = false;
+                SaveManager.Instance.SaveLRData("English", "Vowels", 1, activityTimer.ToString());
                 SceneManager.LoadScene("English");
             } else {
                 m_activity.resultPanel.SetActive(true);

@@ -118,31 +118,13 @@ public class AlphabetObjSpawner : MonoBehaviour {
         Debug.Log(levelTimer);
         PlayerPrefs.SetInt("lrLevelEng", 1);
         PlayerPrefs.Save();
-        SaveManager.Instance.SaveLRData("English", "Alphabet Recogition", 0, levelTimer.ToString());
+        SaveManager.Instance.SaveLRData("English", "Alphabet Recognition", 1, levelTimer.ToString());
         SceneManager.LoadScene("SubjectSelect");
         Destroy(gameObject);
         Debug.Log("Learning Resource completed Game Unlocked");
     }
 
-    /*public void PlayAlphabetAndObjActivity() {
-        alphabetAudio.enabled = false;
-        alphabetAnimator.enabled = false;
-        objAnimator.enabled = false;
-        int activityAlphabet = alphabetNo;
-        int posIncrease = 4;
-        for (int i = 0; i < rounds; i++) {
-            alphabetPrefab.GetComponent<SpriteRenderer>().sprite = alphabetSpriteList[activityAlphabet-1];
-            objectPrefab.GetComponent<SpriteRenderer>().sprite = objectsSpriteList[activityAlphabet-1];
-            var clonedAlphabet = Instantiate(alphabetPrefab, new Vector3(-10 + posIncrease, 2, -1), Quaternion.identity);
-            var clonedObj = Instantiate(objectPrefab, new Vector3(-10 + posIncrease, -2, -1), Quaternion.identity);
-            clonedAlphabet.transform.localScale -= new Vector3(0.08f, 0.08f, 0);
-            clonedObj.transform.localScale -= new Vector3(0.2f, 0.2f, 0);
-            activityAlphabet -= 1;
-            posIncrease += 4;
-        }
-    }*/
-    
-    
+
     public List<Sprite> ReturnAlphabetList() {
         
         List<Sprite> activityAlphabetList = new List<Sprite>();

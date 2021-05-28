@@ -11,6 +11,9 @@ public class ULR1 : MonoBehaviour {
     public static int alphabetNo = 0;
     private int totalScrens = 13;
     private int screenNo = 0;
+    private float levelTimer = 0;
+    private bool isTimerRunning = true;
+    public static bool dataSent = false;
 
     private void Awake() {
         DontDestroyOnLoad(gameObject);
@@ -35,6 +38,12 @@ public class ULR1 : MonoBehaviour {
             screenNo++;
         }
         
+    }
+
+    private void Update() {
+        if (isTimerRunning) {
+            levelTimer += Time.deltaTime;
+        }
     }
 
     public void NextAlphabet() {
@@ -62,7 +71,18 @@ public class ULR1 : MonoBehaviour {
         clone = Instantiate(alphabetContainer, new Vector3(0,0,-1), Quaternion.identity); 
     }
     public void SetChild(int childNo, int alphabetNo) {
-        alphabetContainer.transform.GetChild(childNo).GetComponent<SpriteRenderer>().sprite = urduAlphabetsSprite[alphabetNo];
+        if (alphabetNo < urduAlphabetsSprite.Count) {
+            alphabetContainer.transform.GetChild(childNo).GetComponent<SpriteRenderer>().sprite = urduAlphabetsSprite[alphabetNo];
+        }
+        else {
+            isTimerRunning = false;
+            Debug.Log("Game Unlocked");
+            if (!dataSent) {
+                SaveManager.Instance.SaveLRData("Urdu", "Recognition", 1,levelTimer.ToString());
+            }
+            PlayerPrefs.SetInt("lrUrduLevel", 1);
+            SceneManager.LoadScene("Urdu");
+        }
     }
 
     public void EmbedActivity() {

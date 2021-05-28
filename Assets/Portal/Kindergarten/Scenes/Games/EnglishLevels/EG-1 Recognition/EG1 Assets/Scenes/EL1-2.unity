@@ -376,16 +376,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6867427760317324416, guid: c0d879f054d868648a936beb326c2ecf,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 199.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867427760317324416, guid: c0d879f054d868648a936beb326c2ecf,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 280.4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0d879f054d868648a936beb326c2ecf, type: 3}
 --- !u!114 &532384437 stripped
@@ -691,6 +681,21 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 532384437}
+    - target: {fileID: 8633576764947247567, guid: 8492c6b0b8bd5584bb45c25fec2d9287,
+        type: 3}
+      propertyPath: hearts.Array.data[0]
+      value: 
+      objectReference: {fileID: 2096371790}
+    - target: {fileID: 8633576764947247567, guid: 8492c6b0b8bd5584bb45c25fec2d9287,
+        type: 3}
+      propertyPath: hearts.Array.data[1]
+      value: 
+      objectReference: {fileID: 2096371789}
+    - target: {fileID: 8633576764947247567, guid: 8492c6b0b8bd5584bb45c25fec2d9287,
+        type: 3}
+      propertyPath: hearts.Array.data[2]
+      value: 
+      objectReference: {fileID: 2096371788}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8492c6b0b8bd5584bb45c25fec2d9287, type: 3}
 --- !u!1001 &2009055280
@@ -767,6 +772,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b53a948653e9e9b4893a356ca2cc71c8, type: 3}
+--- !u!1 &2096371788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6379844972513755822, guid: c0d879f054d868648a936beb326c2ecf,
+    type: 3}
+  m_PrefabInstance: {fileID: 532384436}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2096371789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2376345567157221059, guid: c0d879f054d868648a936beb326c2ecf,
+    type: 3}
+  m_PrefabInstance: {fileID: 532384436}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2096371790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7819253487960626364, guid: c0d879f054d868648a936beb326c2ecf,
+    type: 3}
+  m_PrefabInstance: {fileID: 532384436}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2124527142
 GameObject:
   m_ObjectHideFlags: 0

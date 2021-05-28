@@ -13,12 +13,20 @@ public class ELR4 : MonoBehaviour {
     [SerializeField] private List<AudioClip> audios;
     private AudioSource audioSrc;
     private int screenIndex = 0;
+    public float levelTimer = 0;
+    public bool isTimerRunning = true;
     private void Start() {
         audioSrc = GetComponent<AudioSource>();
         panelText.text = texts[screenIndex];
         boardSet.GetComponent<SpriteRenderer>().sprite = boardImages[screenIndex];
         audioSrc.PlayOneShot(audios[screenIndex]);
         screenIndex++;
+    }
+
+    private void Update() {
+        if (isTimerRunning) {
+            levelTimer += Time.deltaTime;
+        }
     }
 
     public void NextBtn() {
@@ -32,6 +40,7 @@ public class ELR4 : MonoBehaviour {
             screenIndex++;
         }
         else {
+            isTimerRunning = false;
             SceneManager.LoadScene("ELR4Activity");
         }
     }

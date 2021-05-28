@@ -12,7 +12,8 @@ public class GameRunner : MonoBehaviour {
     [SerializeField] private List<AudioClip> audioClips;
     [SerializeField] private AudioClip capitalAudioClip;
     [SerializeField] private AudioClip smallAudioClip;
-    
+    private float levelTimer= 0;
+    private bool isTimerRunning = true;
     private Animation m_anim;
     public static int alphabetNo = 0;
     public static int interval = 4;
@@ -35,6 +36,12 @@ public class GameRunner : MonoBehaviour {
         StartCoroutine(nameof(PlaySound));
     }
 
+    private void Update() {
+        if (isTimerRunning) {
+            levelTimer += Time.deltaTime;
+        }
+    }
+
     public void NextBtn() {
         int newAlphabetNo = alphabetNo + 1;
         if (newAlphabetNo < capitalAlphabets.Count) {
@@ -48,9 +55,11 @@ public class GameRunner : MonoBehaviour {
             alphabetNo++;
         }
         else {
+            isTimerRunning = false;
             Debug.Log("Display WIN screen");
             PlayerPrefs.SetInt("lrLevelEng", 2);
             PlayerPrefs.Save();
+            SaveManager.Instance.SaveLRData("English", "Capital and Small Alphabets", 1,levelTimer.ToString());
             SceneManager.LoadScene("English");
         }
 

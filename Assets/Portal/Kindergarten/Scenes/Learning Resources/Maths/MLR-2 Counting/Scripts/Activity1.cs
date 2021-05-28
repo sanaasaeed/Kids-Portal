@@ -14,11 +14,22 @@ public class Activity1 : MonoBehaviour {
     [SerializeField] private List<GameObject> clones;
     [SerializeField] private List<TMP_InputField> inputFields;
     [SerializeField] private GameObject resultPanel;
+    private MLR2 mainScript;
+    private float activityTimer = 0;
+    private bool isActivityRunning = true;
     private Sprite currentNo;
     private List<float> yPositions;
     public static int correctAnswers;
     private void Start() {
+        mainScript = FindObjectOfType<MLR2>();
         SetCountingObjects();
+        activityTimer = mainScript.levelTimer;
+    }
+
+    private void Update() {
+        if (isActivityRunning) {
+            activityTimer += Time.deltaTime;
+        }
     }
 
     void SetCountingObjects() {
@@ -45,10 +56,12 @@ public class Activity1 : MonoBehaviour {
                 CheckAnswers(ans, i);
             }
         }
-        // GREATER THAN 2 TO MAKE IT 50% PASSING
-        if (correctAnswers > 2) {
+        // GREATER THAN 3 TO MAKE IT above 50% PASSING
+        if (correctAnswers > 3) {
+            isActivityRunning = false;
             PlayerPrefs.SetInt("lrMathLevel", 2);
             PlayerPrefs.Save();
+            SaveManager.Instance.SaveLRData("Maths", "Counting", 1,activityTimer.ToString());
             SceneManager.LoadScene("Math");
         }
         else {

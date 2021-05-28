@@ -5,8 +5,7 @@ using TMPro;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
-public class ClickLetters : MonoBehaviour, IPointerClickHandler
-{
+public class ClickLetters : MonoBehaviour, IPointerClickHandler{
     private char _randomLetter;
     private bool _uppercase;
     private AudioSource _audioSource;
@@ -24,6 +23,8 @@ public class ClickLetters : MonoBehaviour, IPointerClickHandler
             GameController.Instance.HandleCorrectLetterClick(_uppercase);
         }
         else {
+            GameController.Instance.totalScore--;
+            GameController.Instance.totalClicks++;
         }
     }
 

@@ -96,6 +96,7 @@ public class SaveManager : MonoBehaviour {
         }
         else {
             Debug.Log("Game Data Submitted successfully " + webRequest.downloadHandler.text);
+        //    var fromjson = JsonUtility.FromJson<Player>(webRequest.downloadHandler.text);
         }
     }
     
@@ -135,4 +136,5 @@ class Progress {
         PlayerPrefs.SetInt(key, value);
     }
 }
+
 
