@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,14 +12,25 @@ namespace Portal.Kindergarten.Scenes.UrduLevels.UL1_Assets.Scripts {
         [SerializeField] private GameObject targetLetterBalloon;
         [SerializeField] public List<Sprite> letters;
         [SerializeField] private TextMeshProUGUI scoreText;
-        [SerializeField] private List<int> levelScores;
+        [SerializeField] private List<int> levelScores; 
         public static int targetScore;
+        [HideInInspector] public int totalCollected = 0;
+        [HideInInspector] public int totalScore = 0;
+        [HideInInspector] public int correct = 0;
+        [HideInInspector] public float levelTimer = 0;
+        [HideInInspector]  public bool isTimeRunning = true;
     
         private void OnEnable() {
             SetTargetAlphabet();
             SetLevelScore();
         }
-// Can make it more dynamic
+        // Can make it more dynamic
+        private void Update() {
+            if (isTimeRunning) {
+                levelTimer += Time.deltaTime;
+            }
+        }
+
         private void SetLevelScore() {
             if (SceneManager.GetActiveScene().name == "UL1-1") {
                 targetScore = levelScores[0];
@@ -30,11 +42,15 @@ namespace Portal.Kindergarten.Scenes.UrduLevels.UL1_Assets.Scripts {
         }
 
         public  void IncreaseScore() {
+            totalCollected++;
+            totalScore++;
             CurrentScore += 10;
             scoreText.text = CurrentScore.ToString();
         }
     
         public void DecreaseScore() {
+            totalScore--;
+            totalCollected++;
             CurrentScore -= 10;
             scoreText.text = CurrentScore.ToString();
         }
@@ -43,16 +59,14 @@ namespace Portal.Kindergarten.Scenes.UrduLevels.UL1_Assets.Scripts {
             target = letters[Random.Range(0, 37)];
             targetLetterBalloon.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = target;
         }
-    }
-}
+    
+        public void TryAgain() {
+            SceneManager.LoadScene("UL1-1");
+        }
 
-/*
-TODOS:
-- MainMenu
-- Add more levels
-- Add scores
-- Speed balloons up in next levels
-- Game Over
-- Pause Menu
-- Goals Menu
-*/
+        public void Back() {
+            SceneManager.LoadScene("Urdu");
+        }
+    }
+    
+}

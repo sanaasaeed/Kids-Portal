@@ -53,3 +53,5 @@ MonoBehaviour:
   levelText: {fileID: 0}
   randomNumber: {fileID: 0}
   scoreText: {fileID: 0}
+  gameOverPanel: {fileID: 0}
+  gameWinPanel: {fileID: 0}

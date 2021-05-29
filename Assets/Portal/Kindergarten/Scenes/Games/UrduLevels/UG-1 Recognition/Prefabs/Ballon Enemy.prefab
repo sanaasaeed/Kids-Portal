@@ -120,6 +120,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   newSprite: {fileID: 21300000, guid: 606f9811c22bfe64681a157aee763fdb, type: 3}
+  gameOverPanel: {fileID: 7907694353248893542, guid: 832780d50ba84484a83291071354061c,
+    type: 3}
+  gameWinPanel: {fileID: 5384760186067755584, guid: 7100799ac19e5d94083fa56b277c89c6,
+    type: 3}
 --- !u!60 &6030293963663068945
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -11,15 +11,15 @@ public class LevelManager : MonoBehaviour {
     public static int levelNo = 1;
     public static int numberToGet;
     public static int score;
-    public static int indexHeart = 0;
-    public static int totalLives = 14;
-    [SerializeField] private List<GameObject> hearts;
-    [SerializeField] private Sprite emptyHeart;
     [SerializeField] private GameObject levelPopup;
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private TextMeshProUGUI randomNumber;
-    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] public TextMeshProUGUI scoreText;
+    [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject gameWinPanel;
+    private ResultPanel m_resultPanel;
     public static float timer = 0;
+    private int correctCollected = 0;
     public static bool isTimerRunning = true;
     public static int totalScore = 0;
     public static int totalNumbersCollected = 0;
@@ -70,6 +70,7 @@ public class LevelManager : MonoBehaviour {
     }
 
     public void IncreaseScore() {
+        correctCollected++;
         score += 10;
         if (score == 20) {
             levelNo = 2;
@@ -83,24 +84,31 @@ public class LevelManager : MonoBehaviour {
         } else if (score == 60) {
             isTimerRunning = false;
             int marks = (int) Math.Round(CalculateMarks());
-            PlayerPrefs.SetInt("gameMathLevel", 1);
-            PlayerPrefs.Save();
-            SaveManager.Instance.SaveGameData("English", "Number Recognition", marks,timer.ToString(),40,1);
-            SceneManager.LoadScene("Math");
+            if (marks > 5) {
+                gameWinPanel.SetActive(true);
+                m_resultPanel = FindObjectOfType<ResultPanel>();
+                Time.timeScale = 0f;
+                m_resultPanel.SetStatus("Game Won", "Score: " + marks, "Total numbers collected: " + totalNumbersCollected, "Correct collected: " + correctCollected);
+                PlayerPrefs.SetInt("gameMathLevel", 1);
+                PlayerPrefs.Save();
+                SaveManager.Instance.SaveGameData("Maths", "Number Recognition", marks,timer.ToString(),40,1);
+            }
+            else {
+                gameOverPanel.SetActive(true);
+                m_resultPanel = FindObjectOfType<ResultPanel>();
+                m_resultPanel.SetStatus("Game Over", "Score: " + marks, "Total numbers collected: " + totalNumbersCollected, "Correct collected: " + correctCollected);
+                Time.timeScale = 0f;
+            }
+            
         }
         scoreText.text = score.ToString();
     }
 
-    public void DecreaseLives() {
-        totalLives -= 1;
-        if (totalLives % 5 == 0) {
-            Debug.Log("GameOver");
-            SceneManager.LoadScene("GameOver");
-        }
-        else {
-            hearts[indexHeart].GetComponent<Image>().sprite = emptyHeart;
-            indexHeart++;
-        }
+    public void DecreaseScore() {
+        score -= 10;
+        totalNumbersCollected++;
+        totalScore--;
+        scoreText.text = score.ToString();
     }
     
     private float CalculateMarks() {
@@ -110,5 +118,13 @@ public class LevelManager : MonoBehaviour {
         float result = (obtainedMarks / totalMarks) * 10;
         Debug.Log("Result: " + result);
         return result;
+    }
+    
+    public void TryAgain() {
+        SceneManager.LoadScene("MG-1");
+    }
+
+    public void Back() {
+        SceneManager.LoadScene("Math");
     }
 }

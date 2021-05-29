@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
@@ -9,6 +10,10 @@ namespace Portal.Kindergarten.Scenes.UrduLevels.UL1_Assets.Scripts {
         public Sprite newSprite;
         private AudioManager audioManager;
         private float yUpperLimit = 8;
+        private ResultPanel m_resultPanel;
+        
+        [SerializeField] public GameObject gameOverPanel;
+        [SerializeField] public GameObject gameWinPanel;
 
         private void Start() {
             gameState = FindObjectOfType<GameState>();
@@ -38,7 +43,20 @@ namespace Portal.Kindergarten.Scenes.UrduLevels.UL1_Assets.Scripts {
                         SceneLoader.LoadNextScene(); 
                     }
                     else {
-                        SceneManager.LoadScene("UrduLevels"); // TODO: Add Win Screen
+                        // TODO: Win here
+                        gameState.isTimeRunning = false;
+                        int marks = (int) Math.Round(CalculateMarks());
+                        if (marks > 5) {
+                            gameWinPanel.SetActive(true);
+                            Time.timeScale = 0f;
+                           SaveManager.Instance.SaveGameData("Urdu", "Recognition", marks, gameState.levelTimer.ToString(), 40, 1);
+                            SceneManager.LoadScene("Urdu");                            
+                        }
+                        else {
+                            gameOverPanel.SetActive(true);
+                            Time.timeScale = 0f;
+                            SceneManager.LoadScene("Urdu");   
+                        }
                     }
                 }
                 audioManager.PlayCorrectAudio();
@@ -55,5 +73,14 @@ namespace Portal.Kindergarten.Scenes.UrduLevels.UL1_Assets.Scripts {
                 gameObject.GetComponent<SpriteRenderer>().sprite = newSprite;
             }
         }
+        private float CalculateMarks() {
+            float totalMarks = gameState.totalCollected;
+            float obtainedMarks = gameState.totalScore;
+
+            float result = (obtainedMarks / totalMarks) * 10;
+            Debug.Log("Result: " + result);
+            return result;
+        }
     }
+    
 }

@@ -9,6 +9,7 @@ public class PlayerCar : MonoBehaviour {
     private AudioSource audio;
     public SpawnManagerMath spawnManager;
     public LevelManager levelManager;
+    public AudioClip wrongAudio;
 
     private void Start() {
         levelManager = FindObjectOfType<LevelManager>();
@@ -33,9 +34,8 @@ public class PlayerCar : MonoBehaviour {
             LevelManager.totalNumbersCollected++;
             levelManager.IncreaseScore();
         } else if (!other.name.Contains(LevelManager.numberToGet.ToString())) {
-            LevelManager.totalNumbersCollected++;
-            LevelManager.totalScore--;
-            levelManager.DecreaseLives();
+            levelManager.DecreaseScore();
+            audio.PlayOneShot(wrongAudio);
         }
     }
 }
