@@ -50,6 +50,7 @@ namespace Portal.Kindergarten.Scenes.UrduLevels.UL1_Assets.Scripts {
                             gameWinPanel.SetActive(true);
                             Time.timeScale = 0f;
                            SaveManager.Instance.SaveGameData("Urdu", "Recognition", marks, gameState.levelTimer.ToString(), 40, 1);
+                           SaveManager.Instance.UpdateExperiencePoints(40);
                             SceneManager.LoadScene("Urdu");                            
                         }
                         else {

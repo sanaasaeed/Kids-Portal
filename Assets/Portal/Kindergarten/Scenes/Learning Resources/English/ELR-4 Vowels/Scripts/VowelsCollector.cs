@@ -43,7 +43,10 @@ public class VowelsCollector : MonoBehaviour {
             if (percentage > 50) {
                 Debug.Log("Game UNLOCKED");
                 activityRunning = false;
+                PlayerPrefs.SetInt("lrLevelEng", 3);
+                PlayerPrefs.Save();
                 SaveManager.Instance.SaveLRData("English", "Vowels", 1, activityTimer.ToString());
+                SaveManager.Instance.UpdateExperiencePoints(20);
                 SceneManager.LoadScene("English");
             } else {
                 m_activity.resultPanel.SetActive(true);

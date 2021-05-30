@@ -67,7 +67,6 @@ public class GameState : MonoBehaviour{
                PlayerPrefs.SetInt("gameLevelEng", 1);
                PlayerPrefs.Save();
                SaveManager.Instance.SaveGameData("English", "AlphabetRecognition", marksToSend,timer.ToString(), 40,1);
-              // if(ConnectionManage)
                SaveManager.Instance.UpdateExperiencePoints(40);
                SceneManager.LoadScene("English");
             }

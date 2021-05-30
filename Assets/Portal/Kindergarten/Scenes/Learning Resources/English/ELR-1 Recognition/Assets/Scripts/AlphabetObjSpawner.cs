@@ -87,6 +87,7 @@ public class AlphabetObjSpawner : MonoBehaviour {
         else {
             nextBtn.SetActive(false);  
             // Finish the Game
+            alphabetNo = 0;
             FinishResource();
         }
         
@@ -119,8 +120,9 @@ public class AlphabetObjSpawner : MonoBehaviour {
         PlayerPrefs.SetInt("lrLevelEng", 1);
         PlayerPrefs.Save();
         SaveManager.Instance.SaveLRData("English", "Alphabet Recognition", 1, levelTimer.ToString());
+        SaveManager.Instance.UpdateExperiencePoints(20);
         SceneManager.LoadScene("SubjectSelect");
-        Destroy(gameObject);
+        levelTimer = 0;
         Debug.Log("Learning Resource completed Game Unlocked");
     }
 

@@ -82,6 +82,7 @@ public class Shape : MonoBehaviour {
             PlayerPrefs.SetInt("lrMathLevel", 3);
             PlayerPrefs.Save();
             SaveManager.Instance.SaveLRData("Maths", "Shapes", 1, activityTimer.ToString());
+            SaveManager.Instance.UpdateExperiencePoints(20);
             SceneManager.LoadScene("Math");
         }
         else {

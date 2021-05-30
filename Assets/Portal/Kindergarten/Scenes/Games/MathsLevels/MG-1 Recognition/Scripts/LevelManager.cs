@@ -91,6 +91,7 @@ public class LevelManager : MonoBehaviour {
                 m_resultPanel.SetStatus("Game Won", "Score: " + marks, "Total numbers collected: " + totalNumbersCollected, "Correct collected: " + correctCollected);
                 PlayerPrefs.SetInt("gameMathLevel", 1);
                 PlayerPrefs.Save();
+                SaveManager.Instance.UpdateExperiencePoints(40);
                 SaveManager.Instance.SaveGameData("Maths", "Number Recognition", marks,timer.ToString(),40,1);
             }
             else {

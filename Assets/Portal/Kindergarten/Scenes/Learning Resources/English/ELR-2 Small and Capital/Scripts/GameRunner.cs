@@ -60,6 +60,7 @@ public class GameRunner : MonoBehaviour {
             PlayerPrefs.SetInt("lrLevelEng", 2);
             PlayerPrefs.Save();
             SaveManager.Instance.SaveLRData("English", "Capital and Small Alphabets", 1,levelTimer.ToString());
+            SaveManager.Instance.UpdateExperiencePoints(20);
             SceneManager.LoadScene("English");
         }
 

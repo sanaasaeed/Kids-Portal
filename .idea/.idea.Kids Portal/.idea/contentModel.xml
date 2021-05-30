@@ -180,6 +180,7 @@
               <e p="InitialPlayerPrefs.cs" t="Include" />
               <e p="levelUnlocker.cs" t="Include" />
               <e p="PlayerData.cs" t="Include" />
+              <e p="RewardCollector.cs" t="Include" />
               <e p="SaveManager.cs" t="Include" />
               <e p="UIScripts" t="Include">
                 <e p="AnimatedButton.cs" t="Include" />

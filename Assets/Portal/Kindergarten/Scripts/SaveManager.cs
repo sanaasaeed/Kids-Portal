@@ -27,7 +27,8 @@ public class SaveManager : MonoBehaviour {
     }
 
     public void UpdateExperiencePoints(int pointsToAdd) {
-        experiencePoints += pointsToAdd;
+        experiencePoints = pointsToAdd;
+        Debug.Log("Experience points being send: " + experiencePoints );
         StartCoroutine(SaveToDatabase("experiencePoints", experiencePoints, "updatexp"));
     }
 

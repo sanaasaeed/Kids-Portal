@@ -62,6 +62,7 @@ public class Activity1 : MonoBehaviour {
             PlayerPrefs.SetInt("lrMathLevel", 2);
             PlayerPrefs.Save();
             SaveManager.Instance.SaveLRData("Maths", "Counting", 1,activityTimer.ToString());
+            SaveManager.Instance.UpdateExperiencePoints(20);
             SceneManager.LoadScene("Math");
         }
         else {

@@ -46,7 +46,8 @@ public class ScoreHandler : MonoBehaviour {
                 Debug.Log("Marks " + marks);
                 Debug.Log("Total " + totalClicks);
                 Debug.Log("Correct " + correctClicks);
-                m_resultPanel.SetStatus("You Won", marks.ToString(), totalClicks.ToString(), correctClicks.ToString()); 
+                m_resultPanel.SetStatus("You Won", marks.ToString(), totalClicks.ToString(), correctClicks.ToString());
+                SaveManager.Instance.UpdateExperiencePoints(40);
                 SaveManager.Instance.SaveGameData("English", "Counting", marks,timer.ToString(),40,1);
             }
             else {

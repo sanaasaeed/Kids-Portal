@@ -60,6 +60,7 @@ public class ShapeManager : MonoBehaviour {
                 Time.timeScale = 0f;
                 m_resultPanel = FindObjectOfType<ResultPanel>();
                 m_resultPanel.SetStatus("You Win", "Score: " + marks, "Total Shoots: " + totalShoots , "Correct Shoots: " + correctClick);
+                SaveManager.Instance.UpdateExperiencePoints(40);
                 SaveManager.Instance.SaveGameData("Maths", "Shapes", marks, leveltimer.ToString(), 40,1);
             }
             else {
