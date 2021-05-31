@@ -21,7 +21,6 @@ public class SaveManager : MonoBehaviour {
         StartCoroutine(GetProgress());
     }
 
-    // To be called while saving player prefs in any game or LR
     public void SaveAllPlayerPrefsToDatabase() {
         StartCoroutine(UpdatePlayerPrefs());
     }
@@ -116,13 +115,110 @@ public class SaveManager : MonoBehaviour {
             progress.SetPlayerPrefsFromDb("engGameLevel", progress.engGamesProgress);
             progress.SetPlayerPrefsFromDb("gameMathLevel", progress.mathGamesProgress);
             progress.SetPlayerPrefsFromDb("urduGameLevel", progress.urduGamesProgress);
-            
         }
     }
 
     public void SaveLRData(string subject, string name, int status, string learningTime) {
         StartCoroutine(SaveLRDataToDB(subject, name, status, learningTime));
     }
+
+    public void SaveProgressData(string subject, string type, int progress) {
+        if (subject == "English" && type == "lr") {
+            StartCoroutine(SaveEngLrProgress(progress));
+        } else if (subject == "English" && type == "game") {
+            StartCoroutine(SaveEngGameProgress(progress));
+        } else if (subject == "Urdu" && type == "lr") {
+            StartCoroutine(SaveUrduLrProgress(progress));
+        } else if (subject == "Urdu" && type == "game") {
+            StartCoroutine(SaveUrduGameProgress(progress));
+        } else if (subject == "Math" && type == "lr") {
+            StartCoroutine(SaveMathLrProgress(progress));
+        } else if (subject == "Math" && type == "game") {
+            StartCoroutine(SaveMathGameProgress(progress));
+        }
+    }
+    IEnumerator SaveEngLrProgress(int progress) {
+        WWWForm form = new WWWForm();
+        form.AddField("engLrProgress", progress);
+        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "getEngLrProgress", form);
+        yield return webRequest.SendWebRequest();
+        if (webRequest.isNetworkError || webRequest.isHttpError) {
+            Debug.Log(webRequest.error);
+        }
+        else {
+            Debug.Log("English Progress Submitted successfully ");
+            
+        }
+    }
+
+    IEnumerator SaveEngGameProgress(int gameProgress) {
+        WWWForm form = new WWWForm();
+        form.AddField("engGamesProgress", gameProgress);
+        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "getEngGameProgress", form);
+        yield return webRequest.SendWebRequest();
+        if (webRequest.isNetworkError || webRequest.isHttpError) {
+            Debug.Log(webRequest.error);
+        }
+        else {
+            Debug.Log("English Progress Submitted successfully ");
+            
+        }
+    }
+
+    IEnumerator SaveMathGameProgress(int gameProgress) {
+        WWWForm form = new WWWForm();
+        form.AddField("mathGamesProgress", gameProgress);
+        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "getMathGameProgress", form);
+        yield return webRequest.SendWebRequest();
+        if (webRequest.isNetworkError || webRequest.isHttpError) {
+            Debug.Log(webRequest.error);
+        }
+        else {
+            Debug.Log("Math Progress Submitted successfully ");
+        }
+    }
+    
+    IEnumerator SaveMathLrProgress(int gameProgress) {
+        WWWForm form = new WWWForm();
+        form.AddField("mathLrProgress", gameProgress);
+        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "getMathLrProgress", form);
+        yield return webRequest.SendWebRequest();
+        if (webRequest.isNetworkError || webRequest.isHttpError) {
+            Debug.Log(webRequest.error);
+        }
+        else {
+            Debug.Log("Math Progress Submitted successfully ");
+            
+        }
+    }
+
+    IEnumerator SaveUrduGameProgress(int gameProgress) {
+        WWWForm form = new WWWForm();
+        form.AddField("urduGamesProgress", gameProgress);
+        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "getUrduGameProgress", form);
+        yield return webRequest.SendWebRequest();
+        if (webRequest.isNetworkError || webRequest.isHttpError) {
+            Debug.Log(webRequest.error);
+        }
+        else {
+            Debug.Log("Urdu Progress Submitted successfully ");
+        }
+    }
+
+    IEnumerator SaveUrduLrProgress(int gameProgress) {
+        WWWForm form = new WWWForm();
+        form.AddField("urduLrProgress", gameProgress);
+        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "getUrduLrProgress", form);
+        yield return webRequest.SendWebRequest();
+        if (webRequest.isNetworkError || webRequest.isHttpError) {
+            Debug.Log(webRequest.error);
+        }
+        else {
+            Debug.Log("Urdu Progress Submitted successfully ");
+            
+        }
+    }
+    
 }
 
 class Progress {

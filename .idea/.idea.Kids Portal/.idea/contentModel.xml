@@ -23,6 +23,9 @@
             <e p="Fonts" t="Include">
               <e p="OFL.txt" t="Include" />
             </e>
+            <e p="Plugins" t="Include">
+              <e p="SimpleJSON.cs" t="Include" />
+            </e>
             <e p="Scenes" t="Include">
               <e p="Games" t="Include">
                 <e p="EnglishLevels" t="Include">

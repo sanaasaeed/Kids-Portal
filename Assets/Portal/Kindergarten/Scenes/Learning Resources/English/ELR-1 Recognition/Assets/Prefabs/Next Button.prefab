@@ -152,7 +152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3706759799506278560
 RectTransform:
   m_ObjectHideFlags: 0
@@ -253,7 +253,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7838075441055859324, guid: 15d3c04bfbb0d00409b4f456c0512288,
+          type: 3}
         m_MethodName: NextAlphabet
         m_Mode: 1
         m_Arguments:

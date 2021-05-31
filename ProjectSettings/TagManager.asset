@@ -32,6 +32,7 @@ TagManager:
   - rightShape
   - playerbullet
   - shape
+  - gamemanager
   layers:
   - Default
   - TransparentFX

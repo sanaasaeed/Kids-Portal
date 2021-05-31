@@ -61,6 +61,7 @@ public class GameRunner : MonoBehaviour {
             PlayerPrefs.Save();
             SaveManager.Instance.SaveLRData("English", "Capital and Small Alphabets", 1,levelTimer.ToString());
             SaveManager.Instance.UpdateExperiencePoints(20);
+            SaveManager.Instance.SaveProgressData("English", "lr", 2);
             SceneManager.LoadScene("English");
         }
 

@@ -93,6 +93,7 @@ public class LevelManager : MonoBehaviour {
                 PlayerPrefs.Save();
                 SaveManager.Instance.UpdateExperiencePoints(40);
                 SaveManager.Instance.SaveGameData("Maths", "Number Recognition", marks,timer.ToString(),40,1);
+                SaveManager.Instance.SaveProgressData("Math", "game", 1);
             }
             else {
                 gameOverPanel.SetActive(true);

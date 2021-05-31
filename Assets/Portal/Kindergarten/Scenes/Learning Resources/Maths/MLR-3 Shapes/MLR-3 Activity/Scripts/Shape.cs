@@ -22,6 +22,7 @@ public class Shape : MonoBehaviour {
         objspawner = FindObjectOfType<ObjectSpawner>();
         initalPos = transform.position;
         activityTimer = mainScript.levelTimer;
+        // TODO: Remove error from here and test it again and again
     }
 
     private void Update() {
@@ -83,6 +84,7 @@ public class Shape : MonoBehaviour {
             PlayerPrefs.Save();
             SaveManager.Instance.SaveLRData("Maths", "Shapes", 1, activityTimer.ToString());
             SaveManager.Instance.UpdateExperiencePoints(20);
+            SaveManager.Instance.SaveProgressData("Math", "lr", 3);
             SceneManager.LoadScene("Math");
         }
         else {

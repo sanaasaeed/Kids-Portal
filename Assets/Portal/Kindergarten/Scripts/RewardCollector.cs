@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class RewardCollector : MonoBehaviour {
     [SerializeField] private Image cardImg;
     [SerializeField] private List<Sprite> cards;
+    [SerializeField] private GameObject rewardCardPanel;
     private Kid kid;
     private int experiencePoints;
     private void Start() {
@@ -31,21 +32,25 @@ public class RewardCollector : MonoBehaviour {
 // TODO: rewards should be put into DB
     public void RewardCard(int experiencePoints){
         if (experiencePoints > 85 && experiencePoints < 170) {
-            StartCoroutine(pushCardInDb("card1"));
+            rewardCardPanel.SetActive(true);
             cardImg.sprite = cards[0];
         } else if (experiencePoints > 170 && experiencePoints < 254) {
+            rewardCardPanel.SetActive(true);
             cardImg.sprite = cards[1];
         } else if (experiencePoints > 254 && experiencePoints < 350) {
+            rewardCardPanel.SetActive(true);
             cardImg.sprite = cards[2];
         } else if (experiencePoints > 350 && experiencePoints < 420) {
+            rewardCardPanel.SetActive(true);
             cardImg.sprite = cards[3];
         } else if (experiencePoints > 420) {
+            rewardCardPanel.SetActive(true);
             cardImg.sprite = cards[4];
         }
     }
 
     public void Back() {
-        SceneManager.LoadScene("SubjectSelect");
+        rewardCardPanel.SetActive(false);
     }
 
     IEnumerator pushCardInDb(string cardNo) {

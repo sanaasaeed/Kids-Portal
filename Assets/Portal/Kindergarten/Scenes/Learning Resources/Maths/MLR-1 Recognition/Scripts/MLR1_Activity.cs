@@ -15,7 +15,7 @@ public class MLR1_Activity : MonoBehaviour {
         cameraAudioSrc = cameraGameObject.GetComponent<AudioSource>();
         audioSrc = GetComponent<AudioSource>();
         mainScript = FindObjectOfType<MLR1>();
-        int randomIndex = Random.Range(MLR1.letterNo - 5, MLR1.letterNo);
+        int randomIndex = Random.Range(MLR1.letterNo - 3, MLR1.letterNo);
         randomSprite = mainScript.mathLetters[randomIndex];
         numbers[Random.Range(0, numbers.Count)].GetComponent<SpriteRenderer>().sprite = randomSprite;
         StartCoroutine(Wait(randomIndex));

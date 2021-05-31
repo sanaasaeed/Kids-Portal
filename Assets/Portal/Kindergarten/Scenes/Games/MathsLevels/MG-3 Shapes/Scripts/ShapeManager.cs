@@ -62,6 +62,7 @@ public class ShapeManager : MonoBehaviour {
                 m_resultPanel.SetStatus("You Win", "Score: " + marks, "Total Shoots: " + totalShoots , "Correct Shoots: " + correctClick);
                 SaveManager.Instance.UpdateExperiencePoints(40);
                 SaveManager.Instance.SaveGameData("Maths", "Shapes", marks, leveltimer.ToString(), 40,1);
+                SaveManager.Instance.SaveProgressData("Math", "game", 3);
             }
             else {
                 gameOverPanel.SetActive(true);

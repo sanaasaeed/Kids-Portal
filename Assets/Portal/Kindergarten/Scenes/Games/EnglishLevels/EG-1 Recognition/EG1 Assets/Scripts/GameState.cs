@@ -68,6 +68,7 @@ public class GameState : MonoBehaviour{
                PlayerPrefs.Save();
                SaveManager.Instance.SaveGameData("English", "AlphabetRecognition", marksToSend,timer.ToString(), 40,1);
                SaveManager.Instance.UpdateExperiencePoints(40);
+               SaveManager.Instance.SaveProgressData("English", "game", 1);
                SceneManager.LoadScene("English");
             }
         }
