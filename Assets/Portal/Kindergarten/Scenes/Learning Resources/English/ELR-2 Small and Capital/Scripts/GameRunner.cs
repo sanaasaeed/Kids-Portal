@@ -59,13 +59,14 @@ public class GameRunner : MonoBehaviour {
             Debug.Log("Display WIN screen");
             PlayerPrefs.SetInt("lrLevelEng", 2);
             PlayerPrefs.Save();
-            SaveManager.Instance.SaveLRData("English", "Capital and Small Alphabets", 1,levelTimer.ToString());
+            /*SaveManager.Instance.SaveLRData("English", "Capital and Small Alphabets", 1,levelTimer.ToString());
             SaveManager.Instance.UpdateExperiencePoints(20);
-            SaveManager.Instance.SaveProgressData("English", "lr", 2);
+            SaveManager.Instance.SaveProgressData("English", "lr", 2);*/
             SceneManager.LoadScene("English");
+            alphabetNo = 0;
         }
 
-        if (alphabetNo % interval == 0) {
+        if (alphabetNo % interval == 0 && alphabetNo != 0) {
             checkPoint = alphabetNo;
             SceneManager.LoadScene($"EmbeddedActivity2");
         }

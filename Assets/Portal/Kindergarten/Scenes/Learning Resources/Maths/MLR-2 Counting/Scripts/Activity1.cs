@@ -56,8 +56,8 @@ public class Activity1 : MonoBehaviour {
                 CheckAnswers(ans, i);
             }
         }
-        // GREATER THAN 3 TO MAKE IT above 50% PASSING
-        if (correctAnswers > 3) {
+        // GREATER THAN 2 TO MAKE IT above 50% PASSING
+        if (correctAnswers > 2) {
             isActivityRunning = false;
             PlayerPrefs.SetInt("lrMathLevel", 2);
             PlayerPrefs.Save();
@@ -65,6 +65,7 @@ public class Activity1 : MonoBehaviour {
             SaveManager.Instance.UpdateExperiencePoints(20);
             SaveManager.Instance.SaveProgressData("Math", "lr", 2);
             SceneManager.LoadScene("Math");
+            MLR2.letterNo = 0;
         }
         else {
             OpenPanel();
@@ -90,6 +91,7 @@ public class Activity1 : MonoBehaviour {
         yield return new WaitForSeconds(0.3f);
         ClosePanel();
         yield return new WaitForSeconds(0.2f);
+        MLR2.letterNo = 0;
         SceneManager.LoadScene("MLR-2");
     }
 }

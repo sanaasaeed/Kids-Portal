@@ -127,6 +127,7 @@ public class LevelManager : MonoBehaviour {
     }
 
     public void Back() {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Math");
     }
 }

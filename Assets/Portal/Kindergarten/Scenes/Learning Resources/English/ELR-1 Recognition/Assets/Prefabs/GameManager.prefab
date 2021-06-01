@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b83e342fdc82084d94feebb70b12e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instructionPopup: {fileID: 0}
+  instructionPopup: {fileID: 5857190917576451744, guid: bc57d466d47154a46a346555a76d91c9,
+    type: 3}
 --- !u!114 &7074688286047558011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,12 +139,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8b1f080e9ac22b34f8995b60454ff099, type: 3}
   - {fileID: 8300000, guid: 3b949bc39938bba40b71f49e37d0b880, type: 3}
   - {fileID: 8300000, guid: 2d3b7d24f5354e7458e6047e7cc7c537, type: 3}
-  nextBtn: {fileID: 0}
+  nextBtn: {fileID: 3706759799506278561, guid: c7ec80ac1faf7634c8f4a5c9b852d21d, type: 3}
   alphabetPrefab: {fileID: 6412103608288929441, guid: 2625ef21581173d4ea3dd21a7f6bb585,
     type: 3}
   objectPrefab: {fileID: 6873962750485158522, guid: ffc3e0beb6c7f7442b19538f6134299d,
     type: 3}
-  instructionPopup: {fileID: 0}
+  instructionPopup: {fileID: 5857190917576451744, guid: bc57d466d47154a46a346555a76d91c9,
+    type: 3}
   playActivityBtn: {fileID: 1165488445033136994, guid: 4f17a700b6c824a45a1bfd85610bb3a4,
     type: 3}
-  canvas: {fileID: 0}
+  canvas: {fileID: 6368503094610824673, guid: 527f44cb8ceb6904caa24e3f89bd4f03, type: 3}

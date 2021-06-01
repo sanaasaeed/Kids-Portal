@@ -18,6 +18,7 @@ public class MLR2 : MonoBehaviour {
     private int screenNo = 0;
     void Start() {
         audioSrc = GetComponent<AudioSource>();
+        Debug.Log("Letter No: " + letterNo);
         digit.GetComponent<SpriteRenderer>().sprite = numbers[letterNo];
         audioSrc.PlayOneShot(audios[letterNo]);
         for (int i = 0; i < Int32.Parse(numbers[letterNo].name); i++) {

@@ -21,7 +21,7 @@ public class Shape : MonoBehaviour {
         mainScript = FindObjectOfType<MLR3>();
         objspawner = FindObjectOfType<ObjectSpawner>();
         initalPos = transform.position;
-        activityTimer = mainScript.levelTimer;
+//        activityTimer = mainScript.levelTimer;
         // TODO: Remove error from here and test it again and again
     }
 
@@ -86,6 +86,7 @@ public class Shape : MonoBehaviour {
             SaveManager.Instance.UpdateExperiencePoints(20);
             SaveManager.Instance.SaveProgressData("Math", "lr", 3);
             SceneManager.LoadScene("Math");
+            MLR3.index = 0;
         }
         else {
             objspawner.OpenPanel();
@@ -99,6 +100,7 @@ public class Shape : MonoBehaviour {
 
     IEnumerator ChangeScene() {
         yield return new WaitForSeconds(1.2f);
+        MLR3.index = 0;
         SceneManager.LoadScene("MLR-3");
     }
 }

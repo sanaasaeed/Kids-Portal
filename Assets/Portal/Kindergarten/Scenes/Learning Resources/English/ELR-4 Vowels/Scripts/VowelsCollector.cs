@@ -14,14 +14,14 @@ public class VowelsCollector : MonoBehaviour {
     private void Start() {
         main = FindObjectOfType<ELR4>();
         m_activity = FindObjectOfType<ELR4Activity>();
-        activityTimer = main.levelTimer;
+  //      activityTimer = main.levelTimer;
     }
 
-    private void Update() {
+    /*private void Update() {
         if (activityRunning) {
             activityTimer += Time.deltaTime;
         }
-    }
+    }*/
 
     private void OnMouseDown() {
         if (gameObject.GetComponent<SpriteRenderer>().sprite.name.Contains("A") ||
@@ -48,6 +48,8 @@ public class VowelsCollector : MonoBehaviour {
                 SaveManager.Instance.SaveLRData("English", "Vowels", 1, activityTimer.ToString());
                 SaveManager.Instance.UpdateExperiencePoints(20);
                 SaveManager.Instance.SaveProgressData("English", "lr", 3);
+                count = 0;
+                totalCount = 0;
                 SceneManager.LoadScene("English");
             } else {
                 m_activity.resultPanel.SetActive(true);
@@ -66,6 +68,8 @@ public class VowelsCollector : MonoBehaviour {
         yield return new WaitForSeconds(1f);
         m_activity.resultPanel.SetActive(false);
         SceneManager.LoadScene("ELR4");
+        count = 0;
+        totalCount = 0;
     }
 
     public int CalculatePercentage() {

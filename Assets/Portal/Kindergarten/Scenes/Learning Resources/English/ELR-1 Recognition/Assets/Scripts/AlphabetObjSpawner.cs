@@ -122,9 +122,11 @@ public class AlphabetObjSpawner : MonoBehaviour {
         SaveManager.Instance.SaveLRData("English", "Alphabet Recognition", 1, levelTimer.ToString());
         SaveManager.Instance.UpdateExperiencePoints(20);
         SaveManager.Instance.SaveProgressData("English", "lr", 1);
+       
         SceneManager.LoadScene("SubjectSelect");
         levelTimer = 0;
         Debug.Log("Learning Resource completed Game Unlocked");
+        alphabetNo = 0;
     }
 
 
