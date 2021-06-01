@@ -79,7 +79,6 @@ public class ULR1 : MonoBehaviour {
             Debug.Log("Game Unlocked");
             if (!dataSent) {
                 SaveManager.Instance.SaveLRData("Urdu", "Recognition", 1,levelTimer.ToString());
-                SaveManager.Instance.UpdateExperiencePoints(20);
                 SaveManager.Instance.SaveProgressData("Urdu", "lr", 1);
             }
             PlayerPrefs.SetInt("lrUrduLevel", 1);

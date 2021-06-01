@@ -24,25 +24,7 @@ public class SaveManager : MonoBehaviour {
     public void SaveAllPlayerPrefsToDatabase() {
         StartCoroutine(UpdatePlayerPrefs());
     }
-
-    public void UpdateExperiencePoints(int pointsToAdd) {
-        experiencePoints = pointsToAdd;
-        Debug.Log("Experience points being send: " + experiencePoints );
-        StartCoroutine(SaveToDatabase("experiencePoints", experiencePoints, "updatexp"));
-    }
-
-    IEnumerator SaveToDatabase(string key, int value, string url) {
-        WWWForm form = new WWWForm();
-        form.AddField(key, value);
-        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + url, form);
-        yield return webRequest.SendWebRequest();
-        if (webRequest.isNetworkError || webRequest.isHttpError) {
-            Debug.Log(webRequest.error);
-        }
-        else {
-            Debug.Log("Submitted successfully " + webRequest.downloadHandler.text);
-        }
-    }
+    
     IEnumerator UpdatePlayerPrefs() {
         WWWForm form = new WWWForm();
         form.AddField("engGamesProgress", PlayerPrefs.GetInt("engGameLevel", 0));

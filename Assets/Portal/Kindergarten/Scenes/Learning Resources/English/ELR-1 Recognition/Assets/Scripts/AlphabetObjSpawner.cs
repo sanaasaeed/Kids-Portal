@@ -120,7 +120,6 @@ public class AlphabetObjSpawner : MonoBehaviour {
         PlayerPrefs.SetInt("lrLevelEng", 1);
         PlayerPrefs.Save();
         SaveManager.Instance.SaveLRData("English", "Alphabet Recognition", 1, levelTimer.ToString());
-        SaveManager.Instance.UpdateExperiencePoints(20);
         SaveManager.Instance.SaveProgressData("English", "lr", 1);
        
         SceneManager.LoadScene("SubjectSelect");

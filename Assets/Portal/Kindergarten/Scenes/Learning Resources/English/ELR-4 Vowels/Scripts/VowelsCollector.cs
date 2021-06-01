@@ -46,7 +46,6 @@ public class VowelsCollector : MonoBehaviour {
                 PlayerPrefs.SetInt("lrLevelEng", 3);
                 PlayerPrefs.Save();
                 SaveManager.Instance.SaveLRData("English", "Vowels", 1, activityTimer.ToString());
-                SaveManager.Instance.UpdateExperiencePoints(20);
                 SaveManager.Instance.SaveProgressData("English", "lr", 3);
                 count = 0;
                 totalCount = 0;
