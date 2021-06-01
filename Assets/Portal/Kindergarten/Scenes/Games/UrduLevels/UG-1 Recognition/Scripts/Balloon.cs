@@ -51,12 +51,14 @@ namespace Portal.Kindergarten.Scenes.UrduLevels.UL1_Assets.Scripts {
                             Time.timeScale = 0f;
                            SaveManager.Instance.SaveGameData("Urdu", "Recognition", marks, gameState.levelTimer.ToString(), 40, 1);
                            SaveManager.Instance.SaveProgressData("Urdu", "game", 1);
-                            SceneManager.LoadScene("Urdu");                            
+                            SceneManager.LoadScene("Urdu");  
+                            Time.timeScale = 1f;
                         }
                         else {
                             gameOverPanel.SetActive(true);
                             Time.timeScale = 0f;
                             SceneManager.LoadScene("Urdu");   
+                            Time.timeScale = 1f;
                         }
                     }
                 }

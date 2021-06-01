@@ -14,18 +14,10 @@ public class MLR3 : MonoBehaviour {
     [SerializeField] private List<AudioClip> audios;
     private AudioSource audioSrc;
     public static int index = 0;
-    public float levelTimer = 0;
-    private bool isTimerRunning = true;
 
     private void Start() {
         audioSrc = GetComponent<AudioSource>();
         SetShape(index);
-    }
-
-    private void Update() {
-        if (isTimerRunning) {
-            levelTimer += Time.deltaTime;
-        }
     }
 
     public void NextBtn() {
@@ -52,7 +44,6 @@ public class MLR3 : MonoBehaviour {
             index++;
         }
         else {
-            isTimerRunning = false;
             SceneManager.LoadScene("MLR-3Activity");
         }
     }

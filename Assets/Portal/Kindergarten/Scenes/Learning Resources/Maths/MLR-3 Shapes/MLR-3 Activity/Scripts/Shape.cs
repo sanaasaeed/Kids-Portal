@@ -13,22 +13,12 @@ public class Shape : MonoBehaviour {
     private static int rightMoves = 0;
     private static int wrongMoves = 0;
     private ObjectSpawner objspawner;
-    private MLR3 mainScript;
-    private float activityTimer = 0;
-    private bool isActivityRunning = true;
 
     private void Start() {
-        mainScript = FindObjectOfType<MLR3>();
         objspawner = FindObjectOfType<ObjectSpawner>();
         initalPos = transform.position;
 //        activityTimer = mainScript.levelTimer;
         // TODO: Remove error from here and test it again and again
-    }
-
-    private void Update() {
-        if (isActivityRunning) {
-            activityTimer += Time.deltaTime;
-        }
     }
 
     private void OnMouseDrag() {
@@ -79,13 +69,13 @@ public class Shape : MonoBehaviour {
         int percentage = CalculatePercentage();
         Debug.Log(percentage);
         if (percentage > 70) {
-            isActivityRunning = false;
             PlayerPrefs.SetInt("lrMathLevel", 3);
             PlayerPrefs.Save();
-            SaveManager.Instance.SaveLRData("Maths", "Shapes", 1, activityTimer.ToString());
+            SaveManager.Instance.SaveLRData("Maths", "Shapes", 1, TimeMeasure.Instance.ToString());
             SaveManager.Instance.SaveProgressData("Math", "lr", 3);
             SceneManager.LoadScene("Math");
             MLR3.index = 0;
+            TimeMeasure.Instance.DestroyYourSelf();
         }
         else {
             objspawner.OpenPanel();

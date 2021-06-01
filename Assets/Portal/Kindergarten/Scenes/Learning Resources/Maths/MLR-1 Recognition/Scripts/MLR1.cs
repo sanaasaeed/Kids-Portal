@@ -74,9 +74,10 @@ public class MLR1 : MonoBehaviour {
             isTimerRunning = false;
             PlayerPrefs.SetInt("lrMathLevel", 1);
             PlayerPrefs.Save();
-            SaveManager.Instance.SaveLRData("Maths", "Number Recognition", 1,levelTimer.ToString());
+            SaveManager.Instance.SaveLRData("Maths", "Number Recognition", 1,TimeMeasure.Instance.levelTimer.ToString());
             SaveManager.Instance.SaveProgressData("Math", "lr", 1);
             SceneManager.LoadScene("Math");
+            TimeMeasure.Instance.DestroyYourSelf();
         }
     }
 

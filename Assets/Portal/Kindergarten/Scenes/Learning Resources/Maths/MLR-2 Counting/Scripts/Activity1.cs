@@ -14,23 +14,13 @@ public class Activity1 : MonoBehaviour {
     [SerializeField] private List<GameObject> clones;
     [SerializeField] private List<TMP_InputField> inputFields;
     [SerializeField] private GameObject resultPanel;
-    private MLR2 mainScript;
-    private float activityTimer = 0;
-    private bool isActivityRunning = true;
     private Sprite currentNo;
     private List<float> yPositions;
     public static int correctAnswers;
     private void Start() {
-        mainScript = FindObjectOfType<MLR2>();
         SetCountingObjects();
-        activityTimer = mainScript.levelTimer;
     }
-
-    private void Update() {
-        if (isActivityRunning) {
-            activityTimer += Time.deltaTime;
-        }
-    }
+    
 
     void SetCountingObjects() {
         yPositions = new List<float>(){2f, 0f, -2.2f, -4.1f};
@@ -58,13 +48,13 @@ public class Activity1 : MonoBehaviour {
         }
         // GREATER THAN 2 TO MAKE IT above 50% PASSING
         if (correctAnswers > 2) {
-            isActivityRunning = false;
             PlayerPrefs.SetInt("lrMathLevel", 2);
             PlayerPrefs.Save();
-            SaveManager.Instance.SaveLRData("Maths", "Counting", 1,activityTimer.ToString());
+            SaveManager.Instance.SaveLRData("Maths", "Counting", 1,TimeMeasure.Instance.levelTimer.ToString());
             SaveManager.Instance.SaveProgressData("Math", "lr", 2);
             SceneManager.LoadScene("Math");
             MLR2.letterNo = 0;
+            TimeMeasure.Instance.DestroyYourSelf();
         }
         else {
             OpenPanel();
