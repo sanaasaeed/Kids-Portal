@@ -13,14 +13,12 @@ public class levelUnlocker : MonoBehaviour {
     private RewardCollector rewardCollector;
     
     private void Start() {
-        // StartCoroutine(AddRewardCard(1));
        int currentLRLevel = PlayerPrefs.GetInt(lrPlayerPref, 0);
         int currentGameLevel = PlayerPrefs.GetInt(gamePlayerPref, 0);
         UnlockGame(currentLRLevel);
         if (currentGameLevel > 0) {
             UnlockLearningResource(currentGameLevel);
         }
-       // StartCoroutine(GetRewardCard());
     }
 
     public void DeleteAllPlayerPrefs() {
@@ -42,7 +40,7 @@ public class levelUnlocker : MonoBehaviour {
         }
     }
     
-    IEnumerator GetRewardCard() {
+    /*IEnumerator GetRewardCard() {
         UnityWebRequest webRequest = UnityWebRequest.Get(WebServices.mainUrl + "getRewardCard");
         yield return webRequest.SendWebRequest();
         if (webRequest.isNetworkError || webRequest.isHttpError) {
@@ -58,21 +56,8 @@ public class levelUnlocker : MonoBehaviour {
             }
             /*JSONNode learningResources = kid["learningResources"];
             JSONNode learningObject = learningResources[0]["subject"].Value;
-            print(learningObject);*/
+            print(learningObject);#1#
         }
-    }
-    
-    IEnumerator AddRewardCard(int cardNo) {
-        WWWForm form = new WWWForm();
-        form.AddField("card", cardNo);
-        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "addRewardCard", form);
-        yield return webRequest.SendWebRequest();
-        if (webRequest.isNetworkError || webRequest.isHttpError) {
-            Debug.Log(webRequest.error);
-        }
-        else {
-            Debug.Log("Game Data Submitted successfully " + webRequest.downloadHandler.text);
-        }
-    }
-
+    }*/
+   
 }

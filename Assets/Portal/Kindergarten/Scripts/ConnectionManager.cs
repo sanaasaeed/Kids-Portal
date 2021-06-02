@@ -12,15 +12,7 @@ public class ConnectionManager : MonoBehaviour {
     [SerializeField] private Text experiencePointsText;
    // public static ConnectionManager Instance;
     private Kid kid;
-    /*private void Awake() {
-        if (Instance == null) {
-            DontDestroyOnLoad(gameObject);
-            Instance = this;
-        }
-        else if (Instance != this) {
-            Destroy (gameObject);
-        }
-    }*/
+
 
     private void Start() {
         Kid newKid = new Kid();
