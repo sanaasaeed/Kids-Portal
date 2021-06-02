@@ -48,8 +48,6 @@ public class Activity1 : MonoBehaviour {
         }
         // GREATER THAN 2 TO MAKE IT above 50% PASSING
         if (correctAnswers > 2) {
-            PlayerPrefs.SetInt("lrMathLevel", 2);
-            PlayerPrefs.Save();
             SaveManager.Instance.SaveLRData("Maths", "Counting", 1,TimeMeasure.Instance.levelTimer.ToString());
             SaveManager.Instance.SaveProgressData("Math", "lr", 2);
             SceneManager.LoadScene("Math");

@@ -106,6 +106,7 @@ public class ShapeManager : MonoBehaviour {
     }
 
     public void Back() {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Math");
     }
 }

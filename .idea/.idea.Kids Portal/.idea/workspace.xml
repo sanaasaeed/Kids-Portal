@@ -20,58 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18fd4037-dc49-412f-af94-81ba1c2b9c3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/css.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/css/main.css.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/favicon.ico.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/index.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTBezierPath.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTBezierPath.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTDescr.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTDescr.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTEvent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTEvent.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTRect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTRect.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTSeq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTSeq.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTSpline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTSpline.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanAudio.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanAudio.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanAudioOptions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanAudioOptions.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanSmooth.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanSmooth.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanTween.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanTween.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanTweenType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanTweenType.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/index.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/elements.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/elements/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/elements/index.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/index.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-1 Recognition/EG1 Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-1 Recognition/EG1 Assets/Scripts/GameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/WordSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/WordSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Materials/BG Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Materials/BG Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scenes/ELR4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scenes/ELR4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scripts/ELR4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scripts/ELR4.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scripts/VowelsCollector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scripts/VowelsCollector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/MLR-3 Activity/Scripts/Shape.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/MLR-3 Activity/Scripts/Shape.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/ULR-1 Recognition/Scenes/ULR-1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/ULR-1 Recognition/Scenes/ULR-1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/ShapeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/ShapeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/Scripts/MLR1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/Scripts/MLR1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/Activity1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/Activity1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/ULR-1 Recognition/Scripts/ULR1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/ULR-1 Recognition/Scripts/ULR1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/English.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/English.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/Math.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/Math.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/Urdu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/Urdu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/UserData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scripts/ELR4Activity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/ThrowBullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/Activity2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Plugins/SimpleJSON.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scripts/VowelsCollector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-4 Vowels/Scripts/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -108,7 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-1 Recognition/Assets/Scripts/TweenPopup.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-2 Small and Capital/Scripts/TweenPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scripts/ELR4Activity.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/ULR-1 Recognition/Scripts/Destroyer.cs" />
@@ -137,14 +93,11 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/Scripts/MLR1_Activity.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-1 Recognition/Assets/Scripts/ActivityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scripts/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/ShapeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/UrduLevels/UG-1 Recognition/Scripts/Balloon.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-1 Recognition/Assets/Scripts/AlphabetObjSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-2 Small and Capital/Scripts/TimeMeasure.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-2 Small and Capital/Scripts/GameRunner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/Scripts/MLR1.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/MLR2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/Activity1.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/Scripts/MLR3.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/RewardCollector.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-2 Counting/ML-1 Assets/Scripts/ScoreHandler.cs" />
@@ -158,7 +111,11 @@
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/English/ELR-4 Vowels/Scripts/VowelsCollector.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/EnglishLevels/EG-1 Recognition/EG1 Assets/Scripts/GameState.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/MLR-3 Activity/Scripts/Shape.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-3 Shapes/Scripts/ShapeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Urdu/ULR-1 Recognition/Scripts/ULR1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/Activity2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-2 Counting/Scripts/Activity1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-1 Recognition/Scripts/MLR1.cs" />
       </list>
     </option>
   </component>
@@ -260,7 +217,7 @@
       <workItem from="1621273291076" duration="24792000" />
       <workItem from="1621419586644" duration="228014000" />
       <workItem from="1622222312633" duration="67749000" />
-      <workItem from="1622447238429" duration="57716000" />
+      <workItem from="1622447238429" duration="64152000" />
     </task>
     <servers />
   </component>

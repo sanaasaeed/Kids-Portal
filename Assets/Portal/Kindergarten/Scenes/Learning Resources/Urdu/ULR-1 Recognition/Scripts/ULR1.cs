@@ -68,7 +68,7 @@ public class ULR1 : MonoBehaviour {
         else {
             Debug.Log("Game Unlocked");
             if (!dataSent) {
-                SaveManager.Instance.SaveLRData("Urdu", "Recognition", 1,TimeMeasure.Instance.ToString());
+                SaveManager.Instance.SaveLRData("Urdu", "Recognition", 1,TimeMeasure.Instance.levelTimer.ToString());
                 SaveManager.Instance.SaveProgressData("Urdu", "lr", 1);
             }
             SceneManager.LoadScene("Urdu");
