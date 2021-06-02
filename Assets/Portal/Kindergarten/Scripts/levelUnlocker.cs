@@ -13,7 +13,7 @@ public class levelUnlocker : MonoBehaviour {
     private RewardCollector rewardCollector;
     
     private void Start() {
-       // StartCoroutine(AddRewardCard(1));
+        // StartCoroutine(AddRewardCard(1));
        int currentLRLevel = PlayerPrefs.GetInt(lrPlayerPref, 0);
         int currentGameLevel = PlayerPrefs.GetInt(gamePlayerPref, 0);
         UnlockGame(currentLRLevel);

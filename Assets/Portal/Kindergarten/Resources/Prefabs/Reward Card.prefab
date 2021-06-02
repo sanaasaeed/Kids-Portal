@@ -327,7 +327,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1935962475789227931}
+      - m_Target: {fileID: 0}
         m_MethodName: Back
         m_Mode: 1
         m_Arguments:
@@ -599,13 +599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3a6da8fa0650e54086dfc1341c65a1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardImg: {fileID: 5005175384619472134, guid: ac4fc4c30e4680b4ca8e679b004a558d, type: 3}
-  cards:
-  - {fileID: 21300000, guid: ecc89ef806d739c4b8759bbf26229e13, type: 3}
-  - {fileID: 21300000, guid: a7fcfe018f161e54aae4ab84803c2026, type: 3}
-  - {fileID: 21300000, guid: 097e63a086dfd1649896eb1bbaee7892, type: 3}
-  - {fileID: 21300000, guid: 99f667f73a1f534418dca21cf4a811b3, type: 3}
-  - {fileID: 21300000, guid: 8aba6a260c231a648a5df3767495dc1c, type: 3}
 --- !u!1001 &8054884332928799601
 PrefabInstance:
   m_ObjectHideFlags: 0
