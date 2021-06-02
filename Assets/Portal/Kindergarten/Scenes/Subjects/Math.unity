@@ -6317,8 +6317,7 @@ MonoBehaviour:
   - {fileID: 1578782084}
   - {fileID: 280978105}
   - {fileID: 1429989510}
-  lrPlayerPref: lrMathLevel
-  gamePlayerPref: gameMathLevel
+  subject: Maths
 --- !u!4 &543429858
 Transform:
   m_ObjectHideFlags: 0

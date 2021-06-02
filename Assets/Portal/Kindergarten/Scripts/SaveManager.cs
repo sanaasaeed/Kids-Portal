@@ -16,33 +16,7 @@ public class SaveManager : MonoBehaviour {
             Destroy (gameObject);
         }
     }
-
-    public void LoadAllPlayerPrefs() {
-        StartCoroutine(GetProgress());
-    }
-
-    public void SaveAllPlayerPrefsToDatabase() {
-        StartCoroutine(UpdatePlayerPrefs());
-    }
     
-    IEnumerator UpdatePlayerPrefs() {
-        WWWForm form = new WWWForm();
-        form.AddField("engGamesProgress", PlayerPrefs.GetInt("engGameLevel", 0));
-        form.AddField("mathGamesProgress", PlayerPrefs.GetInt("gameMathLevel", 0));
-        form.AddField("urduGamesProgress", PlayerPrefs.GetInt("urduGameLevel", 0));
-        form.AddField("engLrProgress", PlayerPrefs.GetInt("lrLevelEng", 0));
-        form.AddField("mathLrProgress", PlayerPrefs.GetInt("lrMathLevel", 0));
-        form.AddField("urduLrProgress", PlayerPrefs.GetInt("lrUrduLevel", 0));
-        UnityWebRequest webRequest = UnityWebRequest.Post(WebServices.mainUrl + "progress", form);
-        yield return webRequest.SendWebRequest();
-        if (webRequest.isNetworkError || webRequest.isHttpError) {
-            Debug.Log(webRequest.error);
-        }
-        else {
-            Debug.Log("Submitted successfully " + webRequest.downloadHandler.text);
-        }
-    }
-
     IEnumerator SaveGameDataToDB(string subject, string gameTitle, int gameScore, string gameTime, int experiencePoints, int gameStatus) {
         WWWForm form = new WWWForm();
         form.AddField("subject", subject);
@@ -82,23 +56,6 @@ public class SaveManager : MonoBehaviour {
         }
     }
     
-    IEnumerator GetProgress() {
-        UnityWebRequest webRequest = UnityWebRequest.Get(WebServices.mainUrl + "progress");
-        yield return webRequest.SendWebRequest();
-        if (webRequest.isNetworkError || webRequest.isHttpError) {
-            Debug.Log(webRequest.error);
-        }
-        else {
-            Debug.Log("Submitted successfully Data: " + webRequest.downloadHandler.text);
-            Progress progress = JsonUtility.FromJson<Progress>(webRequest.downloadHandler.text);
-            progress.SetPlayerPrefsFromDb("lrLevelEng", progress.engLrProgress);
-            progress.SetPlayerPrefsFromDb("lrMathLevel", progress.mathLrProgress);
-            progress.SetPlayerPrefsFromDb("lrUrduLevel", progress.urduLrProgress);
-            progress.SetPlayerPrefsFromDb("engGameLevel", progress.engGamesProgress);
-            progress.SetPlayerPrefsFromDb("gameMathLevel", progress.mathGamesProgress);
-            progress.SetPlayerPrefsFromDb("urduGameLevel", progress.urduGamesProgress);
-        }
-    }
 
     public void SaveLRData(string subject, string name, int status, string learningTime) {
         StartCoroutine(SaveLRDataToDB(subject, name, status, learningTime));

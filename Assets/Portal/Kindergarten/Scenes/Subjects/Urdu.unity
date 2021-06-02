@@ -10245,8 +10245,7 @@ MonoBehaviour:
   - {fileID: 1004105979}
   gameLevelBtns:
   - {fileID: 1578782084}
-  lrPlayerPref: lrUrduLevel
-  gamePlayerPref: urduGameLevel
+  subject: Urdu
 --- !u!4 &1699219237
 Transform:
   m_ObjectHideFlags: 0

@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="18fd4037-dc49-412f-af94-81ba1c2b9c3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kids Portal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/ConnectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/ConnectionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/English.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/English.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/Math.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/Math.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/Urdu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scenes/Subjects/Urdu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/levelUnlocker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Portal/Kindergarten/Scripts/levelUnlocker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +213,7 @@
       <workItem from="1621273291076" duration="24792000" />
       <workItem from="1621419586644" duration="228014000" />
       <workItem from="1622222312633" duration="67749000" />
-      <workItem from="1622447238429" duration="49569000" />
+      <workItem from="1622447238429" duration="52898000" />
     </task>
     <servers />
   </component>

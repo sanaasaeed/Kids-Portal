@@ -13172,6 +13172,11 @@ PrefabInstance:
       propertyPath: gameLevelBtns.Array.data[2]
       value: 
       objectReference: {fileID: 1429989510}
+    - target: {fileID: 1742975777855018589, guid: 1acd4dcd65414944283699a5b42670d0,
+        type: 3}
+      propertyPath: subject
+      value: English
+      objectReference: {fileID: 0}
     - target: {fileID: 5220737146055475842, guid: 1acd4dcd65414944283699a5b42670d0,
         type: 3}
       propertyPath: m_LocalPosition.x

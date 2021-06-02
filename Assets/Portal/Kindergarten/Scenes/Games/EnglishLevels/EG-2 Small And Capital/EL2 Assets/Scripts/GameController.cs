@@ -78,7 +78,7 @@ public class GameController : MonoBehaviour {
                 PlayerPrefs.Save();
                 int marks = (int) Math.Round(CalculateMarks());
                 SaveManager.Instance.SaveGameData("English", "Capital small letters", marks, timer.ToString(), 40, 1);
-                SaveManager.Instance.SaveProgressData("English", "game", 1);
+                SaveManager.Instance.SaveProgressData("English", "game", 2);
                 SceneManager.LoadScene("English");
             }
             if (OriginalLetter < 'z') {
