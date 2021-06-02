@@ -71,7 +71,7 @@ public class Shape : MonoBehaviour {
         if (percentage > 70) {
             PlayerPrefs.SetInt("lrMathLevel", 3);
             PlayerPrefs.Save();
-            SaveManager.Instance.SaveLRData("Maths", "Shapes", 1, TimeMeasure.Instance.ToString());
+            SaveManager.Instance.SaveLRData("Maths", "Shapes", 1, TimeMeasure.Instance.levelTimer.ToString());
             SaveManager.Instance.SaveProgressData("Math", "lr", 3);
             SceneManager.LoadScene("Math");
             MLR3.index = 0;

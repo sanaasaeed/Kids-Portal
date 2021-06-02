@@ -36,7 +36,6 @@ public class WordSpawner : MonoBehaviour {
         else {
             isTimerRunning = false;
             int marks = (int) Math.Round(CalculateMarks());
-           // PlayerPrefs.SetInt("", );
            if (marks > 5) {
                SaveManager.Instance.SaveGameData("English", "Vowels", marks, levelTimer.ToString(),40,1);
                SaveManager.Instance.SaveProgressData("English", "game", 3);

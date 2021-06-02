@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6692143732338100308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6692143732338100310}
+  - component: {fileID: 6692143732338100309}
+  m_Layer: 0
+  m_Name: RewardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6692143732338100310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6692143732338100308}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.071754165, y: 1.2063879, z: 62.32715}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6692143732338100309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6692143732338100308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355f6161d4e72694c9bc5854aaa77bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewardCardPanel: {fileID: 0}
+  cardImg: {fileID: 0}
+  cards:
+  - {fileID: 21300000, guid: ecc89ef806d739c4b8759bbf26229e13, type: 3}
+  - {fileID: 21300000, guid: a7fcfe018f161e54aae4ab84803c2026, type: 3}
+  - {fileID: 21300000, guid: 097e63a086dfd1649896eb1bbaee7892, type: 3}
+  - {fileID: 21300000, guid: 99f667f73a1f534418dca21cf4a811b3, type: 3}
+  - {fileID: 21300000, guid: 8aba6a260c231a648a5df3767495dc1c, type: 3}

@@ -15,9 +15,9 @@ public class GameState : MonoBehaviour{
     private int totalLives = 11;
     private static int totalScore = 0;
     private static int totalAlphabetsCollected = 0;
-    private int level1score = 30;
-    private int level2score = 50;
-    private int level3score = 70;
+    private int level1score = 20;
+    private int level2score = 20;
+    private int level3score = 20;
     public static Sprite target;
     public static int levelScore;
     public static float timer = 0;
