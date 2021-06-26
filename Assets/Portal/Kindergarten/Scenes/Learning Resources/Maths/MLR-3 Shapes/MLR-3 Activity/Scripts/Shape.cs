@@ -18,7 +18,6 @@ public class Shape : MonoBehaviour {
         objspawner = FindObjectOfType<ObjectSpawner>();
         initalPos = transform.position;
 //        activityTimer = mainScript.levelTimer;
-        // TODO: Remove error from here and test it again and again
     }
 
     private void OnMouseDrag() {
@@ -69,11 +68,9 @@ public class Shape : MonoBehaviour {
         int percentage = CalculatePercentage();
         Debug.Log(percentage);
         if (percentage > 70) {
-            PlayerPrefs.SetInt("lrMathLevel", 3);
-            PlayerPrefs.Save();
             SaveManager.Instance.SaveLRData("Maths", "Shapes", 1, TimeMeasure.Instance.levelTimer.ToString());
             SaveManager.Instance.SaveProgressData("Math", "lr", 3);
-            SceneManager.LoadScene("Math");
+            SceneManager.LoadScene("Activity Shape");
             MLR3.index = 0;
             TimeMeasure.Instance.DestroyYourSelf();
         }

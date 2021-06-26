@@ -145,11 +145,11 @@
                     <e p="Scripts" t="Include">
                       <e p="Destroy.cs" t="Include" />
                       <e p="InputHandler.cs" t="Include" />
-                      <e p="MLR1.cs" t="Include" />
                       <e p="MLR1_Activity.cs" t="Include" />
                     </e>
                   </e>
                   <e p="MLR-2 Counting" t="Include">
+                    <e p="MLR1.cs" t="Include" />
                     <e p="Scripts" t="Include">
                       <e p="Activity1.cs" t="Include" />
                       <e p="Activity2.cs" t="Include" />
@@ -165,6 +165,8 @@
                     </e>
                     <e p="Scripts" t="Include">
                       <e p="MLR3.cs" t="Include" />
+                      <e p="ShapeActivityManager.cs" t="Include" />
+                      <e p="TestScript.cs" t="Include" />
                     </e>
                   </e>
                 </e>

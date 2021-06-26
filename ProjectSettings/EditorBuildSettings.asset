@@ -91,6 +91,10 @@ EditorBuildSettings:
     path: Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-1 Recognition/Scenes/MG-1.unity
     guid: 7d4a9e7b1842d6441a66bbe5bda45fd4
   - enabled: 1
+    path: Assets/Portal/Kindergarten/Scenes/Learning Resources/Maths/MLR-3 Shapes/Activity
+      Shape.unity
+    guid: 25ab88fd983d2f944bd19d60e9fbafdd
+  - enabled: 1
     path: Assets/Portal/Kindergarten/Scenes/Games/MathsLevels/MG-2 Counting/MG-2.unity
     guid: a6bbe21899d951242babc906f584be5e
   - enabled: 1
